@@ -29,37 +29,40 @@
 <!-- Only manually reviewed, allowlisted aggregate data may replace this block.
      Never paste source rows or a full spreadsheet export into this file. -->
 <script id="aggregate-data" type="application/json">
-{"schemaVersion":"1.0","verifiedAt":"2026-10-26T21:58:00+08:00","statusRule":"approved_dates","buildings":[{"building":"C棟","total":78,"open":35,"working":33,"completed":10}]}
+{"schemaVersion":"1.1","statusRule":"approved_dates","buildings":[{"building":"A棟","total":58,"open":1,"working":14,"completed":43,"verifiedAt":"2026-10-27T00:12:00+08:00"},{"building":"B棟","total":133,"open":12,"working":5,"completed":116,"verifiedAt":"2026-10-27T00:12:00+08:00"},{"building":"C棟","total":78,"open":35,"working":33,"completed":10,"verifiedAt":"2026-10-26T21:58:00+08:00"},{"building":"D棟","total":212,"open":96,"working":22,"completed":94,"verifiedAt":"2026-10-27T00:12:00+08:00"},{"building":"E棟","total":139,"open":22,"working":0,"completed":117,"verifiedAt":"2026-10-27T00:12:00+08:00"},{"building":"F棟","total":102,"open":5,"working":4,"completed":93,"verifiedAt":"2026-10-27T00:12:00+08:00"},{"building":"G棟","total":121,"open":118,"working":3,"completed":0,"verifiedAt":"2026-10-27T00:12:00+08:00"}]}
 </script>
 <script>
 'use strict';
 (()=>{
 const $=id=>document.getElementById(id), format=new Intl.NumberFormat('zh-TW');
 const keys=(o,allowed)=>o&&typeof o==='object'&&!Array.isArray(o)&&Object.keys(o).every(k=>allowed.includes(k))&&allowed.every(k=>Object.hasOwn(o,k));
+const validTime=v=>typeof v==='string'&&/^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}(?:Z|[+-]\d{2}:\d{2})$/.test(v)&&Number.isFinite(Date.parse(v));
 let data;
 try{data=JSON.parse($('aggregate-data').textContent);
- if(!keys(data,['schemaVersion','verifiedAt','statusRule','buildings'])||data.schemaVersion!=='1.0'||!Array.isArray(data.buildings)||data.buildings.length>100)throw Error();
+ if(!keys(data,['schemaVersion','statusRule','buildings'])||data.schemaVersion!=='1.1'||!Array.isArray(data.buildings)||data.buildings.length>100)throw Error();
  if(!['pending','approved_explicit','approved_dates'].includes(data.statusRule))throw Error();
  const names=new Set();
- for(const b of data.buildings){if(!keys(b,['building','total','open','working','completed'])||typeof b.building!=='string'||!/^([A-Za-z0-9]{1,4}|[一二三四五六七八九十]{1,3})棟$/.test(b.building)||names.has(b.building))throw Error();names.add(b.building);
+ for(const b of data.buildings){if(!keys(b,['building','total','open','working','completed','verifiedAt'])||!validTime(b.verifiedAt)||typeof b.building!=='string'||!/^([A-Za-z0-9]{1,4}|[一二三四五六七八九十]{1,3})棟$/.test(b.building)||names.has(b.building))throw Error();names.add(b.building);
   if(['total','open','working','completed'].some(k=>!Number.isSafeInteger(b[k])||b[k]<0||b[k]>10000000)||b.total!==b.open+b.working+b.completed)throw Error();}
- if(data.verifiedAt!==null&&(typeof data.verifiedAt!=='string'||!/^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}(?:Z|[+-]\d{2}:\d{2})$/.test(data.verifiedAt)||!Number.isFinite(Date.parse(data.verifiedAt))))throw Error();
- if(data.statusRule==='pending'||!data.verifiedAt||!data.buildings.length)return;
+ if(data.statusRule==='pending'||!data.buildings.length)return;
 }catch{ $('notice-title').textContent='資料暫時無法顯示';$('notice-detail').textContent='彙總格式需重新查核；目前不顯示統計數字。';return; }
 const rows=[...data.buildings].sort((a,b)=>a.building.localeCompare(b.building,'zh-Hant',{numeric:true}));
 const sums=rows.reduce((s,b)=>{for(const k of ['total','open','working','completed'])s[k]+=b[k];return s;},{total:0,open:0,working:0,completed:0});
 for(const k of Object.keys(sums))$(k).textContent=format.format(sums[k]);
-$('checked-at').textContent=new Intl.DateTimeFormat('zh-TW',{dateStyle:'medium',timeStyle:'short',timeZone:'Asia/Taipei'}).format(new Date(data.verifiedAt))+'（台北）';
-$('notice-title').textContent='已發布核實彙總';$('notice-detail').textContent='數字僅涵蓋已發布棟別。其他棟別：未核實／無資料，不推定為零。';
+const dateFormat=new Intl.DateTimeFormat('zh-TW',{dateStyle:'medium',timeStyle:'short',timeZone:'Asia/Taipei'});
+const times=[...new Set(rows.map(b=>b.verifiedAt))].sort((a,b)=>Date.parse(a)-Date.parse(b));
+$('checked-at').textContent=(times.length===1?dateFormat.format(new Date(times[0])):dateFormat.format(new Date(times[0]))+' 至 '+dateFormat.format(new Date(times.at(-1))))+'（台北；各棟時間見下）';
+$('notice-title').textContent='已發布核實彙總';$('notice-detail').textContent='各棟依各自查核時間發布人工快照；非自動同步，非即時資料。';
 $('coverage').textContent=`共 ${rows.length} 棟已發布彙總`;$('empty').hidden=true;$('legend').hidden=false;$('building-filter').disabled=false;
-$('rule-state').textContent='填表分類規則已核定';$('rules-text').textContent=data.statusRule==='approved_dates'?'依填表紀錄分類：完成日期有填優先列為已完成；否則聯絡日期或預計修繕日期有填列為處理中；其餘列為未處理。此分類不等同人工驗收。':'依已核定的狀態分類統計，不等同人工驗收。';
+$('rule-state').textContent='填表分類規則已核定';$('rules-text').textContent=data.statusRule==='approved_dates'?'依原表日期欄是否填值分類，部分欄位含文字；僅反映填表紀錄，不代表人工驗收。人工快照，非自動同步。完成欄非空優先列為已完成；否則聯絡或預計欄非空列為處理中；其餘未處理。':'依已核定的狀態分類統計，不等同人工驗收。人工快照，非自動同步。';
 for(const b of rows){const option=document.createElement('option');option.value=b.building;option.textContent=b.building;$('building-filter').append(option);}
 function render(selected){$('buildings').replaceChildren();for(const b of rows.filter(b=>!selected||b.building===selected)){
  const card=document.createElement('article');card.className='building';
  const top=document.createElement('div');top.className='building-top';const title=document.createElement('h3');title.textContent=b.building;const amount=document.createElement('span'),n=document.createElement('strong');n.textContent=format.format(b.total);amount.append(n,document.createTextNode('件'));top.append(title,amount);
  const bar=document.createElement('div');bar.className='bar';bar.setAttribute('aria-hidden','true');const details=document.createElement('div');details.className='breakdown';
  for(const [k,label,color]of [['open','未處理','var(--open)'],['working','處理中','var(--work)'],['completed','已完成','var(--done)']]){const seg=document.createElement('span');seg.style.width=(b.total?100*b[k]/b.total:0)+'%';seg.style.background=color;bar.append(seg);const cell=document.createElement('div'),caption=document.createElement('span'),value=document.createElement('strong');caption.textContent=label;value.textContent=format.format(b[k]);cell.append(caption,value);details.append(cell);}
- card.append(top,bar,details);$('buildings').append(card);}}
+ const checked=nodeTime(b.verifiedAt);card.append(top,bar,details,checked);$('buildings').append(card);}}
+function nodeTime(value){const p=document.createElement('p');p.className='sub';p.textContent='查核：'+dateFormat.format(new Date(value))+'（台北）';return p;}
 $('building-filter').addEventListener('change',e=>render(e.target.value));render('');
 })();
 </script>
