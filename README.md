@@ -8,12 +8,12 @@
 
 由授權負責人先查核來源、統計規則與彙總，手動審閱後，只更新 index.html 中 aggregate-data JSON 區塊。公開資料鍵僅允許：
 
-- schemaVersion：1.0。
-- verifiedAt：實際資料查核時間（含時區的 ISO 8601），未查核為 null。
+- schemaVersion：1.1。
+- 每棟 verifiedAt：該棟實際資料查核時間（含時區的 ISO 8601），不能以最新一棟時間冒充所有棟同時查核。
 - statusRule：pending（待核定）、approved_explicit（核定狀態分類）、approved_dates（核定日期分類）。不在頁面執行日期分類，必須在公開前完成並核准彙總。
-- buildings：每棟僅 building、total、open、working、completed。總數必須等於三狀態合計；皆為非負整數。
+- buildings：每棟僅 building、total、open、working、completed、verifiedAt。總數必須等於三狀態合計；皆為非負整數。
 
-尚無核實資料時維持空陣列、null、pending，不放示範數字。若狀態規則未核定或缺少查核時間，頁面不顯示統計數字。瀏覽器驗證只保護顯示，不能撤回已公開在原始碼／Git 歷史的資料；務必先審閱再提交。
+尚無核實資料時維持空陣列與pending，不放示範數字。若規則未核定或任一發布棟缺少查核時間，頁面不顯示統計數字。日期分類依完成欄非空優先完成，否則聯絡或預計欄非空處理中，其餘未處理；欄位可含文字，只反映填表紀錄，非人工驗收。瀏覽器驗證只保護顯示，不能撤回已公開在原始碼／Git歷史的資料；務必先審閱再提交。
 
 更新採人工提交，沒有自動拉取來源或定時同步。不要求任何憑證。Pages 使用 main 分支根目錄發布。
 
