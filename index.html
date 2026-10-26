@@ -29,7 +29,7 @@
 <!-- Only manually reviewed, allowlisted aggregate data may replace this block.
      Never paste source rows or a full spreadsheet export into this file. -->
 <script id="aggregate-data" type="application/json">
-{"schemaVersion":"1.0","verifiedAt":null,"statusRule":"pending","buildings":[]}
+{"schemaVersion":"1.0","verifiedAt":"2026-10-26T21:58:00+08:00","statusRule":"approved_dates","buildings":[{"building":"C棟","total":78,"open":35,"working":33,"completed":10}]}
 </script>
 <script>
 'use strict';
@@ -50,9 +50,9 @@ const rows=[...data.buildings].sort((a,b)=>a.building.localeCompare(b.building,'
 const sums=rows.reduce((s,b)=>{for(const k of ['total','open','working','completed'])s[k]+=b[k];return s;},{total:0,open:0,working:0,completed:0});
 for(const k of Object.keys(sums))$(k).textContent=format.format(sums[k]);
 $('checked-at').textContent=new Intl.DateTimeFormat('zh-TW',{dateStyle:'medium',timeStyle:'short',timeZone:'Asia/Taipei'}).format(new Date(data.verifiedAt))+'（台北）';
-$('notice-title').textContent='已發布核實彙總';$('notice-detail').textContent='數字僅涵蓋已發布棟別，其他棟別不推定為零。';
+$('notice-title').textContent='已發布核實彙總';$('notice-detail').textContent='數字僅涵蓋已發布棟別。其他棟別：未核實／無資料，不推定為零。';
 $('coverage').textContent=`共 ${rows.length} 棟已發布彙總`;$('empty').hidden=true;$('legend').hidden=false;$('building-filter').disabled=false;
-$('rule-state').textContent='統計規則已核定';$('rules-text').textContent=data.statusRule==='approved_dates'?'依已核定的日期規則計算狀態。':'依已核定的狀態分類統計。';
+$('rule-state').textContent='填表分類規則已核定';$('rules-text').textContent=data.statusRule==='approved_dates'?'依填表紀錄分類：完成日期有填優先列為已完成；否則聯絡日期或預計修繕日期有填列為處理中；其餘列為未處理。此分類不等同人工驗收。':'依已核定的狀態分類統計，不等同人工驗收。';
 for(const b of rows){const option=document.createElement('option');option.value=b.building;option.textContent=b.building;$('building-filter').append(option);}
 function render(selected){$('buildings').replaceChildren();for(const b of rows.filter(b=>!selected||b.building===selected)){
  const card=document.createElement('article');card.className='building';
