@@ -1,0 +1,28 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Public building aggregates only",
+  "type": "object", "additionalProperties": false,
+  "required": ["schemaVersion", "verifiedAt", "statusRule", "buildings"],
+  "properties": {
+    "schemaVersion": {"const": "1.0"},
+    "verifiedAt": {"type": ["string", "null"], "format": "date-time"},
+    "statusRule": {"enum": ["pending", "approved_explicit", "approved_dates"]},
+    "buildings": {
+      "type": "array", "maxItems": 100,
+      "items": {
+        "type": "object", "additionalProperties": false,
+        "required": ["building", "total", "open", "working", "completed"],
+        "properties": {
+          "building": {"type": "string", "pattern": "^([A-Za-z0-9]{1,4}|[一二三四五六七八九十]{1,3})棟$"},
+          "total": {"$ref": "#/$defs/count"},
+          "open": {"$ref": "#/$defs/count"},
+          "working": {"$ref": "#/$defs/count"},
+          "completed": {"$ref": "#/$defs/count"}
+        }
+      }
+    }
+  },
+  "$defs": {"count": {"type": "integer", "minimum": 0, "maximum": 10000000}},
+  "$comment": "Also require unique building names and total=open+working+completed before publication. Pending rules or missing verification time must not show statistics."
+}
+
