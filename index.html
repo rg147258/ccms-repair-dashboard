@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="各棟修繕件數與狀態統計。僅提供彙總，不提供案件明細。">
+<meta name="color-scheme" content="light"><meta name="referrer" content="no-referrer">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'unsafe-inline'; script-src 'unsafe-inline'; img-src data:; base-uri 'none'; form-action 'none'">
+<title>修繕進度｜各棟統計</title>
+<style>
+:root{--ink:#163230;--muted:#60716d;--bg:#f4f6f2;--line:#dce4dd;--green:#21694f;--open:#a35c2b;--work:#467c9b;--done:#2a7658;--white:#fff;--radius:20px}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font-family:system-ui,-apple-system,"Segoe UI","Microsoft JhengHei",sans-serif;line-height:1.6}button,select{font:inherit}a{color:inherit}.wrap{max-width:1140px;margin:auto;padding:0 28px}header{background:#163c34;color:#fff;padding:30px 0 40px}.brand{display:flex;align-items:center;gap:10px;font-size:14px;letter-spacing:.12em;color:#d3e4d8}.mark{display:grid;place-items:center;width:30px;height:30px;border:1px solid #92b09e;border-radius:9px}.header-grid{display:flex;justify-content:space-between;align-items:flex-end;gap:24px;margin-top:30px}h1{font-weight:650;font-size:clamp(30px,5vw,45px);line-height:1.25;letter-spacing:.03em;margin:0 0 12px}.intro{margin:0;color:#d3e4d8;font-size:15px}.stamp{min-width:195px;color:#d3e4d8;font-size:12px;border-left:1px solid #537165;padding-left:22px}.stamp strong{display:block;font-size:14px;color:#fff;font-weight:500;margin-top:3px}main{padding-top:26px;padding-bottom:42px}.notice{display:flex;gap:12px;align-items:flex-start;background:#e8eee5;border:1px solid #d8e3d2;border-radius:14px;padding:14px 18px;font-size:14px;margin-bottom:24px}.dot{flex:none;width:8px;height:8px;border-radius:50%;background:#7a8d71;margin-top:8px}.notice p{margin:0}.notice small{display:block;color:var(--muted);margin-top:3px}.metrics{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-bottom:30px}.metric{background:var(--white);border:1px solid var(--line);border-radius:var(--radius);padding:22px 23px}.metric .label{color:var(--muted);font-size:14px;display:flex;align-items:center;gap:8px}.swatch{width:7px;height:7px;border-radius:50%;display:inline-block}.metric .value{display:block;font-size:36px;line-height:1.3;font-weight:650;letter-spacing:-.02em;margin:12px 0 4px;font-variant-numeric:tabular-nums}.metric small{color:var(--muted);font-size:12px}.metric.total{background:#e6eee5;border-color:#ceddcc}.section-head{display:flex;justify-content:space-between;align-items:center;gap:18px;margin-bottom:16px}h2{font-size:20px;font-weight:650;margin:0}.sub{font-size:13px;color:var(--muted);margin:3px 0 0}.filters{display:flex;align-items:center;gap:10px;color:var(--muted);font-size:13px}select{border:1px solid #cdd9ce;border-radius:11px;background:#fff;color:var(--ink);padding:9px 34px 9px 12px;min-width:128px}select:disabled{opacity:.6}.empty{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:58px 22px;text-align:center}.empty-icon{width:66px;height:66px;margin:0 auto 22px;background:#edf2ea;border-radius:21px;display:grid;place-items:center;color:#597c64}.empty h3{font-size:21px;margin:0 0 10px;font-weight:600}.empty p{color:var(--muted);font-size:14px;margin:0 auto;max-width:420px}.empty .badge{display:inline-flex;margin-top:24px;padding:5px 12px;border:1px solid var(--line);border-radius:99px;font-size:12px;color:#65735f}.buildings{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.building{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:24px}.building-top{display:flex;align-items:center;justify-content:space-between;margin-bottom:24px}.building h3{margin:0;font-size:24px}.building-top span{font-size:13px;color:var(--muted)}.building-top strong{color:var(--ink);font-size:23px;font-weight:600;padding-right:3px;font-variant-numeric:tabular-nums}.bar{height:9px;border-radius:10px;display:flex;overflow:hidden;background:#edf1ec;margin-bottom:18px}.bar span{height:100%}.breakdown{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}.breakdown span{display:block;color:var(--muted);font-size:12px}.breakdown strong{display:block;font-size:22px;font-weight:600;font-variant-numeric:tabular-nums}.legend{display:flex;gap:18px;flex-wrap:wrap;margin-top:16px;font-size:12px;color:var(--muted)}.legend i{margin-right:6px}.rules{display:flex;gap:18px;justify-content:space-between;align-items:flex-start;margin-top:28px;border-top:1px solid var(--line);padding-top:21px;color:var(--muted);font-size:12px}.rules p{margin:0;max-width:740px}.pill{flex:none;border:1px solid #ccd8cb;border-radius:99px;padding:4px 10px;font-size:11px;white-space:nowrap}.foot{border-top:1px solid var(--line);padding:20px 0 28px;color:var(--muted);font-size:12px;display:flex;justify-content:space-between;gap:20px}.foot p{margin:0}button:focus-visible,select:focus-visible{outline:3px solid #3f8d68;outline-offset:3px}[hidden]{display:none!important}.nojs{padding:14px;background:#fff1da;color:#633b0c}
+@media(max-width:760px){.wrap{padding:0 20px}header{padding:24px 0 30px}.header-grid{display:block;margin-top:26px}.stamp{border-left:0;padding:18px 0 0;min-width:0}.stamp strong{display:inline;margin-left:8px}.metrics{grid-template-columns:repeat(2,1fr);gap:10px;margin-bottom:25px}.metric{padding:17px 18px;border-radius:16px}.metric .value{font-size:32px;margin-top:9px}.buildings{grid-template-columns:repeat(2,1fr)}.section-head{align-items:flex-start}.filters{flex-direction:column;align-items:flex-end;gap:3px}.empty{padding:45px 22px}.rules{display:block}.pill{display:inline-block;margin-top:12px}.foot{display:block}.foot p+p{margin-top:6px}}
+@media(max-width:460px){.buildings{grid-template-columns:1fr}.intro{font-size:14px}.notice{font-size:13px}.metric .label{font-size:13px}.metric small{font-size:11px}.section-head{gap:10px}select{min-width:115px;padding-top:7px;padding-bottom:7px}.empty h3{font-size:19px}}
+@media(prefers-reduced-motion:no-preference){.building{animation:appear .25s ease-out}@keyframes appear{from{opacity:0;transform:translateY(5px)}to{opacity:1;transform:none}}}
+@media print{header{background:#fff;color:#163230}.intro,.brand,.stamp,.stamp strong{color:#163230}.filters{display:none}.metric,.building,.empty{break-inside:avoid}.wrap{max-width:none}.foot{padding-bottom:0}}
+</style>
+</head>
+<body>
+<header><div class="wrap"><div class="brand"><span class="mark" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 21V7l8-4 8 4v14M9 21v-6h6v6M8 9h1m6 0h1M8 12h1m6 0h1"/></svg></span>修繕進度總覽</div><div class="header-grid"><div><h1>把進度，看清楚。</h1><p class="intro">依棟別掌握修繕件數與處理狀態，讓每一步都有依據。</p></div><div class="stamp">資料查核時間<strong id="checked-at">尚未查核</strong></div></div></div></header>
+<main class="wrap">
+<noscript><p class="nojs">此頁需要 JavaScript 顯示彙總；目前未載入統計資料。</p></noscript>
+<aside class="notice" role="status" aria-live="polite"><span class="dot" aria-hidden="true"></span><div><p id="notice-title">等待核實的彙總資料</p><small id="notice-detail">尚未發布件數；空白不代表零件。統計規則仍待核定。</small></div></aside>
+<section class="metrics" aria-label="各棟合計"><article class="metric total"><div class="label">修繕總件數</div><strong class="value" id="total">—</strong><small>已發布棟別合計</small></article><article class="metric"><div class="label"><i class="swatch" style="background:var(--open)" aria-hidden="true"></i>未處理</div><strong class="value" id="open">—</strong><small>等待開始處理</small></article><article class="metric"><div class="label"><i class="swatch" style="background:var(--work)" aria-hidden="true"></i>處理中</div><strong class="value" id="working">—</strong><small>修繕持續進行</small></article><article class="metric"><div class="label"><i class="swatch" style="background:var(--done)" aria-hidden="true"></i>已完成</div><strong class="value" id="completed">—</strong><small>依核定規則統計</small></article></section>
+<section aria-labelledby="buildings-heading"><div class="section-head"><div><h2 id="buildings-heading">各棟概況</h2><p class="sub" id="coverage">僅顯示已核實、獲准公開的棟別。</p></div><label class="filters">選擇棟別<select id="building-filter" disabled><option value="">全部棟別</option></select></label></div>
+<div class="empty" id="empty"><div class="empty-icon" aria-hidden="true"><svg width="33" height="33" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="5" y="5" width="22" height="23" rx="3"/><path d="M11 3v5m10-5v5M5 12h22m-16 6h3m4 0h3m-10 5h3"/></svg></div><h3>資料確認後，進度就會在這裡。</h3><p>目前沒有已核實的統計可供發布。完成資料與狀態規則查核後，再更新各棟彙總。</p><span class="badge">尚無資料 · 不以示範數字代替</span></div>
+<div id="buildings" class="buildings"></div><div class="legend" id="legend" hidden><span><i class="swatch" style="background:var(--open)"></i>未處理</span><span><i class="swatch" style="background:var(--work)"></i>處理中</span><span><i class="swatch" style="background:var(--done)"></i>已完成</span></div>
+</section><div class="rules"><p>此頁僅提供棟別彙總，不提供案件或住戶明細。<br><span id="rules-text">狀態統計規則待核定；尚未使用日期推算狀態。</span> 資料為查核時間的快照，並非即時進度。</p><span class="pill" id="rule-state">統計規則待核定</span></div>
+</main><footer class="wrap foot"><p>修繕統計 · 公開彙總</p><p>不含個人資料與案件明細</p></footer>
+<!-- Only manually reviewed, allowlisted aggregate data may replace this block.
+     Never paste source rows or a full spreadsheet export into this file. -->
+<script id="aggregate-data" type="application/json">
+{"schemaVersion":"1.0","verifiedAt":null,"statusRule":"pending","buildings":[]}
+</script>
+<script>
+'use strict';
+(()=>{
+const $=id=>document.getElementById(id), format=new Intl.NumberFormat('zh-TW');
+const keys=(o,allowed)=>o&&typeof o==='object'&&!Array.isArray(o)&&Object.keys(o).every(k=>allowed.includes(k))&&allowed.every(k=>Object.hasOwn(o,k));
+let data;
+try{data=JSON.parse($('aggregate-data').textContent);
+ if(!keys(data,['schemaVersion','verifiedAt','statusRule','buildings'])||data.schemaVersion!=='1.0'||!Array.isArray(data.buildings)||data.buildings.length>100)throw Error();
+ if(!['pending','approved_explicit','approved_dates'].includes(data.statusRule))throw Error();
+ const names=new Set();
+ for(const b of data.buildings){if(!keys(b,['building','total','open','working','completed'])||typeof b.building!=='string'||!/^([A-Za-z0-9]{1,4}|[一二三四五六七八九十]{1,3})棟$/.test(b.building)||names.has(b.building))throw Error();names.add(b.building);
+  if(['total','open','working','completed'].some(k=>!Number.isSafeInteger(b[k])||b[k]<0||b[k]>10000000)||b.total!==b.open+b.working+b.completed)throw Error();}
+ if(data.verifiedAt!==null&&(typeof data.verifiedAt!=='string'||!/^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}(?:Z|[+-]\d{2}:\d{2})$/.test(data.verifiedAt)||!Number.isFinite(Date.parse(data.verifiedAt))))throw Error();
+ if(data.statusRule==='pending'||!data.verifiedAt||!data.buildings.length)return;
+}catch{ $('notice-title').textContent='資料暫時無法顯示';$('notice-detail').textContent='彙總格式需重新查核；目前不顯示統計數字。';return; }
+const rows=[...data.buildings].sort((a,b)=>a.building.localeCompare(b.building,'zh-Hant',{numeric:true}));
+const sums=rows.reduce((s,b)=>{for(const k of ['total','open','working','completed'])s[k]+=b[k];return s;},{total:0,open:0,working:0,completed:0});
+for(const k of Object.keys(sums))$(k).textContent=format.format(sums[k]);
+$('checked-at').textContent=new Intl.DateTimeFormat('zh-TW',{dateStyle:'medium',timeStyle:'short',timeZone:'Asia/Taipei'}).format(new Date(data.verifiedAt))+'（台北）';
+$('notice-title').textContent='已發布核實彙總';$('notice-detail').textContent='數字僅涵蓋已發布棟別，其他棟別不推定為零。';
+$('coverage').textContent=`共 ${rows.length} 棟已發布彙總`;$('empty').hidden=true;$('legend').hidden=false;$('building-filter').disabled=false;
+$('rule-state').textContent='統計規則已核定';$('rules-text').textContent=data.statusRule==='approved_dates'?'依已核定的日期規則計算狀態。':'依已核定的狀態分類統計。';
+for(const b of rows){const option=document.createElement('option');option.value=b.building;option.textContent=b.building;$('building-filter').append(option);}
+function render(selected){$('buildings').replaceChildren();for(const b of rows.filter(b=>!selected||b.building===selected)){
+ const card=document.createElement('article');card.className='building';
+ const top=document.createElement('div');top.className='building-top';const title=document.createElement('h3');title.textContent=b.building;const amount=document.createElement('span'),n=document.createElement('strong');n.textContent=format.format(b.total);amount.append(n,document.createTextNode('件'));top.append(title,amount);
+ const bar=document.createElement('div');bar.className='bar';bar.setAttribute('aria-hidden','true');const details=document.createElement('div');details.className='breakdown';
+ for(const [k,label,color]of [['open','未處理','var(--open)'],['working','處理中','var(--work)'],['completed','已完成','var(--done)']]){const seg=document.createElement('span');seg.style.width=(b.total?100*b[k]/b.total:0)+'%';seg.style.background=color;bar.append(seg);const cell=document.createElement('div'),caption=document.createElement('span'),value=document.createElement('strong');caption.textContent=label;value.textContent=format.format(b[k]);cell.append(caption,value);details.append(cell);}
+ card.append(top,bar,details);$('buildings').append(card);}}
+$('building-filter').addEventListener('change',e=>render(e.target.value));render('');
+})();
+</script>
+</body></html>
+
