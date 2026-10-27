@@ -1,1 +1,102 @@
-PLACEHOLDER_TO_BE_REPLACED_WITH_FULL
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>修繕進度 · 總覽與明細</title>
+<style>
+:root{--ink:#163230;--muted:#60716d;--bg:#f4f6f2;--line:#dce4dd;--green:#21694f;--open:#a35c2b;--work:#467c9b;--done:#2a7658;--white:#fff;--radius:16px}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font-family:system-ui,-apple-system,"Segoe UI","Microsoft JhengHei",sans-serif}
+.wrap{max-width:1100px;margin:auto;padding:18px}
+header{background:#163c34;color:#fff;padding:22px 0}
+h1{margin:0;font-size:26px}
+.sub{color:#d3e4d8;font-size:13px;margin-top:4px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:12px;margin:18px 0}
+.card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:14px;cursor:pointer;transition:.15s}
+.card:hover{transform:translateY(-2px);box-shadow:0 4px 12px rgba(0,0,0,.06)}
+.card h2{margin:0 0 8px;font-size:18px}
+.nums{font-size:13px;color:var(--muted)}
+.nums strong{color:var(--ink)}
+.view{display:none;margin-top:10px}
+.view.active{display:block}
+.filters{display:flex;gap:10px;margin:12px 0;flex-wrap:wrap}
+select,input{border:1px solid #cdd9ce;border-radius:10px;padding:7px 10px}
+.table-wrap{background:#fff;border:1px solid var(--line);border-radius:var(--radius);overflow:auto;max-height:70vh}
+table{width:100%;border-collapse:collapse;font-size:13px}
+th,td{padding:10px 12px;text-align:left;border-bottom:1px solid var(--line)}
+th{background:#f0f4ef;position:sticky;top:0}
+.status{display:inline-block;padding:2px 8px;border-radius:99px;font-size:11px}
+.status.open{background:#fde8d8;color:var(--open)}
+.status.working{background:#e3f0f7;color:var(--work)}
+.status.done{background:#e0f0e8;color:var(--done)}
+.status.review{background:#eee;color:#666}
+.back{background:none;border:none;color:var(--green);font-size:14px;cursor:pointer;margin-bottom:8px}
+</style>
+</head>
+<body>
+<header><div class="wrap">
+  <h1>修繕進度</h1>
+  <div class="sub">點選棟別查看明細 · 公開去識別化資料 · 查核時間 <span id="vt"></span></div>
+</div></header>
+<div class="wrap">
+  <div id="overview" class="view active">
+    <div class="grid" id="cards"></div>
+  </div>
+  <div id="details" class="view">
+    <button class="back" onclick="showOverview()">← 返回總覽</button>
+    <h2 id="detail-title"></h2>
+    <div class="filters">
+      <select id="statusFilter"><option value="">全部狀態</option><option>未處理</option><option>處理中</option><option>已完成</option><option>待確認</option></select>
+      <input id="search" type="search" placeholder="搜尋缺失內容或案件編號">
+    </div>
+    <div class="table-wrap"><table id="table"><thead><tr><th>案件編號</th><th>樓層</th><th>缺失內容</th><th>工種</th><th>狀態</th><th>完成日期</th><th>備註</th></tr></thead><tbody></tbody></table></div>
+  </div>
+</div>
+<script id="data" type="application/json">
+{"aggregates":{"A":{"total":59,"open":2,"working":14,"completed":43,"needs_review":0},"B":{"total":137,"open":21,"working":0,"completed":116,"needs_review":0},"C":{"total":94,"open":51,"working":33,"completed":10,"needs_review":0},"D":{"total":224,"open":86,"working":22,"completed":116,"needs_review":0},"E":{"total":141,"open":24,"working":0,"completed":117,"needs_review":0},"F":{"total":103,"open":11,"working":0,"completed":92,"needs_review":0},"G":{"total":135,"open":135,"working":0,"completed":0,"needs_review":0}},"details":{"A":{"building":"A棟","records":[]},"B":{"building":"B棟","records":[]}},"verifiedAt":"2026-10-27T17:06:23+08:00"}
+</script>
+<script>
+const DATA = JSON.parse(document.getElementById('data').textContent);
+document.getElementById('vt').textContent = DATA.verifiedAt.replace('T',' ').slice(0,16);
+function showOverview(){
+  document.getElementById('overview').classList.add('active');
+  document.getElementById('details').classList.remove('active');
+}
+function showDetails(letter){
+  document.getElementById('overview').classList.remove('active');
+  document.getElementById('details').classList.add('active');
+  const b = DATA.details[letter];
+  document.getElementById('detail-title').textContent = b.building + ' 修繕明細';
+  renderTable(b.records);
+}
+function statusClass(s){
+  if(s==='未處理') return 'open';
+  if(s==='處理中') return 'working';
+  if(s==='已完成') return 'done';
+  return 'review';
+}
+function escapeHtml(s){ return String(s).replace(/[&<>]/g, c=>({'&':'&','<':'<','>':'>'}[c])); }
+function renderTable(recs){
+  const status = document.getElementById('statusFilter').value;
+  const q = document.getElementById('search').value.toLowerCase();
+  const filtered = recs.filter(r => (!status || r.status === status) && (!q || (r.description + r.caseId + r.note).toLowerCase().includes(q)));
+  document.querySelector('#table tbody').innerHTML = filtered.map(r => `<tr>
+    <td>${escapeHtml(r.caseId||'—')}</td><td>${escapeHtml(r.floor||'—')}</td><td>${escapeHtml(r.description||'—')}</td>
+    <td>${escapeHtml(r.trade||'—')}</td><td><span class="status ${statusClass(r.status)}">${r.status}</span></td>
+    <td>${escapeHtml(r.completeDate||'—')}</td><td>${escapeHtml(r.note||'—')}</td>
+  </tr>`).join('') || '<tr><td colspan="7">無符合資料</td></tr>';
+}
+document.getElementById('statusFilter').onchange = () => renderTable(currentRecords);
+document.getElementById('search').oninput = () => renderTable(currentRecords);
+let currentRecords = [];
+const cards = document.getElementById('cards');
+for(const [letter, agg] of Object.entries(DATA.aggregates)){
+  const card = document.createElement('div');
+  card.className = 'card';
+  card.onclick = () => showDetails(letter);
+  card.innerHTML = `<h2>${letter}棟</h2><div class="nums">總計 <strong>${agg.total}</strong><br>未處理 ${agg.open} · 處理中 ${agg.working}<br>已完成 ${agg.completed}</div>`;
+  cards.appendChild(card);
+}
+</script>
+</body>
+</html>
