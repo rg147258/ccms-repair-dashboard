@@ -2,7 +2,7 @@
 <html lang="zh-Hant">
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="各棟修繕件數與狀態統計，點選棟別查看公開去識別修繕明細。">
+<meta name="description" content="各棟修繕件數與狀態統計，點選棟別查看公開修繕明細。">
 <meta name="color-scheme" content="light"><meta name="referrer" content="no-referrer">
 <meta http-equiv="Content-Security-Policy" content="default-src 'none'; connect-src 'self'; style-src 'unsafe-inline'; script-src 'self' 'unsafe-inline'; img-src data:; base-uri 'none'; form-action 'none'">
 <title>修繕進度｜各棟統計</title>
@@ -30,7 +30,7 @@ a.metric{display:block;text-decoration:none}a.metric:hover,a.building:hover{box-
 <section aria-labelledby="buildings-heading"><div class="section-head"><div><h2 id="buildings-heading">各棟概況</h2><p class="sub" id="coverage">僅顯示已核實、獲准公開的棟別。</p></div><label class="filters">選擇棟別<select id="building-filter" disabled><option value="">全部棟別</option></select></label></div>
 <div class="empty" id="empty"><div class="empty-icon" aria-hidden="true"><svg width="33" height="33" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="5" y="5" width="22" height="23" rx="3"/><path d="M11 3v5m10-5v5M5 12h22m-16 6h3m4 0h3m-10 5h3"/></svg></div><h3>資料確認後，進度就會在這裡。</h3><p>目前沒有已核實的統計可供發布。完成資料與狀態規則查核後，再更新各棟彙總。</p><span class="badge">尚無資料 · 不以示範數字代替</span></div>
 <div id="buildings" class="buildings"></div><div class="legend" id="legend" hidden><span><i class="swatch" style="background:var(--open)"></i>未處理</span><span><i class="swatch" style="background:var(--work)"></i>處理中</span><span><i class="swatch" style="background:var(--done)"></i>已完成</span></div>
-</section><div class="rules"><p>點選棟別卡片查看公開去識別修繕明細。<br><span id="rules-text">狀態統計規則待核定；尚未使用日期推算狀態。</span> 資料為查核時間的快照，並非即時進度。</p><span class="pill" id="rule-state">統計規則待核定</span></div>
+</section><div class="rules"><p>點選棟別卡片查看公開修繕明細。<br><span id="rules-text">狀態統計規則待核定；尚未使用日期推算狀態。</span> 資料為查核時間的快照，並非即時進度。</p><span class="pill" id="rule-state">統計規則待核定</span></div>
 </main><footer class="wrap foot"><p>修繕統計 · 公開彙總</p><p>公開明細已遮除個人與門禁資訊</p></footer>
 
 <script>

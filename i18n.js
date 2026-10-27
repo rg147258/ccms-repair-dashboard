@@ -9,7 +9,7 @@ const dict={
 '已發布棟別合計':'Total blok yang dipublikasikan','未處理':'Belum ditangani','處理中':'Sedang ditangani','已完成':'Selesai','待確認':'Perlu konfirmasi',
 '等待開始處理':'Menunggu penanganan','修繕持續進行':'Perbaikan sedang berlangsung','依核定規則統計':'Berdasarkan status sumber','狀態待確認':'Status perlu dikonfirmasi',
 '各棟概況':'Ringkasan per blok','選擇棟別':'Pilih blok','全部棟別':'Semua blok','棟別':'Blok','樓層':'Lantai','工種':'Jenis pekerjaan','狀態':'Status',
-'案件編號':'Nomor kasus','缺失內容':'Rincian kerusakan','完成日期':'Tanggal selesai','備註':'Catatan','全部明細':'Semua rincian','未指定工種':'Pekerjaan belum ditentukan',
+'棟別／戶號':'Blok / Unit','未提供戶號':'Nomor unit belum tersedia','搜尋戶號、案件、樓層、修繕內容或備註':'Cari unit, kasus, lantai, kerusakan, atau catatan','案件編號':'Nomor kasus','缺失內容':'Rincian kerusakan','完成日期':'Tanggal selesai','備註':'Catatan','全部明細':'Semua rincian','未指定工種':'Pekerjaan belum ditentukan',
 '查看全部明細':'Lihat semua rincian','全部樓層':'Semua lantai','全部工種':'Semua pekerjaan','全部狀態':'Semua status','搜尋':'Cari',
 '清除篩選':'Hapus filter','篩選狀態':'Filter status','篩選棟別':'Filter blok','篩選樓層':'Filter lantai','篩選工種':'Filter pekerjaan',
 '搜尋修繕明細':'Cari rincian perbaikan','搜尋案件、樓層、修繕內容或備註':'Cari kasus, lantai, kerusakan, atau catatan',
@@ -30,7 +30,7 @@ const dict={
 '資料為查核時間的快照，並非即時進度。':'Data merupakan cuplikan saat pemeriksaan, bukan kemajuan langsung.',
 '統計規則待核定':'Aturan statistik menunggu konfirmasi','依來源狀態欄分類':'Berdasarkan kolom status sumber',
 '依來源狀態欄分類為未處理、處理中、已完成、待確認。不使用日期反推；填表狀態不等同人工驗收。':'Status sumber: belum ditangani, sedang ditangani, selesai, atau perlu konfirmasi. Tidak disimpulkan dari tanggal; status bukan penerimaan manual.',
-'修繕統計 · 公開彙總':'Statistik perbaikan · ringkasan publik','公開明細已遮除個人與門禁資訊':'Identitas pribadi dan informasi akses telah disamarkan',
+'修繕統計 · 公開彙總':'Statistik perbaikan · ringkasan publik','點選棟別卡片查看公開修繕明細。':'Pilih kartu blok untuk melihat rincian perbaikan publik.','公開明細已遮除個人與門禁資訊':'Identitas pribadi dan informasi akses telah disamarkan',
 '資料暫時無法顯示':'Data sementara tidak tersedia','彙總格式需重新查核；目前不顯示統計數字。':'Format ringkasan perlu diperiksa kembali; angka belum ditampilkan.',
 '其他':'Lainnya','工務所':'Kantor teknik','廚具':'Perangkat dapur','水電':'Air dan listrik','石材':'Batu','磁磚':'Ubin','衛浴設備':'Perlengkapan kamar mandi','門框扇':'Kusen dan daun pintu',
 '三協':'San Xie','予宙':'Yu Zhou','櫻花':'Sakura','沐泰':'Mu Tai','翔第':'Xiang Di','麗璟':'Li Jing',
@@ -46,7 +46,7 @@ function t(text){
    .replace(/^顯示 (\d+) \/ (\d+) 筆$/,'Menampilkan $1 / $2 kasus').replace(/^共 (\d+) 棟已發布彙總$/,'Ringkasan $1 blok dipublikasikan')
    .replace(/^總計 (\d+)$/,'Total $1').replace(/^查核：/,'Diperiksa: ').replace(/（台北；各棟時間見下）/g,'(Taipei; waktu per blok di bawah)').replace(/（台北）/g,'(Taipei)')
    .replace(/(\d{4})年(\d{1,2})月(\d{1,2})日/g,'$1/$2/$3').replace(/晚上/g,'malam ').replace(/下午/g,'sore ').replace(/上午/g,'pagi ').replace(/凌晨/g,'dini hari ')
-   .replace(/^點選棟別查看明細 · 公開去識別化資料 · 查核時間$/,'Pilih blok untuk rincian · Data tanpa identitas · Diperiksa');
+   .replace(/^點選棟別查看明細 · 公開修繕資料 · 查核時間$/,'Pilih blok untuk rincian · Data perbaikan publik · Diperiksa');
  }
  return value.replace(trimmed,result);
 }
