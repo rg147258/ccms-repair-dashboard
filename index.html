@@ -2,9 +2,9 @@
 <html lang="zh-Hant">
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="各棟修繕件數與狀態統計。僅提供彙總，不提供案件明細。">
+<meta name="description" content="各棟修繕件數與狀態統計，點選棟別查看公開去識別修繕明細。">
 <meta name="color-scheme" content="light"><meta name="referrer" content="no-referrer">
-<meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'unsafe-inline'; script-src 'unsafe-inline'; img-src data:; base-uri 'none'; form-action 'none'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; connect-src 'self'; style-src 'unsafe-inline'; script-src 'unsafe-inline'; img-src data:; base-uri 'none'; form-action 'none'">
 <title>修繕進度｜各棟統計</title>
 <style>
 :root{--ink:#163230;--muted:#60716d;--bg:#f4f6f2;--line:#dce4dd;--green:#21694f;--open:#a35c2b;--work:#467c9b;--done:#2a7658;--white:#fff;--radius:20px}
@@ -13,6 +13,8 @@
 @media(max-width:460px){.buildings{grid-template-columns:1fr}.intro{font-size:14px}.notice{font-size:13px}.metric .label{font-size:13px}.metric small{font-size:11px}.section-head{gap:10px}select{min-width:115px;padding-top:7px;padding-bottom:7px}.empty h3{font-size:19px}}
 @media(prefers-reduced-motion:no-preference){.building{animation:appear .25s ease-out}@keyframes appear{from{opacity:0;transform:translateY(5px)}to{opacity:1;transform:none}}}
 @media print{header{background:#fff;color:#163230}.intro,.brand,.stamp,.stamp strong{color:#163230}.filters{display:none}.metric,.building,.empty{break-inside:avoid}.wrap{max-width:none}.foot{padding-bottom:0}}
+a.building{display:block;text-decoration:none}a.building:hover{border-color:var(--green)}a.building:focus-visible{outline:3px solid #3f8d68;outline-offset:3px}.breakdown{grid-template-columns:repeat(2,1fr)}
+@media(min-width:761px){.metrics{grid-template-columns:repeat(5,1fr)}}
 </style>
 </head>
 <body>
@@ -20,47 +22,45 @@
 <main class="wrap">
 <noscript><p class="nojs">此頁需要 JavaScript 顯示彙總；目前未載入統計資料。</p></noscript>
 <aside class="notice" role="status" aria-live="polite"><span class="dot" aria-hidden="true"></span><div><p id="notice-title">等待核實的彙總資料</p><small id="notice-detail">尚未發布件數；空白不代表零件。統計規則仍待核定。</small></div></aside>
-<section class="metrics" aria-label="各棟合計"><article class="metric total"><div class="label">修繕總件數</div><strong class="value" id="total">—</strong><small>已發布棟別合計</small></article><article class="metric"><div class="label"><i class="swatch" style="background:var(--open)" aria-hidden="true"></i>未處理</div><strong class="value" id="open">—</strong><small>等待開始處理</small></article><article class="metric"><div class="label"><i class="swatch" style="background:var(--work)" aria-hidden="true"></i>處理中</div><strong class="value" id="working">—</strong><small>修繕持續進行</small></article><article class="metric"><div class="label"><i class="swatch" style="background:var(--done)" aria-hidden="true"></i>已完成</div><strong class="value" id="completed">—</strong><small>依核定規則統計</small></article></section>
+<section class="metrics" aria-label="各棟合計"><article class="metric total"><div class="label">修繕總件數</div><strong class="value" id="total">—</strong><small>已發布棟別合計</small></article><article class="metric"><div class="label"><i class="swatch" style="background:var(--open)" aria-hidden="true"></i>未處理</div><strong class="value" id="open">—</strong><small>等待開始處理</small></article><article class="metric"><div class="label"><i class="swatch" style="background:var(--work)" aria-hidden="true"></i>處理中</div><strong class="value" id="working">—</strong><small>修繕持續進行</small></article><article class="metric"><div class="label"><i class="swatch" style="background:var(--done)" aria-hidden="true"></i>已完成</div><strong class="value" id="completed">—</strong><small>依核定規則統計</small></article><article class="metric"><div class="label">待確認</div><strong class="value" id="needs_review">—</strong><small>狀態待確認</small></article></section>
 <section aria-labelledby="buildings-heading"><div class="section-head"><div><h2 id="buildings-heading">各棟概況</h2><p class="sub" id="coverage">僅顯示已核實、獲准公開的棟別。</p></div><label class="filters">選擇棟別<select id="building-filter" disabled><option value="">全部棟別</option></select></label></div>
 <div class="empty" id="empty"><div class="empty-icon" aria-hidden="true"><svg width="33" height="33" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="5" y="5" width="22" height="23" rx="3"/><path d="M11 3v5m10-5v5M5 12h22m-16 6h3m4 0h3m-10 5h3"/></svg></div><h3>資料確認後，進度就會在這裡。</h3><p>目前沒有已核實的統計可供發布。完成資料與狀態規則查核後，再更新各棟彙總。</p><span class="badge">尚無資料 · 不以示範數字代替</span></div>
 <div id="buildings" class="buildings"></div><div class="legend" id="legend" hidden><span><i class="swatch" style="background:var(--open)"></i>未處理</span><span><i class="swatch" style="background:var(--work)"></i>處理中</span><span><i class="swatch" style="background:var(--done)"></i>已完成</span></div>
-</section><div class="rules"><p>此頁僅提供棟別彙總，不提供案件或住戶明細。<br><span id="rules-text">狀態統計規則待核定；尚未使用日期推算狀態。</span> 資料為查核時間的快照，並非即時進度。</p><span class="pill" id="rule-state">統計規則待核定</span></div>
-</main><footer class="wrap foot"><p>修繕統計 · 公開彙總</p><p>不含個人資料與案件明細</p></footer>
-<!-- Only manually reviewed, allowlisted aggregate data may replace this block.
-     Never paste source rows or a full spreadsheet export into this file. -->
-<script id="aggregate-data" type="application/json">
-{"schemaVersion":"1.1","statusRule":"approved_dates","buildings":[{"building":"A棟","total":59,"open":16,"working":0,"completed":43,"verifiedAt":"2026-10-27T16:58:01+08:00"},{"building":"B棟","total":137,"open":16,"working":9,"completed":112,"verifiedAt":"2026-10-27T16:58:01+08:00"},{"building":"C棟","total":94,"open":51,"working":33,"completed":10,"verifiedAt":"2026-10-27T16:58:01+08:00"},{"building":"D棟","total":224,"open":220,"working":0,"completed":4,"verifiedAt":"2026-10-27T16:58:01+08:00"},{"building":"E棟","total":141,"open":140,"working":0,"completed":1,"verifiedAt":"2026-10-27T16:58:01+08:00"},{"building":"F棟","total":103,"open":7,"working":4,"completed":92,"verifiedAt":"2026-10-27T16:58:01+08:00"},{"building":"G棟","total":135,"open":135,"working":0,"completed":0,"verifiedAt":"2026-10-27T16:58:01+08:00"}]}
-</script>
+</section><div class="rules"><p>點選棟別卡片查看公開去識別修繕明細。<br><span id="rules-text">狀態統計規則待核定；尚未使用日期推算狀態。</span> 資料為查核時間的快照，並非即時進度。</p><span class="pill" id="rule-state">統計規則待核定</span></div>
+</main><footer class="wrap foot"><p>修繕統計 · 公開彙總</p><p>公開明細已遮除個人與門禁資訊</p></footer>
+
 <script>
 'use strict';
-(()=>{
+(async()=>{
 const $=id=>document.getElementById(id), format=new Intl.NumberFormat('zh-TW');
 const keys=(o,allowed)=>o&&typeof o==='object'&&!Array.isArray(o)&&Object.keys(o).every(k=>allowed.includes(k))&&allowed.every(k=>Object.hasOwn(o,k));
 const validTime=v=>typeof v==='string'&&/^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}(?:Z|[+-]\d{2}:\d{2})$/.test(v)&&Number.isFinite(Date.parse(v));
 let data;
-try{data=JSON.parse($('aggregate-data').textContent);
+try{const response=await fetch('./repair_public_data.json');if(!response.ok)throw Error();const publicData=await response.json();
+ if(!keys(publicData,['aggregates','details','verifiedAt'])||!keys(publicData.aggregates,[...'ABCDEFG'])||!validTime(publicData.verifiedAt))throw Error();
+ data={schemaVersion:'1.1',statusRule:'approved_explicit',buildings:Object.entries(publicData.aggregates).map(([letter,a])=>({building:letter+'棟',...a,verifiedAt:publicData.verifiedAt}))};
  if(!keys(data,['schemaVersion','statusRule','buildings'])||data.schemaVersion!=='1.1'||!Array.isArray(data.buildings)||data.buildings.length>100)throw Error();
  if(!['pending','approved_explicit','approved_dates'].includes(data.statusRule))throw Error();
  const names=new Set();
- for(const b of data.buildings){if(!keys(b,['building','total','open','working','completed','verifiedAt'])||!validTime(b.verifiedAt)||typeof b.building!=='string'||!/^([A-Za-z0-9]{1,4}|[一二三四五六七八九十]{1,3})棟$/.test(b.building)||names.has(b.building))throw Error();names.add(b.building);
-  if(['total','open','working','completed'].some(k=>!Number.isSafeInteger(b[k])||b[k]<0||b[k]>10000000)||b.total!==b.open+b.working+b.completed)throw Error();}
+ for(const b of data.buildings){if(!keys(b,['building','total','open','working','completed','needs_review','verifiedAt'])||!validTime(b.verifiedAt)||typeof b.building!=='string'||!/^([A-Za-z0-9]{1,4}|[一二三四五六七八九十]{1,3})棟$/.test(b.building)||names.has(b.building))throw Error();names.add(b.building);
+  if(['total','open','working','completed','needs_review'].some(k=>!Number.isSafeInteger(b[k])||b[k]<0||b[k]>10000000)||b.total!==b.open+b.working+b.completed+b.needs_review)throw Error();}
  if(data.statusRule==='pending'||!data.buildings.length)return;
 }catch{ $('notice-title').textContent='資料暫時無法顯示';$('notice-detail').textContent='彙總格式需重新查核；目前不顯示統計數字。';return; }
 const rows=[...data.buildings].sort((a,b)=>a.building.localeCompare(b.building,'zh-Hant',{numeric:true}));
-const sums=rows.reduce((s,b)=>{for(const k of ['total','open','working','completed'])s[k]+=b[k];return s;},{total:0,open:0,working:0,completed:0});
+const sums=rows.reduce((s,b)=>{for(const k of ['total','open','working','completed','needs_review'])s[k]+=b[k];return s;},{total:0,open:0,working:0,completed:0,needs_review:0});
 for(const k of Object.keys(sums))$(k).textContent=format.format(sums[k]);
 const dateFormat=new Intl.DateTimeFormat('zh-TW',{dateStyle:'medium',timeStyle:'short',timeZone:'Asia/Taipei'});
 const times=[...new Set(rows.map(b=>b.verifiedAt))].sort((a,b)=>Date.parse(a)-Date.parse(b));
 $('checked-at').textContent=(times.length===1?dateFormat.format(new Date(times[0])):dateFormat.format(new Date(times[0]))+' 至 '+dateFormat.format(new Date(times.at(-1))))+'（台北；各棟時間見下）';
 $('notice-title').textContent='已發布核實彙總';$('notice-detail').textContent='各棟依各自查核時間發布人工快照；非自動同步，非即時資料。';
 $('coverage').textContent=`共 ${rows.length} 棟已發布彙總`;$('empty').hidden=true;$('legend').hidden=false;$('building-filter').disabled=false;
-$('rule-state').textContent='填表分類規則已核定';$('rules-text').textContent=data.statusRule==='approved_dates'?'依原表日期欄是否填值分類，部分欄位含文字；僅反映填表紀錄，不代表人工驗收。人工快照，非自動同步。完成欄非空優先列為已完成；否則聯絡或預計欄非空列為處理中；其餘未處理。':'依已核定的狀態分類統計，不等同人工驗收。人工快照，非自動同步。';
+$('rule-state').textContent='依來源狀態欄分類';$('rules-text').textContent='依來源狀態欄分類為未處理、處理中、已完成、待確認。不使用日期反推；填表狀態不等同人工驗收。';
 for(const b of rows){const option=document.createElement('option');option.value=b.building;option.textContent=b.building;$('building-filter').append(option);}
 function render(selected){$('buildings').replaceChildren();for(const b of rows.filter(b=>!selected||b.building===selected)){
- const card=document.createElement('article');card.className='building';
+ const card=document.createElement('a');card.className='building';card.href='./details.html?building='+encodeURIComponent(b.building.slice(0,-1));card.setAttribute('aria-label',b.building+' 修繕明細');
  const top=document.createElement('div');top.className='building-top';const title=document.createElement('h3');title.textContent=b.building;const amount=document.createElement('span'),n=document.createElement('strong');n.textContent=format.format(b.total);amount.append(n,document.createTextNode('件'));top.append(title,amount);
  const bar=document.createElement('div');bar.className='bar';bar.setAttribute('aria-hidden','true');const details=document.createElement('div');details.className='breakdown';
- for(const [k,label,color]of [['open','未處理','var(--open)'],['working','處理中','var(--work)'],['completed','已完成','var(--done)']]){const seg=document.createElement('span');seg.style.width=(b.total?100*b[k]/b.total:0)+'%';seg.style.background=color;bar.append(seg);const cell=document.createElement('div'),caption=document.createElement('span'),value=document.createElement('strong');caption.textContent=label;value.textContent=format.format(b[k]);cell.append(caption,value);details.append(cell);}
+ for(const [k,label,color]of [['open','未處理','var(--open)'],['working','處理中','var(--work)'],['completed','已完成','var(--done)'],['needs_review','待確認','#777']]){const seg=document.createElement('span');seg.style.width=(b.total?100*b[k]/b.total:0)+'%';seg.style.background=color;bar.append(seg);const cell=document.createElement('div'),caption=document.createElement('span'),value=document.createElement('strong');caption.textContent=label;value.textContent=format.format(b[k]);cell.append(caption,value);details.append(cell);}
  const checked=nodeTime(b.verifiedAt);card.append(top,bar,details,checked);$('buildings').append(card);}}
 function nodeTime(value){const p=document.createElement('p');p.className='sub';p.textContent='查核：'+dateFormat.format(new Date(value))+'（台北）';return p;}
 $('building-filter').addEventListener('change',e=>render(e.target.value));render('');
