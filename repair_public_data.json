@@ -2,16 +2,16 @@
   "aggregates": {
     "A": {
       "total": 59,
-      "open": 16,
-      "working": 0,
+      "open": 2,
+      "working": 14,
       "completed": 43,
       "needs_review": 0
     },
     "B": {
       "total": 137,
-      "open": 16,
-      "working": 9,
-      "completed": 112,
+      "open": 21,
+      "working": 0,
+      "completed": 116,
       "needs_review": 0
     },
     "C": {
@@ -23,22 +23,22 @@
     },
     "D": {
       "total": 224,
-      "open": 220,
-      "working": 0,
-      "completed": 4,
+      "open": 86,
+      "working": 22,
+      "completed": 116,
       "needs_review": 0
     },
     "E": {
       "total": 141,
-      "open": 140,
+      "open": 24,
       "working": 0,
-      "completed": 1,
+      "completed": 117,
       "needs_review": 0
     },
     "F": {
       "total": 103,
-      "open": 7,
-      "working": 4,
+      "open": 11,
+      "working": 0,
       "completed": 92,
       "needs_review": 0
     },
@@ -9017,5 +9017,5 @@
       ]
     }
   },
-  "verifiedAt": "2026-10-28T07:14:57+08:00"
+  "verifiedAt": "2026-10-27T13:18:56Z"
 }

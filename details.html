@@ -38,6 +38,7 @@ button,input,select{font:inherit}button,a,input,select{-webkit-tap-highlight-col
 @media(max-width:760px){.wrap{padding:16px}header .wrap{padding-top:4px;padding-bottom:4px}h1{font-size:23px}.header-top{align-items:flex-start;flex-wrap:wrap}.filters{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.search-label{grid-column:1/-1}.filters .action{grid-column:1/-1}.table-wrap{background:transparent;border:0;overflow:visible;max-height:none}table,tbody{display:block;width:100%;min-width:0}thead{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%)}tr{display:block;border:1px solid var(--line);border-radius:14px;background:#fff;padding:8px 14px;margin:0 0 14px}td{display:grid;grid-template-columns:minmax(86px,30%) minmax(0,1fr);gap:10px;padding:9px 0;border:0;border-bottom:1px solid #edf1ec;font-size:14px;line-height:1.6;white-space:normal}td::before{content:attr(data-label);font-size:12px;color:var(--muted)}td:last-child{border-bottom:0}td .cell-value{white-space:pre-wrap;overflow-wrap:anywhere;min-width:0}.status{justify-self:start;align-self:start;font-size:12px}.empty-row{display:block}.empty-row::before{display:none}.grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.card{padding:12px}.card h2{font-size:18px}.pie{width:100px;height:100px}.nums{font-size:12px}}
 </style>
 <script src="./i18n.js"></script>
+<script src="./repair-data.js"></script>
 </head>
 <body>
 <header><div class="wrap">
@@ -74,21 +75,7 @@ const letters=[...'ABCDEFG'], fields=['caseId','floor','description','trade','st
 const columns=['building',...fields], labels=['棟別／戶號','案件編號','樓層','缺失內容','工種','狀態','完成日期','備註'];
 const statusKeys={'未處理':'open','處理中':'working','已完成':'completed','待確認':'needs_review'};
 const $=id=>document.getElementById(id), t=text=>I18N.t(text);
-function exactKeys(o, keys){return o && typeof o==='object' && !Array.isArray(o) && Object.keys(o).length===keys.length && keys.every(k=>Object.hasOwn(o,k));}
-function validate(data){
-  if(!exactKeys(data,['aggregates','details','verifiedAt']) || !exactKeys(data.aggregates,letters) || !exactKeys(data.details,letters) || typeof data.verifiedAt!=='string' || !/Z$|[+-]\d{2}:\d{2}$/.test(data.verifiedAt) || !Number.isFinite(Date.parse(data.verifiedAt))) throw Error('資料格式錯誤');
-  for(const letter of letters){
-    const b=data.details[letter],a=data.aggregates[letter];
-    if(!exactKeys(b,['building','records']) || b.building!==letter+'棟' || !Array.isArray(b.records) || !exactKeys(a,['total','open','working','completed','needs_review'])) throw Error('棟別格式錯誤');
-    const counts={total:b.records.length,open:0,working:0,completed:0,needs_review:0}, ids=new Set();
-    for(const r of b.records){
-      if(!exactKeys(r,[...fields,'unit']) || [...fields,'unit'].some(k=>typeof r[k]!=='string') || (r.unit!==''&&!new RegExp('^'+letter+'[0-9]{1,2}$').test(r.unit)) || !Object.hasOwn(statusKeys,r.status) || !new RegExp('^'+letter+'-\\d{4}$').test(r.caseId) || ids.has(r.caseId)) throw Error('明細格式錯誤');
-      ids.add(r.caseId); counts[statusKeys[r.status]]++;
-    }
-    if(Object.keys(counts).some(k=>!Number.isSafeInteger(a[k]) || a[k]!==counts[k])) throw Error('件數不符');
-  }
-  return data;
-}
+function validate(data){return RepairData.normalize(data);}
 
 function translated(field,value){return I18N.lang==='id'&&TRANSLATIONS&&Object.hasOwn(TRANSLATIONS[field],value)?TRANSLATIONS[field][value]:value;}
 function showOverview(){ $('overview').classList.add('active');$('details').classList.remove('active');history.replaceState(null,'',location.pathname); }
@@ -123,7 +110,7 @@ $('search').addEventListener('input',()=>renderTable());$('clear-filters').addEv
 window.addEventListener('repairlanguagechange',()=>{if(DATA){refreshOptions();renderTable();}});
 (async()=>{
  try{
-  const response=await fetch('./repair_public_data.json');if(!response.ok)throw Error();DATA=validate(await response.json());
+  const response=await fetch('./repair_public_data.json',{cache:'no-store'});if(!response.ok)throw Error();DATA=validate(await response.json());
   allRecords=letters.flatMap(letter=>DATA.details[letter].records.map(r=>({...r,building:letter+'棟'})));
   try{const translationResponse=await fetch('./repair_id.json');if(!translationResponse.ok)throw Error();const tr=await translationResponse.json();if(!['description','note','trade'].every(field=>tr[field]&&allRecords.every(r=>typeof tr[field][r[field]]==='string')))throw Error();TRANSLATIONS=tr;}
   catch{I18N.set('zh');$('translation-state').textContent='印尼文翻譯暫時無法載入，請重新整理；目前保留中文。';document.querySelector('[data-language="id"]').disabled=true;}
@@ -131,7 +118,7 @@ window.addEventListener('repairlanguagechange',()=>{if(DATA){refreshOptions();re
   for(const letter of letters){const a=DATA.aggregates[letter],card=document.createElement('a');card.className='card';card.href='?building='+letter;const title=document.createElement('h2');title.textContent=letter+'棟';const pie=document.createElement('div');pie.className='pie';pie.setAttribute('aria-hidden','true');let start=0;const segments=[['open','#a35c2b'],['working','#467c9b'],['completed','#2a7658'],['needs_review','#777']].map(([key,color])=>{const end=start+(a.total?a[key]/a.total*100:0),segment=color+' '+start+'% '+end+'%';start=end;return segment;});pie.style.background=a.total?'conic-gradient('+segments.join(',')+')':'#edf1ec';const nums=document.createElement('div');nums.className='nums';for(const [key,label]of [['total','總計'],['open','未處理'],['working','處理中'],['completed','已完成'],['needs_review','待確認']]){const line=document.createElement('div'),name=document.createElement('span');name.textContent=label;line.append(name,document.createTextNode(' '+a[key]));nums.append(line);}card.append(title,pie,nums);card.addEventListener('click',e=>{if(!e.ctrlKey&&!e.metaKey&&!e.shiftKey&&e.button===0){e.preventDefault();showDetails(letter);}});$('cards').append(card);
    const option=document.createElement('option');option.value=letter;option.textContent=letter+'棟';$('buildingFilter').append(option);
   }
-  $('load-state').textContent='依來源狀態欄分類，快照非即時進度；填表完成不等於人工驗收。';
+  $('load-state').textContent=RepairData.mismatches.length?'彙總與明細不一致，已依逐筆狀態重算；資料查核時間需重新確認。':'依來源狀態欄分類，快照非即時進度；填表完成不等於人工驗收。';if(RepairData.mismatches.length)$('vt').textContent='待重新查核';
   const params=new URLSearchParams(location.search),letter=params.get('building')||'',status=Object.keys(statusKeys).find(key=>statusKeys[key]===params.get('status'))||'';
   if(params.has('building')||params.has('status')||params.get('view')==='all')showDetails(letter,status);I18N.apply();
  }catch{ $('load-state').textContent=DATA?'印尼文翻譯暫時無法載入，請重新整理；目前保留中文。':'資料載入失敗或格式不符，請稍後重新整理。';$('cards').replaceChildren();I18N.apply();}

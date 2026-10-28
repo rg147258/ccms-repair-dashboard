@@ -1,6 +1,7 @@
 'use strict';
 (()=>{
 const dict={
+'彙總與明細不一致':'Ringkasan dan rincian tidak sesuai','待重新查核':'Perlu diperiksa ulang','彙總與明細不一致，已依逐筆狀態重算；資料查核時間需重新確認。':'Ringkasan tidak sesuai dengan rincian. Jumlah dihitung ulang dari status tiap kasus; waktu pemeriksaan perlu dikonfirmasi kembali.',
 '修繕進度｜各棟統計':'Kemajuan perbaikan | Ringkasan blok','修繕進度 · 總覽與明細':'Kemajuan perbaikan | Ringkasan dan rincian',
 '修繕進度總覽':'Ringkasan perbaikan','修繕進度':'Kemajuan perbaikan','把進度，看清楚。':'Pantau kemajuan dengan jelas.',
 '此頁需要 JavaScript 顯示彙總；目前未載入統計資料。':'Halaman ini memerlukan JavaScript untuk menampilkan ringkasan; data statistik belum dimuat.',
