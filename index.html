@@ -43,7 +43,7 @@ const validTime=v=>typeof v==='string'&&/^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}(?:
 let data;
 try{const response=await fetch('./repair_public_data.json',{cache:'no-store'});if(!response.ok)throw Error();const publicData=RepairData.normalize(await response.json());
  if(!keys(publicData,['aggregates','details','verifiedAt'])||!keys(publicData.aggregates,[...'ABCDEFG'])||!validTime(publicData.verifiedAt))throw Error();
- data={schemaVersion:'1.1',statusRule:'approved_explicit',buildings:Object.entries(publicData.aggregates).map(([letter,a])=>({building:letter+'棟',...a,verifiedAt:publicData.verifiedAt}))};
+ data={schemaVersion:'1.1',statusRule:'approved_explicit',buildings:Object.entries(publicData.aggregates).map(([letter,a])=>({building:letter+'棟',...a,verifiedAt:publicData.details[letter].verifiedAt||publicData.verifiedAt}))};
  if(!keys(data,['schemaVersion','statusRule','buildings'])||data.schemaVersion!=='1.1'||!Array.isArray(data.buildings)||data.buildings.length>100)throw Error();
  if(!['pending','approved_explicit','approved_dates'].includes(data.statusRule))throw Error();
  const names=new Set();
