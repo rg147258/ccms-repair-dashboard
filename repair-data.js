@@ -24,5 +24,5 @@
   }
   return {aggregates,details:data.details,verifiedAt:data.verifiedAt};
  }
- window.RepairData={normalize,get mismatches(){return [...mismatches];}};
+ window.RepairData={normalize,percent:(count,total)=>(total?100*count/total:0).toFixed(1)+'%',get mismatches(){return [...mismatches];}};
 })();
