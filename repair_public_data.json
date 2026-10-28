@@ -23,9 +23,9 @@
     },
     "D": {
       "total": 224,
-      "open": 86,
-      "working": 22,
-      "completed": 116,
+      "open": 84,
+      "working": 0,
+      "completed": 140,
       "needs_review": 0
     },
     "E": {
@@ -2964,8 +2964,7 @@
           "note": "",
           "unit": "C7"
         }
-      ],
-      "verifiedAt": "2026-10-28T01:18:19Z"
+      ]
     },
     "D": {
       "building": "D棟",
@@ -4115,7 +4114,7 @@
           "floor": "10F",
           "description": "工作陽台壁磚換裝",
           "trade": "其他",
-          "status": "處理中",
+          "status": "已完成",
           "completeDate": "",
           "note": "原預計日：Ok；原工種：萬能工",
           "unit": "D1"
@@ -4125,7 +4124,7 @@
           "floor": "10F",
           "description": "廚房小窗玻璃刮傷",
           "trade": "其他",
-          "status": "處理中",
+          "status": "已完成",
           "completeDate": "",
           "note": "原預計日：Ok；原工種：玻璃",
           "unit": "D1"
@@ -4135,7 +4134,7 @@
           "floor": "10F",
           "description": "客廳左側小窗玻璃刮傷",
           "trade": "其他",
-          "status": "處理中",
+          "status": "已完成",
           "completeDate": "",
           "note": "原預計日：Ok；原工種：玻璃",
           "unit": "D1"
@@ -4145,7 +4144,7 @@
           "floor": "10F",
           "description": "補 鞋櫃換氣扇",
           "trade": "工務所",
-          "status": "處理中",
+          "status": "已完成",
           "completeDate": "",
           "note": "[門禁資訊已移除]；原預計日：Ok",
           "unit": "D5"
@@ -4155,7 +4154,7 @@
           "floor": "10F",
           "description": "前陽台、工作陽台、廚房地排內均有泥塊及雜物需清理",
           "trade": "工務所",
-          "status": "處理中",
+          "status": "已完成",
           "completeDate": "",
           "note": "[門禁資訊已移除]；原預計日：OK",
           "unit": "D5"
@@ -4165,7 +4164,7 @@
           "floor": "10F",
           "description": "主浴地磚二片色差且不平整",
           "trade": "工務所",
-          "status": "處理中",
+          "status": "已完成",
           "completeDate": "",
           "note": "[門禁資訊已移除]；原預計日：OK",
           "unit": "D5"
@@ -4195,7 +4194,7 @@
           "floor": "11F",
           "description": "缺內外銅蓋",
           "trade": "工務所",
-          "status": "處理中",
+          "status": "已完成",
           "completeDate": "",
           "note": "原預計日：OK",
           "unit": "D2"
@@ -4205,7 +4204,7 @@
           "floor": "11F",
           "description": "鞋櫃風機、工作陽台五金未點交",
           "trade": "工務所",
-          "status": "處理中",
+          "status": "已完成",
           "completeDate": "",
           "note": "原預計日：OK",
           "unit": "D2"
@@ -4215,7 +4214,7 @@
           "floor": "11F",
           "description": "大門、內門把髒污",
           "trade": "工務所",
-          "status": "處理中",
+          "status": "已完成",
           "completeDate": "",
           "note": "原預計日：OK",
           "unit": "D2"
@@ -4225,7 +4224,7 @@
           "floor": "11F",
           "description": "地板地磚縫需填平",
           "trade": "工務所",
-          "status": "處理中",
+          "status": "已完成",
           "completeDate": "",
           "note": "原預計日：OK",
           "unit": "D2"
@@ -4245,7 +4244,7 @@
           "floor": "11F",
           "description": "主浴淋浴門檻破損缺角",
           "trade": "其他",
-          "status": "處理中",
+          "status": "已完成",
           "completeDate": "",
           "note": "[門禁資訊已移除]；原預計日：OK；原工種：美容",
           "unit": "D3"
@@ -4265,7 +4264,7 @@
           "floor": "11F",
           "description": "廚房掛架換盒子",
           "trade": "廚具",
-          "status": "處理中",
+          "status": "已完成",
           "completeDate": "",
           "note": "[門禁資訊已移除]；原預計日：OK",
           "unit": "D3"
@@ -4275,7 +4274,7 @@
           "floor": "11F",
           "description": "廚房水槽缺黑上蓋",
           "trade": "廚具",
-          "status": "處理中",
+          "status": "已完成",
           "completeDate": "",
           "note": "[門禁資訊已移除]；原預計日：OK",
           "unit": "D3"
@@ -4285,7 +4284,7 @@
           "floor": "11F",
           "description": "三合一門從外清洗會漏水進來",
           "trade": "工務所",
-          "status": "處理中",
+          "status": "已完成",
           "completeDate": "",
           "note": "原預計日：OK",
           "unit": "D3"
@@ -4295,7 +4294,7 @@
           "floor": "11F",
           "description": "浴室缺蓮蓬頭一組",
           "trade": "工務所",
-          "status": "處理中",
+          "status": "已完成",
           "completeDate": "",
           "note": "原預計日：OK",
           "unit": "D3"
@@ -4365,7 +4364,7 @@
           "floor": "11F",
           "description": "客廳小窗推拉不順(軌道變形)",
           "trade": "其他",
-          "status": "未處理",
+          "status": "已完成",
           "completeDate": "",
           "note": "[門禁疑似數值已移除]；原工種：美容",
           "unit": "D5"
@@ -4405,7 +4404,7 @@
           "floor": "11F",
           "description": "廚房水槽宇台面黏貼處有縫(右前)",
           "trade": "廚具",
-          "status": "處理中",
+          "status": "已完成",
           "completeDate": "",
           "note": "原預計日：OK",
           "unit": "D5"
@@ -4445,7 +4444,7 @@
           "floor": "12F",
           "description": "客廳小窗推拉不順(軌道變形)",
           "trade": "其他",
-          "status": "未處理",
+          "status": "已完成",
           "completeDate": "",
           "note": "[門禁資訊已移除]；原工種：美容",
           "unit": "D5"
@@ -4645,7 +4644,7 @@
           "floor": "14F",
           "description": "廚具抽油煙機燈不亮",
           "trade": "廚具",
-          "status": "處理中",
+          "status": "已完成",
           "completeDate": "",
           "note": "原預計日：OK",
           "unit": "D3"
@@ -4655,7 +4654,7 @@
           "floor": "14F",
           "description": "主浴天花維修孔周邊順平",
           "trade": "其他",
-          "status": "處理中",
+          "status": "已完成",
           "completeDate": "",
           "note": "原預計日：OK；原工種：萬能工",
           "unit": "D3"
@@ -4665,7 +4664,7 @@
           "floor": "14F",
           "description": "客浴門檻破損",
           "trade": "其他",
-          "status": "處理中",
+          "status": "已完成",
           "completeDate": "",
           "note": "原預計日：OK；原工種：美容",
           "unit": "D3"
@@ -4675,7 +4674,7 @@
           "floor": "14F",
           "description": "工作陽台壁磚破損1處",
           "trade": "其他",
-          "status": "處理中",
+          "status": "已完成",
           "completeDate": "",
           "note": "原預計日：OK；原工種：美容",
           "unit": "D3"
@@ -4685,7 +4684,7 @@
           "floor": "14F",
           "description": "前、後陽台清潔",
           "trade": "其他",
-          "status": "處理中",
+          "status": "已完成",
           "completeDate": "",
           "note": "原預計日：OK；原工種：萬能工",
           "unit": "D3"
@@ -4695,7 +4694,7 @@
           "floor": "14F",
           "description": "對講機無畫面",
           "trade": "其他",
-          "status": "處理中",
+          "status": "已完成",
           "completeDate": "",
           "note": "原預計日：OK；原工種：萬能工",
           "unit": "D3"
@@ -9018,5 +9017,5 @@
       ]
     }
   },
-  "verifiedAt": "2026-10-27T13:18:56Z"
+  "verifiedAt": "2026-10-28T02:46:36Z"
 }
