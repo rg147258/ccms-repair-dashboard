@@ -873,7 +873,33 @@
     "頂樓試水照片": "Foto uji air atap.",
     "餐廳門板位安裝，是否可以直接不安裝，協助收掉": "Panel pintu ruang makan belum dipasang. Apakah boleh tidak dipasang dan dibawa pergi?",
     "馬桶保固書": "Dokumen garansi kloset.",
-    "馬桶新故障更換(客浴)": "Ganti kloset kamar mandi tamu karena kerusakan baru."
+    "馬桶新故障更換(客浴)": "Ganti kloset kamar mandi tamu karena kerusakan baru.",
+    "[玄關門/美容]大門靠近牆壁處，有白色油漆樣的漆！": "[Pintu masuk/perbaikan tampilan] Di bagian pintu utama dekat dinding terdapat noda putih seperti cat!",
+    "[玄關門/美容]大門進牆壁處有油漆一樣的污漬": "[Pintu masuk/perbaikan tampilan] Di bagian pintu utama dekat dinding terdapat noda seperti cat.",
+    "[玄關門/美容]大門進牆壁處有油漆樣的污漬": "[Pintu masuk/perbaikan tampilan] Di bagian pintu utama dekat dinding terdapat noda menyerupai cat.",
+    "[主臥/門扇]1. 門縫底部過窄，開關門會卡卡的不順\n2. 中間鉸鏈沒鎖": "[Kamar tidur utama/daun pintu] 1. Celah di bawah pintu terlalu sempit sehingga pintu tersangkut dan tidak lancar saat dibuka atau ditutup.\n2. Engsel tengah belum dikencangkan.",
+    "[臥室一/門扇]底部門縫過窄，開關門會卡卡的不順": "[Kamar tidur 1/daun pintu] Celah di bawah pintu terlalu sempit sehingga pintu tersangkut dan tidak lancar saat dibuka atau ditutup.",
+    "[臥室二/門扇]底部門縫過窄，開關門會卡卡的不順": "[Kamar tidur 2/daun pintu] Celah di bawah pintu terlalu sempit sehingga pintu tersangkut dan tidak lancar saat dibuka atau ditutup.",
+    "[廚房/門扇]底部門縫過窄，開關門會卡卡的不順\n（目前壓條還沒黏上去，因為黏上去之後就打不開了）": "[Dapur/daun pintu] Celah di bawah pintu terlalu sempit sehingga pintu tersangkut dan tidak lancar saat dibuka atau ditutup.\n(List penekan belum direkatkan karena pintu tidak dapat dibuka setelah list direkatkan.)",
+    "[廚房/電器]烘碗機無法選擇時間，瓦斯爐下方的櫃子左側側邊板子沒有封好": "[Dapur/peralatan listrik] Waktu pada mesin pengering piring tidak dapat dipilih. Papan sisi kiri lemari di bawah kompor gas belum ditutup dengan baik.",
+    "[主浴/淋浴玻璃]主臥室淋浴間的膠條沒有黏好會分開": "[Kamar mandi utama/kaca pancuran] Karet penyekat pada ruang pancuran kamar tidur utama tidak direkatkan dengan baik dan terlepas.",
+    "[工陽/地板排水]地排損壞": "[Balkon servis/saluran pembuangan lantai] Saluran pembuangan lantai rusak.",
+    "[廚房/壁磚]目前僅用批土補起來而已，現在看批土邊邊沒有完全黏著": "[Dapur/ubin dinding] Saat ini hanya ditambal dengan dempul. Tepi dempul terlihat belum melekat sepenuhnya.",
+    "[廚房/上櫃]櫥櫃凹洞": "[Dapur/lemari atas] Terdapat cekungan pada lemari.",
+    "[主浴/美容]1.主浴門框矽利康凹凸不平有洞，需補強。\n2.主浴門下方的止水條會卡在門檻外，這樣是否正常呢？謝謝": "[Kamar mandi utama/perbaikan tampilan] 1. Silikon pada kusen pintu kamar mandi utama tidak rata dan berlubang; perlu diperkuat.\n2. Karet penahan air di bawah pintu kamar mandi utama tersangkut di luar ambang pintu. Apakah ini normal? Terima kasih.",
+    "[主臥/其他]主臥室與客房 兩個緊急壓扣都沒功能\n1.室內不會響\n2.管理室也沒有收到通知": "[Kamar tidur utama/lainnya] Kedua tombol darurat di kamar tidur utama dan kamar tamu tidak berfungsi.\n1. Tidak berbunyi di dalam unit.\n2. Ruang pengelola juga tidak menerima pemberitahuan.",
+    "[其他/清潔]車位前後天花漏水": "[Lainnya/pembersihan] Plafon di depan dan belakang tempat parkir bocor.",
+    "[主臥/其他]如圖所示，設計師詢問，不在當時點交的部分": "[Kamar tidur utama/lainnya] Seperti terlihat pada gambar, desainer menanyakan bagian yang tidak termasuk dalam serah terima saat itu.",
+    "[前陽/同意過戶撥款，交屋時複驗]陽台頂棚漏水，下雨天會漏水，其他時間不會": "[Balkon depan/setuju proses balik nama dan pencairan dana; pemeriksaan ulang saat serah terima] Atap balkon bocor saat hujan; tidak bocor pada waktu lainnya.",
+    "[前陽/清潔]陽台會漏水，下雨天會，其他時間不會，麻煩再來看一下": "[Balkon depan/pembersihan] Balkon bocor saat hujan dan tidak bocor pada waktu lainnya. Mohon datang memeriksa kembali.",
+    "[其他/清潔]B1往1F車道出口鐵門左側牆上的白色小電箱（照片可以看到牆壁上有水痕）遇到下大雨就會有水沿著牆壁流到地上，請處理。": "[Lainnya/pembersihan] Kotak listrik kecil berwarna putih di dinding sebelah kiri pintu besi keluar jalur kendaraan dari B1 ke 1F (bekas air pada dinding terlihat pada foto): saat hujan lebat, air mengalir sepanjang dinding ke lantai. Mohon ditangani.",
+    "[公浴/下櫃]側邊門縫縫隙需調整": "[Kamar mandi bersama/lemari bawah] Celah pada sisi pintu lemari perlu disesuaikan.",
+    "[前陽/石材檯面]磁磚白痕": "[Balkon depan/permukaan batu] Terdapat bekas putih pada ubin.",
+    "[前陽/地板排水]左邊排水孔水無法順利往下流": "[Balkon depan/saluran pembuangan lantai] Air di lubang pembuangan sebelah kiri tidak dapat mengalir turun dengan lancar.",
+    "[主臥/門框]輕隔間封板壓到電線": "[Kamar tidur utama/kusen pintu] Panel penutup partisi ringan menekan kabel listrik.",
+    "[玄關門/清潔]玄關門無法上鎖": "[Pintu masuk/pembersihan] Pintu masuk tidak dapat dikunci.",
+    "[其他/其他]弱點裝置的插座 沒有電": "[Lainnya/lainnya] Stopkontak untuk perangkat arus lemah tidak mendapat listrik.",
+    "[其他/牆面油漆]窗邊油漆受損": "[Lainnya/cat dinding] Cat di sekitar jendela rusak."
   },
   "note": {
     "": "",
@@ -1097,7 +1123,8 @@
     "類型:其他；[來源單號已移除]": "Jenis: lainnya; [來源單號已移除].",
     "類型:廚具；[來源單號已移除]": "Jenis: perangkat dapur; [來源單號已移除].",
     "類型:水電；[來源單號已移除]": "Jenis: air/listrik; [來源單號已移除].",
-    "類型:石材；[來源單號已移除]": "Jenis: batu; [來源單號已移除]."
+    "類型:石材；[來源單號已移除]": "Jenis: batu; [來源單號已移除].",
+    "10/29已請行政告知住戶來領取原聯絡日期：已給單": "10/29: bagian administrasi telah diminta memberi tahu penghuni untuk mengambilnya. Tanggal kontak sebelumnya: formulir sudah diberikan."
   },
   "trade": {
     "": "",
@@ -1115,6 +1142,9 @@
     "翔第": "Xiang Di",
     "衛浴設備": "Perlengkapan kamar mandi",
     "門框扇": "Kusen dan daun pintu",
-    "麗璟": "Li Jing"
+    "麗璟": "Li Jing",
+    "鋁窗及玻璃": "Jendela aluminium dan kaca",
+    "弱電": "Arus lemah",
+    "油漆": "Pengecatan"
   }
 }
