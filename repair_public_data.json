@@ -9,43 +9,43 @@
     },
     "B": {
       "total": 141,
-      "open": 24,
-      "working": 1,
-      "completed": 116,
+      "open": 19,
+      "working": 2,
+      "completed": 120,
       "needs_review": 0
     },
     "C": {
       "total": 101,
-      "open": 2,
-      "working": 21,
+      "open": 4,
+      "working": 19,
       "completed": 78,
       "needs_review": 0
     },
     "D": {
-      "total": 228,
-      "open": 25,
-      "working": 14,
-      "completed": 189,
+      "total": 229,
+      "open": 31,
+      "working": 10,
+      "completed": 188,
       "needs_review": 0
     },
     "E": {
       "total": 149,
-      "open": 7,
-      "working": 7,
-      "completed": 135,
+      "open": 8,
+      "working": 5,
+      "completed": 136,
       "needs_review": 0
     },
     "F": {
-      "total": 108,
+      "total": 110,
       "open": 3,
-      "working": 6,
-      "completed": 99,
+      "working": 9,
+      "completed": 98,
       "needs_review": 0
     },
     "G": {
       "total": 146,
-      "open": 15,
-      "working": 18,
+      "open": 14,
+      "working": 19,
       "completed": 113,
       "needs_review": 0
     }
@@ -598,7 +598,7 @@
           "caseId": "A-0058",
           "floor": "12F",
           "description": "如照片所示的冷氣預留孔的蓋子被颱風吹掉下來,需要重新裝上去,希望能約10月28日早上10點到12點之間可以來維修,謝謝",
-          "trade": "",
+          "trade": "水電",
           "status": "已完成",
           "completeDate": "10/28",
           "note": "10/26已請行政約住戶10/28上午10點修繕；原聯絡日期：已給單",
@@ -846,7 +846,7 @@
           "trade": "",
           "status": "已完成",
           "completeDate": "2026/08/17",
-          "note": "[姓名已移除][姓名已移除] [電話已移除]",
+          "note": "屋主[姓名已移除] [電話已移除]",
           "unit": "B1"
         },
         {
@@ -1934,7 +1934,7 @@
           "floor": "9F",
           "description": "主臥室緊急壓扣沒有反應",
           "trade": "",
-          "status": "未處理",
+          "status": "處理中",
           "completeDate": "",
           "note": "",
           "unit": "B7"
@@ -1954,7 +1954,7 @@
           "floor": "4F",
           "description": "[玄關門/門扇]玄關門內側下方板面，出現不平整接縫空隙。（已於10月5號提交修繕紀錄單但至今未獲回覆）",
           "trade": "門框扇",
-          "status": "處理中",
+          "status": "已完成",
           "completeDate": "2026/10/29",
           "note": "疑似同B第119列",
           "unit": "B2"
@@ -1994,7 +1994,7 @@
           "floor": "02F",
           "description": "[玄關門/美容]大門靠近牆壁處，有白色油漆樣的漆！",
           "trade": "門框扇",
-          "status": "未處理",
+          "status": "已完成",
           "completeDate": "2026/10/29",
           "note": "",
           "unit": "B5"
@@ -2004,7 +2004,7 @@
           "floor": "02F",
           "description": "[玄關門/美容]大門進牆壁處有油漆一樣的污漬",
           "trade": "門框扇",
-          "status": "未處理",
+          "status": "已完成",
           "completeDate": "2026/10/29",
           "note": "",
           "unit": "B5"
@@ -2014,7 +2014,7 @@
           "floor": "02F",
           "description": "[玄關門/美容]大門進牆壁處有油漆樣的污漬",
           "trade": "門框扇",
-          "status": "未處理",
+          "status": "已完成",
           "completeDate": "2026/10/29",
           "note": "",
           "unit": "B5"
@@ -2024,7 +2024,7 @@
           "floor": "8F",
           "description": "[其他/門扇]1150824大門門擋多處損傷（未處理）。\n1150913大門換過鐵片仍會晃動關不緊，故二次報修。",
           "trade": "門框扇",
-          "status": "未處理",
+          "status": "處理中",
           "completeDate": "",
           "note": "",
           "unit": "B2"
@@ -2849,7 +2849,7 @@
           "floor": "7F",
           "description": "[廚房/壁磚]獨立式廚房，整座廚具後面，完全沒有貼壁磚，跟買賣契約書內的配置內容全然不符。\n煩請鉅陞對此提出說明與後續如何處理妥當辦法，好讓我能接受與釋懷。謝謝",
           "trade": "磁磚",
-          "status": "處理中",
+          "status": "未處理",
           "completeDate": "",
           "note": "廠商報價中",
           "unit": "C3"
@@ -2859,7 +2859,7 @@
           "floor": "7F",
           "description": "[廚房/電器]烘碗機是瑕疵商品，右側嚴重敲傷內凹，請回收此瑕疵品，換台同型全新烘碗機給我，不必組裝，我自行處理，謝謝",
           "trade": "廚具",
-          "status": "處理中",
+          "status": "未處理",
           "completeDate": "",
           "note": "已連絡廠商更換",
           "unit": "C3"
@@ -5124,7 +5124,7 @@
           "floor": "12F",
           "description": "工陽地板排水地排損壞",
           "trade": "水電",
-          "status": "處理中",
+          "status": "未處理",
           "completeDate": "",
           "note": "10/29已請屋主排可進戶內修繕時間",
           "unit": "D3"
@@ -5134,7 +5134,7 @@
           "floor": "12F",
           "description": "廚房壁磚目前僅用批土補起來而已，現在看批土邊邊沒有完全黏著",
           "trade": "磁磚",
-          "status": "處理中",
+          "status": "未處理",
           "completeDate": "",
           "note": "10/29已請屋主排可進戶內修繕時間",
           "unit": "D3"
@@ -5144,7 +5144,7 @@
           "floor": "12F",
           "description": "廚房上櫃櫥櫃凹洞",
           "trade": "廚具",
-          "status": "處理中",
+          "status": "未處理",
           "completeDate": "",
           "note": "10/29已請屋主排可進戶內修繕時間",
           "unit": "D3"
@@ -5154,7 +5154,7 @@
           "floor": "6F",
           "description": "主浴美容1.主浴門框矽利康凹凸不平有洞，需補強。\n2.主浴門下方的止水條會卡在門檻外，這樣是否正常呢？謝謝",
           "trade": "門框扇",
-          "status": "已完成",
+          "status": "未處理",
           "completeDate": "",
           "note": "復發；矽利康同R79(已完成OK)，止水條為新問題",
           "unit": "D5"
@@ -5294,7 +5294,7 @@
           "floor": "06F",
           "description": "[主臥/其他]主臥室與客房 兩個緊急壓扣都沒功能\n1.室內不會響\n2.管理室也沒有收到通知",
           "trade": "水電",
-          "status": "處理中",
+          "status": "未處理",
           "completeDate": "",
           "note": "屋主水電裝修中自行拆除，待屋主安裝回後再測試",
           "unit": "D2"
@@ -5328,6 +5328,16 @@
           "completeDate": "2026/11/02",
           "note": "",
           "unit": "D2"
+        },
+        {
+          "caseId": "D-0234",
+          "floor": "1F",
+          "description": "[其他/植栽]戶外草皮皆枯死泛黃、植栽樹木的部分也枯萎、水溝蓋不平整",
+          "trade": "園藝",
+          "status": "未處理",
+          "completeDate": "",
+          "note": "",
+          "unit": "D1"
         }
       ]
     },
@@ -6099,7 +6109,7 @@
           "floor": "8F",
           "description": "房間內空調管線未裝好",
           "trade": "",
-          "status": "未處理",
+          "status": "已完成",
           "completeDate": "",
           "note": "",
           "unit": "E2"
@@ -6599,7 +6609,7 @@
           "floor": "1F",
           "description": "進入一樓住戶的門，小的無法闔上",
           "trade": "",
-          "status": "處理中",
+          "status": "已完成",
           "completeDate": "",
           "note": "",
           "unit": "E1"
@@ -6649,7 +6659,7 @@
           "floor": "1F",
           "description": "面對公區的欄杆想申請加高",
           "trade": "",
-          "status": "處理中",
+          "status": "已完成",
           "completeDate": "",
           "note": "",
           "unit": "E1"
@@ -6749,7 +6759,7 @@
           "floor": "09F",
           "description": "[其他/清潔]車位前後天花漏水",
           "trade": "其他",
-          "status": "已完成",
+          "status": "處理中",
           "completeDate": "",
           "note": "",
           "unit": "E5"
@@ -6759,7 +6769,7 @@
           "floor": "15F",
           "description": "[主臥/其他]如圖所示，設計師詢問，不在當時點交的部分",
           "trade": "水電",
-          "status": "處理中",
+          "status": "未處理",
           "completeDate": "",
           "note": "",
           "unit": "E5"
@@ -6769,7 +6779,7 @@
           "floor": "7F",
           "description": "[廚房/清潔]您好，網路報修單填寫完一直無法送出，所以直接在這裡反應想2件事\n1. 廚房流理台下方的踢腳板整片拉開後裡面都是灰塵木屑細清完全沒清到，我們有先簡易的拿掃把把垃圾掃除，但是還是要請細清的要去清潔，謝謝，附上照片供參考\n2. 廚房水槽下方的櫥櫃拉門左右邊不平有高低差縫隙過大。之前其他櫃子有反應過這個問題有調整但是漏到這個水槽下方的櫃門，附上照片",
           "trade": "其他",
-          "status": "已完成",
+          "status": "未處理",
           "completeDate": "",
           "note": "",
           "unit": "E3"
@@ -7844,7 +7854,7 @@
           "floor": "9F",
           "description": "[玄關門/門框]8/11 已紙本登記報修，曾修繕過一次，但沒修好，大門門框坑洞仍在，重噴漆後色差明顯。\n\n討論後，工務建議直接更換。",
           "trade": "門框扇",
-          "status": "已完成",
+          "status": "處理中",
           "completeDate": "2026/10/31",
           "note": "",
           "unit": "F1"
@@ -7895,7 +7905,7 @@
           "description": "[玄關門/其他]對講機壞掉",
           "trade": "弱電",
           "status": "未處理",
-          "completeDate": "",
+          "completeDate": "2026/11/03",
           "note": "",
           "unit": "F1"
         },
@@ -7908,6 +7918,26 @@
           "completeDate": "",
           "note": "",
           "unit": "F1"
+        },
+        {
+          "caseId": "F-0115",
+          "floor": "14F",
+          "description": "[廚房/清潔]電器櫃被當時送的廚房用具箱子染色，當時有跟官方line說交屋後可以安排人來清潔",
+          "trade": "清潔",
+          "status": "處理中",
+          "completeDate": "",
+          "note": "",
+          "unit": "F5"
+        },
+        {
+          "caseId": "F-0116",
+          "floor": "10F",
+          "description": "[公浴/冷氣排水]浴室牆壁滲水出來，洗澡地上的水都已經乾了，懷疑是次臥冷氣排水管漏水",
+          "trade": "水電",
+          "status": "處理中",
+          "completeDate": "",
+          "note": "",
+          "unit": "F6"
         }
       ]
     },
@@ -9118,7 +9148,7 @@
           "caseId": "G-0121",
           "floor": "13F",
           "description": "玄關門清潔玄關門無法上鎖",
-          "trade": "",
+          "trade": "其他",
           "status": "已完成",
           "completeDate": "",
           "note": "類型:其他；[來源單號已移除]",
@@ -9265,21 +9295,11 @@
           "unit": "G3"
         },
         {
-          "caseId": "G-0136",
-          "floor": "13F",
-          "description": "[玄關門/清潔]玄關門無法上鎖",
-          "trade": "其他",
-          "status": "已完成",
-          "completeDate": "",
-          "note": "",
-          "unit": "G3"
-        },
-        {
           "caseId": "G-0137",
           "floor": "11F",
           "description": "[其他/其他]弱點裝置的插座 沒有電",
           "trade": "弱電",
-          "status": "未處理",
+          "status": "已完成",
           "completeDate": "",
           "note": "",
           "unit": "G7"
@@ -9373,9 +9393,19 @@
           "completeDate": "",
           "note": "",
           "unit": "G3"
+        },
+        {
+          "caseId": "G-0147",
+          "floor": "9F",
+          "description": "[公浴/浴櫃]1.浴室上方的插座面板未密合，請重新處理完整，避免日後碰到水進去就會變形巧起\n*洗手水盆有側面的填膠有縫隙，請重新補平",
+          "trade": "衛浴設備",
+          "status": "處理中",
+          "completeDate": "",
+          "note": "",
+          "unit": "G2"
         }
       ]
     }
   },
-  "verifiedAt": "2026-11-03T00:58:00Z"
+  "verifiedAt": "2026-11-03T02:51:18Z"
 }

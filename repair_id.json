@@ -908,7 +908,11 @@
     "缺吊掛架*2": "Rak gantung kurang 2 buah.",
     "鏡櫃門片更換": "Ganti daun pintu kabinet cermin.",
     "電器櫃門板調整": "Setel panel pintu kabinet peralatan listrik.",
-    "鞋櫃排氣扇AUTO作動??": "Kipas pembuangan lemari sepatu bekerja otomatis (AUTO)??"
+    "鞋櫃排氣扇AUTO作動??": "Kipas pembuangan lemari sepatu bekerja otomatis (AUTO)??",
+    "[其他/植栽]戶外草皮皆枯死泛黃、植栽樹木的部分也枯萎、水溝蓋不平整": "[Lainnya/tanaman] Seluruh rumput luar ruangan mengering dan menguning, pepohonan juga layu, serta penutup selokan tidak rata.",
+    "[廚房/清潔]電器櫃被當時送的廚房用具箱子染色，當時有跟官方line說交屋後可以安排人來清潔": "[Dapur/pembersihan] Lemari peralatan listrik terkena noda warna dari kotak peralatan dapur yang diberikan saat itu. Sebelumnya sudah disampaikan melalui LINE resmi bahwa pembersihan dapat dijadwalkan setelah serah terima.",
+    "[公浴/冷氣排水]浴室牆壁滲水出來，洗澡地上的水都已經乾了，懷疑是次臥冷氣排水管漏水": "[Kamar mandi bersama/pembuangan AC] Air merembes dari dinding kamar mandi meskipun air bekas mandi di lantai sudah kering. Diduga pipa pembuangan AC kamar tidur kedua bocor.",
+    "[公浴/浴櫃]1.浴室上方的插座面板未密合，請重新處理完整，避免日後碰到水進去就會變形巧起\n*洗手水盆有側面的填膠有縫隙，請重新補平": "[Kamar mandi bersama/lemari kamar mandi] 1. Panel stopkontak di bagian atas kamar mandi tidak terpasang rapat. Mohon diperbaiki dengan tuntas agar air tidak masuk dan menyebabkan perubahan bentuk atau bagian terangkat di kemudian hari.\n* Terdapat celah pada sealant di sisi wastafel. Mohon diratakan kembali."
   },
   "note": {
     "": "",
@@ -1150,7 +1154,8 @@
     "類型:其他": "Jenis: Lainnya",
     "類型:廚具": "Jenis: Peralatan dapur",
     "類型:水電": "Jenis: Listrik dan air",
-    "類型:石材": "Jenis: Batu alam"
+    "類型:石材": "Jenis: Batu alam",
+    "屋主[姓名已移除] [電話已移除]": "Pemilik [nama dihapus] [telepon dihapus]"
   },
   "trade": {
     "": "",
@@ -1171,6 +1176,8 @@
     "麗璟": "Li Jing",
     "鋁窗及玻璃": "Jendela aluminium dan kaca",
     "弱電": "Arus lemah",
-    "油漆": "Pengecatan"
+    "油漆": "Pengecatan",
+    "園藝": "Pertamanan",
+    "清潔": "Pembersihan"
   }
 }
