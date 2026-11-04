@@ -912,7 +912,16 @@
     "[其他/植栽]戶外草皮皆枯死泛黃、植栽樹木的部分也枯萎、水溝蓋不平整": "[Lainnya/tanaman] Seluruh rumput luar ruangan mengering dan menguning, pepohonan juga layu, serta penutup selokan tidak rata.",
     "[廚房/清潔]電器櫃被當時送的廚房用具箱子染色，當時有跟官方line說交屋後可以安排人來清潔": "[Dapur/pembersihan] Lemari peralatan listrik terkena noda warna dari kotak peralatan dapur yang diberikan saat itu. Sebelumnya sudah disampaikan melalui LINE resmi bahwa pembersihan dapat dijadwalkan setelah serah terima.",
     "[公浴/冷氣排水]浴室牆壁滲水出來，洗澡地上的水都已經乾了，懷疑是次臥冷氣排水管漏水": "[Kamar mandi bersama/pembuangan AC] Air merembes dari dinding kamar mandi meskipun air bekas mandi di lantai sudah kering. Diduga pipa pembuangan AC kamar tidur kedua bocor.",
-    "[公浴/浴櫃]1.浴室上方的插座面板未密合，請重新處理完整，避免日後碰到水進去就會變形巧起\n*洗手水盆有側面的填膠有縫隙，請重新補平": "[Kamar mandi bersama/lemari kamar mandi] 1. Panel stopkontak di bagian atas kamar mandi tidak terpasang rapat. Mohon diperbaiki dengan tuntas agar air tidak masuk dan menyebabkan perubahan bentuk atau bagian terangkat di kemudian hari.\n* Terdapat celah pada sealant di sisi wastafel. Mohon diratakan kembali."
+    "[公浴/浴櫃]1.浴室上方的插座面板未密合，請重新處理完整，避免日後碰到水進去就會變形巧起\n*洗手水盆有側面的填膠有縫隙，請重新補平": "[Kamar mandi bersama/lemari kamar mandi] 1. Panel stopkontak di bagian atas kamar mandi tidak terpasang rapat. Mohon diperbaiki dengan tuntas agar air tidak masuk dan menyebabkan perubahan bentuk atau bagian terangkat di kemudian hari.\n* Terdapat celah pada sealant di sisi wastafel. Mohon diratakan kembali.",
+    "[公浴/其他]1鞋櫃上油漆有裂痕\n2.浴室天花交接處有裂痕": "[Kamar mandi bersama/lainnya] 1. Cat di atas lemari sepatu retak.\n2. Terdapat retakan pada sambungan plafon kamar mandi.",
+    "[主浴/其他]馬桶後方的地坪有漏水的狀況": "[Kamar mandi utama/lainnya] Terdapat kebocoran air pada lantai di belakang toilet.",
+    "[廚房/電器]瓦斯爐無法正常點火使用（已連接瓦斯管及確認開啟瓦斯爐有聞到瓦斯味道但點不了火）": "[Dapur/peralatan listrik] Kompor gas tidak dapat dinyalakan atau digunakan dengan normal (pipa gas sudah tersambung dan saat kompor dibuka tercium bau gas, tetapi api tidak menyala).",
+    "[主浴/鏡箱]鏡台五金角料繃牙": "[Kamar mandi utama/lemari cermin] Ulir pada komponen sudut logam lemari cermin rusak.",
+    "[臥室一/門框]喇叭鎖受口板偏移 導致門容易彈開 10/21 現場確認後 原告知10/30前來維修 尚未前來": "[Kamar tidur 1/kusen pintu] Pelat penerima kait kunci bergeser sehingga pintu mudah terbuka kembali. Setelah pemeriksaan di lokasi pada 10/21, sebelumnya dijanjikan perbaikan sebelum 10/30, tetapi petugas belum datang.",
+    "[臥室一/牆面]臥室插座待補土整平\n本來有說10/30要來 後來沒有來": "[Kamar tidur 1/dinding] Area stopkontak kamar tidur perlu didempul dan diratakan.\nSebelumnya dijanjikan datang pada 10/30, tetapi kemudian tidak datang.",
+    "[客廳/牆面]客廳燈具開關待補土整平\n本來有說10/30要來 後來沒有來": "[Ruang tamu/dinding] Area sakelar lampu ruang tamu perlu didempul dan diratakan.\nSebelumnya dijanjikan datang pada 10/30, tetapi kemudian tidak datang.",
+    "[客廳/牆面油漆]這陣子鄰居都在施工 \n然後牆壁就出現了裂縫 ": "[Ruang tamu/cat dinding] Belakangan ini para tetangga sedang melakukan pekerjaan konstruksi. \nKemudian muncul retakan pada dinding. ",
+    "[客廳/牆面油漆]這陣子鄰居都在施工 \n然後牆壁就出現了裂縫 \n": "[Ruang tamu/cat dinding] Belakangan ini para tetangga sedang melakukan pekerjaan konstruksi. \nKemudian muncul retakan pada dinding. \n"
   },
   "note": {
     "": "",
@@ -1155,7 +1164,13 @@
     "類型:廚具": "Jenis: Peralatan dapur",
     "類型:水電": "Jenis: Listrik dan air",
     "類型:石材": "Jenis: Batu alam",
-    "屋主[姓名已移除] [電話已移除]": "Pemilik [nama dihapus] [telepon dihapus]"
+    "屋主[姓名已移除] [電話已移除]": "Pemilik [nama dihapus] [telepon dihapus]",
+    "10/12已請行政詢問是否能給廠商私人電話；原聯絡日期：已給單；原工種：弱電11/3已完成": "10/12: bagian administrasi telah diminta menanyakan apakah nomor telepon pribadi boleh diberikan kepada kontraktor; tanggal kontak sebelumnya: formulir sudah diberikan; jenis pekerjaan asal: arus lemah. 11/3 sudah selesai.",
+    "沐泰已重新噴漆處理完成，並拍照，錄影給住戶": "Mu Tai telah menyelesaikan pengecatan ulang dan mengirim foto serta video kepada penghuni.",
+    "已請櫻花廠商現場處理，取出異物，測試正常": "Kontraktor Sakura telah diminta menangani di lokasi, mengeluarkan benda asing, dan pengujian menunjukkan kondisi normal.",
+    "已請廠商遠端測試正常，致電住戶未接，已留言給住戶確認": "Kontraktor telah diminta melakukan pengujian jarak jauh dan hasilnya normal. Telepon kepada penghuni tidak dijawab; pesan telah ditinggalkan agar penghuni mengonfirmasi.",
+    "115/11/03已清潔完成": "115/11/03: pembersihan telah selesai.",
+    "原工種：泥作粉刷": "Jenis pekerjaan asal: pekerjaan pasangan dan plesteran."
   },
   "trade": {
     "": "",
