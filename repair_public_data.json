@@ -16,15 +16,15 @@
     },
     "C": {
       "total": 103,
-      "open": 6,
-      "working": 18,
+      "open": 1,
+      "working": 23,
       "completed": 79,
       "needs_review": 0
     },
     "D": {
       "total": 230,
-      "open": 24,
-      "working": 17,
+      "open": 23,
+      "working": 18,
       "completed": 189,
       "needs_review": 0
     },
@@ -37,15 +37,15 @@
     },
     "F": {
       "total": 112,
-      "open": 3,
-      "working": 5,
+      "open": 1,
+      "working": 7,
       "completed": 104,
       "needs_review": 0
     },
     "G": {
       "total": 151,
-      "open": 17,
-      "working": 17,
+      "open": 15,
+      "working": 19,
       "completed": 117,
       "needs_review": 0
     }
@@ -2879,7 +2879,7 @@
           "floor": "7F",
           "description": "[廚房/壁磚]獨立式廚房，整座廚具後面，完全沒有貼壁磚，跟買賣契約書內的配置內容全然不符。\n煩請鉅陞對此提出說明與後續如何處理妥當辦法，好讓我能接受與釋懷。謝謝",
           "trade": "磁磚",
-          "status": "未處理",
+          "status": "處理中",
           "completeDate": "",
           "note": "廠商報價中",
           "unit": "C3"
@@ -2889,7 +2889,7 @@
           "floor": "7F",
           "description": "[廚房/電器]烘碗機是瑕疵商品，右側嚴重敲傷內凹，請回收此瑕疵品，換台同型全新烘碗機給我，不必組裝，我自行處理，謝謝",
           "trade": "廚具",
-          "status": "未處理",
+          "status": "處理中",
           "completeDate": "",
           "note": "已連絡廠商更換",
           "unit": "C3"
@@ -3069,7 +3069,7 @@
           "floor": "7F",
           "description": "[主臥/其他]在主臥空間裏能聽到樓上的流水聲，且音量超級大聲已影響睡眠品質，望能儘速處理",
           "trade": "水電",
-          "status": "未處理",
+          "status": "處理中",
           "completeDate": "",
           "note": "",
           "unit": "C7"
@@ -3079,7 +3079,7 @@
           "floor": "14F",
           "description": "[公浴/其他]1鞋櫃上油漆有裂痕\n2.浴室天花交接處有裂痕",
           "trade": "油漆",
-          "status": "未處理",
+          "status": "處理中",
           "completeDate": "",
           "note": "",
           "unit": "C6"
@@ -3089,7 +3089,7 @@
           "floor": "10F",
           "description": "[主浴/其他]馬桶後方的地坪有漏水的狀況",
           "trade": "衛浴設備",
-          "status": "未處理",
+          "status": "處理中",
           "completeDate": "",
           "note": "",
           "unit": "C7"
@@ -5364,7 +5364,7 @@
           "floor": "2F",
           "description": "[公浴/門扇]門衛裂縫",
           "trade": "門框扇",
-          "status": "未處理",
+          "status": "處理中",
           "completeDate": "",
           "note": "",
           "unit": "D3"
@@ -7954,7 +7954,7 @@
           "floor": "12F",
           "description": "[前陽/其他]陽台紗門鋁框麻煩協助補漆，感謝🙏",
           "trade": "油漆",
-          "status": "未處理",
+          "status": "處理中",
           "completeDate": "",
           "note": "",
           "unit": "F2"
@@ -8004,7 +8004,7 @@
           "floor": "8F",
           "description": "[主浴/鏡箱]鏡台五金角料繃牙",
           "trade": "衛浴設備",
-          "status": "未處理",
+          "status": "處理中",
           "completeDate": "",
           "note": "",
           "unit": "F7"
@@ -9459,7 +9459,7 @@
           "floor": "3F",
           "description": "[主臥/門框]主臥室門框左右二側有瑕疵",
           "trade": "門框扇",
-          "status": "未處理",
+          "status": "處理中",
           "completeDate": "",
           "note": "",
           "unit": "G3"
@@ -9469,7 +9469,7 @@
           "floor": "3F",
           "description": "[臥室一/框扇]1、次臥窗溝變形\n2、主臥、次臥門框瑕疵\n    （以上皆與[人員已移除]現場會勘）",
           "trade": "鋁窗及玻璃",
-          "status": "未處理",
+          "status": "處理中",
           "completeDate": "",
           "note": "",
           "unit": "G3"
@@ -9537,5 +9537,5 @@
       ]
     }
   },
-  "verifiedAt": "2026-11-05T01:18:26Z"
+  "verifiedAt": "2026-11-05T01:31:15Z"
 }
