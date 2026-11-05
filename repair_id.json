@@ -921,7 +921,11 @@
     "[臥室一/牆面]臥室插座待補土整平\n本來有說10/30要來 後來沒有來": "[Kamar tidur 1/dinding] Area stopkontak kamar tidur perlu didempul dan diratakan.\nSebelumnya dijanjikan datang pada 10/30, tetapi kemudian tidak datang.",
     "[客廳/牆面]客廳燈具開關待補土整平\n本來有說10/30要來 後來沒有來": "[Ruang tamu/dinding] Area sakelar lampu ruang tamu perlu didempul dan diratakan.\nSebelumnya dijanjikan datang pada 10/30, tetapi kemudian tidak datang.",
     "[客廳/牆面油漆]這陣子鄰居都在施工 \n然後牆壁就出現了裂縫 ": "[Ruang tamu/cat dinding] Belakangan ini para tetangga sedang melakukan pekerjaan konstruksi. \nKemudian muncul retakan pada dinding. ",
-    "[客廳/牆面油漆]這陣子鄰居都在施工 \n然後牆壁就出現了裂縫 \n": "[Ruang tamu/cat dinding] Belakangan ini para tetangga sedang melakukan pekerjaan konstruksi. \nKemudian muncul retakan pada dinding. \n"
+    "[客廳/牆面油漆]這陣子鄰居都在施工 \n然後牆壁就出現了裂縫 \n": "[Ruang tamu/cat dinding] Belakangan ini para tetangga sedang melakukan pekerjaan konstruksi. \nKemudian muncul retakan pada dinding. \n",
+    "[工陽/其他]曬衣繩組部分生鏽（環片跟繩）": "[Balkon servis/lainnya] Sebagian rangkaian tali jemuran berkarat (cincin dan tali).",
+    "[臥室二/其他]門擋鬆掉": "[Kamar tidur 2/lainnya] Penahan pintu longgar.",
+    "[工陽/門框]門框脫落": "[Balkon servis/kusen pintu] Kusen pintu terlepas.",
+    "[玄關門/美容]玄關門美容清潔大門內外及對講機的地方；鞋櫃下面的腳踏板會移動；主臥室噴射窗有噴漆未處理，次臥室也有噴漆未處理。再麻煩了謝謝☺️": "[Pintu masuk/perbaikan tampilan] Perbaikan tampilan dan pembersihan sisi dalam serta luar pintu utama dan area interkom; papan pijakan di bawah lemari sepatu bergeser; jendela dorong kamar tidur utama dan kamar tidur kedua masih memiliki bekas semprotan cat yang belum ditangani. Mohon dibantu kembali. Terima kasih ☺️"
   },
   "note": {
     "": "",
@@ -1170,7 +1174,12 @@
     "已請櫻花廠商現場處理，取出異物，測試正常": "Kontraktor Sakura telah diminta menangani di lokasi, mengeluarkan benda asing, dan pengujian menunjukkan kondisi normal.",
     "已請廠商遠端測試正常，致電住戶未接，已留言給住戶確認": "Kontraktor telah diminta melakukan pengujian jarak jauh dan hasilnya normal. Telepon kepada penghuni tidak dijawab; pesan telah ditinggalkan agar penghuni mengonfirmasi.",
     "115/11/03已清潔完成": "115/11/03: pembersihan telah selesai.",
-    "原工種：泥作粉刷": "Jenis pekerjaan asal: pekerjaan pasangan dan plesteran."
+    "原工種：泥作粉刷": "Jenis pekerjaan asal: pekerjaan pasangan dan plesteran.",
+    "原工種：金屬": "Jenis pekerjaan asal: logam.",
+    "11/03已聯絡住戶設計師由設計師自行處理 故先行結案": "11/03: desainer penghuni telah dihubungi dan akan menanganinya sendiri, sehingga kasus ditutup terlebih dahulu.",
+    "於11/02號 完成廚房櫃堤調整、廚具下方踢腳板細清": "Pada 11/02, penyesuaian lemari dapur dan pembersihan rinci papan alas di bawah kabinet dapur telah selesai.",
+    "已協助拆板，取出廢線、復原完成": "Telah membantu membuka panel, mengeluarkan kabel yang tidak digunakan, dan mengembalikan kondisi semula.",
+    "查看溫控龍頭、反爾無漏水狀況，判斷牆上抹縫有縫隙導致洗澡時水流進去反滲出來 已先替除縫重新填補，請住戶在觀察": "Keran pengatur suhu dan katup diperiksa tanpa ditemukan kebocoran. Diduga celah pada nat dinding menyebabkan air mandi masuk lalu merembes kembali. Nat lama telah dibersihkan dan diisi ulang; penghuni diminta mengamati kembali."
   },
   "trade": {
     "": "",

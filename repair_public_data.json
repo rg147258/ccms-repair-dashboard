@@ -1,52 +1,52 @@
 {
   "aggregates": {
     "A": {
-      "total": 56,
-      "open": 0,
+      "total": 57,
+      "open": 1,
       "working": 3,
       "completed": 53,
       "needs_review": 0
     },
     "B": {
-      "total": 141,
+      "total": 143,
       "open": 19,
-      "working": 2,
-      "completed": 120,
+      "working": 3,
+      "completed": 121,
       "needs_review": 0
     },
     "C": {
       "total": 103,
       "open": 6,
-      "working": 19,
-      "completed": 78,
+      "working": 18,
+      "completed": 79,
       "needs_review": 0
     },
     "D": {
       "total": 230,
-      "open": 25,
+      "open": 24,
       "working": 17,
-      "completed": 188,
+      "completed": 189,
       "needs_review": 0
     },
     "E": {
       "total": 149,
-      "open": 8,
+      "open": 6,
       "working": 4,
-      "completed": 137,
+      "completed": 139,
       "needs_review": 0
     },
     "F": {
-      "total": 111,
-      "open": 2,
-      "working": 7,
-      "completed": 102,
+      "total": 112,
+      "open": 3,
+      "working": 5,
+      "completed": 104,
       "needs_review": 0
     },
     "G": {
       "total": 151,
-      "open": 19,
+      "open": 17,
       "working": 17,
-      "completed": 115,
+      "completed": 117,
       "needs_review": 0
     }
   },
@@ -612,6 +612,16 @@
           "status": "已完成",
           "completeDate": "10/31",
           "note": "10/31已與住戶在戶內修繕完成",
+          "unit": "A1"
+        },
+        {
+          "caseId": "A-0060",
+          "floor": "7F",
+          "description": "[工陽/其他]曬衣繩組部分生鏽（環片跟繩）",
+          "trade": "其他",
+          "status": "未處理",
+          "completeDate": "",
+          "note": "原工種：金屬",
           "unit": "A1"
         }
       ]
@@ -2024,10 +2034,30 @@
           "floor": "8F",
           "description": "[其他/門扇]1150824大門門擋多處損傷（未處理）。\n1150913大門換過鐵片仍會晃動關不緊，故二次報修。",
           "trade": "門框扇",
+          "status": "已完成",
+          "completeDate": "2026/11/04",
+          "note": "",
+          "unit": "B2"
+        },
+        {
+          "caseId": "B-0142",
+          "floor": "12F",
+          "description": "[臥室二/其他]門擋鬆掉",
+          "trade": "門框扇",
           "status": "處理中",
           "completeDate": "",
           "note": "",
-          "unit": "B2"
+          "unit": "B7"
+        },
+        {
+          "caseId": "B-0143",
+          "floor": "12F",
+          "description": "[工陽/門框]門框脫落",
+          "trade": "門框扇",
+          "status": "處理中",
+          "completeDate": "",
+          "note": "",
+          "unit": "B7"
         }
       ]
     },
@@ -2819,8 +2849,8 @@
           "floor": "10F",
           "description": "[其他/清潔]鞋櫃不平整報維修，玄關門的門擋要給我一個。",
           "trade": "其他",
-          "status": "處理中",
-          "completeDate": "",
+          "status": "已完成",
+          "completeDate": "2026/11/04",
           "note": "",
           "unit": "C7"
         },
@@ -5364,8 +5394,8 @@
           "floor": "8F",
           "description": "[廚房/電器]瓦斯爐無法正常點火使用（已連接瓦斯管及確認開啟瓦斯爐有聞到瓦斯味道但點不了火）",
           "trade": "廚具",
-          "status": "未處理",
-          "completeDate": "",
+          "status": "已完成",
+          "completeDate": "2026/11/04",
           "note": "",
           "unit": "D3"
         }
@@ -6799,9 +6829,9 @@
           "floor": "15F",
           "description": "[主臥/其他]如圖所示，設計師詢問，不在當時點交的部分",
           "trade": "水電",
-          "status": "未處理",
-          "completeDate": "",
-          "note": "",
+          "status": "已完成",
+          "completeDate": "2026/11/03",
+          "note": "11/03已聯絡住戶設計師由設計師自行處理 故先行結案",
           "unit": "E5"
         },
         {
@@ -6809,9 +6839,9 @@
           "floor": "7F",
           "description": "[廚房/清潔]您好，網路報修單填寫完一直無法送出，所以直接在這裡反應想2件事\n1. 廚房流理台下方的踢腳板整片拉開後裡面都是灰塵木屑細清完全沒清到，我們有先簡易的拿掃把把垃圾掃除，但是還是要請細清的要去清潔，謝謝，附上照片供參考\n2. 廚房水槽下方的櫥櫃拉門左右邊不平有高低差縫隙過大。之前其他櫃子有反應過這個問題有調整但是漏到這個水槽下方的櫃門，附上照片",
           "trade": "其他",
-          "status": "未處理",
-          "completeDate": "",
-          "note": "",
+          "status": "已完成",
+          "completeDate": "2026/11/02",
+          "note": "於11/02號 完成廚房櫃堤調整、廚具下方踢腳板細清",
           "unit": "E3"
         },
         {
@@ -7904,9 +7934,9 @@
           "floor": "08F",
           "description": "[主臥/門框]輕隔間封板壓到電線",
           "trade": "門框扇",
-          "status": "處理中",
-          "completeDate": "",
-          "note": "",
+          "status": "已完成",
+          "completeDate": "2026/11/03",
+          "note": "已協助拆板，取出廢線、復原完成",
           "unit": "F5"
         },
         {
@@ -7964,9 +7994,9 @@
           "floor": "10F",
           "description": "[公浴/冷氣排水]浴室牆壁滲水出來，洗澡地上的水都已經乾了，懷疑是次臥冷氣排水管漏水",
           "trade": "水電",
-          "status": "處理中",
-          "completeDate": "",
-          "note": "",
+          "status": "已完成",
+          "completeDate": "2026/11/04",
+          "note": "查看溫控龍頭、反爾無漏水狀況，判斷牆上抹縫有縫隙導致洗澡時水流進去反滲出來 已先替除縫重新填補，請住戶在觀察",
           "unit": "F6"
         },
         {
@@ -7978,6 +8008,16 @@
           "completeDate": "",
           "note": "",
           "unit": "F7"
+        },
+        {
+          "caseId": "F-0118",
+          "floor": "2F",
+          "description": "[玄關門/美容]玄關門美容清潔大門內外及對講機的地方；鞋櫃下面的腳踏板會移動；主臥室噴射窗有噴漆未處理，次臥室也有噴漆未處理。再麻煩了謝謝☺️",
+          "trade": "門框扇",
+          "status": "未處理",
+          "completeDate": "",
+          "note": "",
+          "unit": "F2"
         }
       ]
     },
@@ -9389,7 +9429,7 @@
           "floor": "14F",
           "description": "[主浴/同意過戶撥款，交屋時複驗]",
           "trade": "其他",
-          "status": "未處理",
+          "status": "已完成",
           "completeDate": "",
           "note": "",
           "unit": "G8"
@@ -9399,7 +9439,7 @@
           "floor": "14F",
           "description": "[廚房/同意過戶撥款，交屋時複驗]",
           "trade": "其他",
-          "status": "未處理",
+          "status": "已完成",
           "completeDate": "",
           "note": "",
           "unit": "G8"
@@ -9497,5 +9537,5 @@
       ]
     }
   },
-  "verifiedAt": "2026-11-04T02:33:05Z"
+  "verifiedAt": "2026-11-05T01:18:26Z"
 }
