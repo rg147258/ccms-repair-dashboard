@@ -925,7 +925,14 @@
     "[工陽/其他]曬衣繩組部分生鏽（環片跟繩）": "[Balkon servis/lainnya] Sebagian rangkaian tali jemuran berkarat (cincin dan tali).",
     "[臥室二/其他]門擋鬆掉": "[Kamar tidur 2/lainnya] Penahan pintu longgar.",
     "[工陽/門框]門框脫落": "[Balkon servis/kusen pintu] Kusen pintu terlepas.",
-    "[玄關門/美容]玄關門美容清潔大門內外及對講機的地方；鞋櫃下面的腳踏板會移動；主臥室噴射窗有噴漆未處理，次臥室也有噴漆未處理。再麻煩了謝謝☺️": "[Pintu masuk/perbaikan tampilan] Perbaikan tampilan dan pembersihan sisi dalam serta luar pintu utama dan area interkom; papan pijakan di bawah lemari sepatu bergeser; jendela dorong kamar tidur utama dan kamar tidur kedua masih memiliki bekas semprotan cat yang belum ditangani. Mohon dibantu kembali. Terima kasih ☺️"
+    "[玄關門/美容]玄關門美容清潔大門內外及對講機的地方；鞋櫃下面的腳踏板會移動；主臥室噴射窗有噴漆未處理，次臥室也有噴漆未處理。再麻煩了謝謝☺️": "[Pintu masuk/perbaikan tampilan] Perbaikan tampilan dan pembersihan sisi dalam serta luar pintu utama dan area interkom; papan pijakan di bawah lemari sepatu bergeser; jendela dorong kamar tidur utama dan kamar tidur kedua masih memiliki bekas semprotan cat yang belum ditangani. Mohon dibantu kembali. Terima kasih ☺️",
+    "[其他/清潔]一樓信箱被刮很深一道 掉漆": "[Lainnya/pembersihan] Kotak surat di lantai satu tergores dalam sehingga catnya terkelupas.",
+    "[其他/壁磚]後陽台壁磚破裂": "[Lainnya/ubin dinding] Ubin dinding balkon belakang retak.",
+    "[主浴/冷氣排水]冷氣漏水": "[Kamar mandi utama/pembuangan AC] AC bocor.",
+    "[主臥/網路]網路孔無法開起": "[Kamar tidur utama/jaringan] Port jaringan tidak dapat dibuka.",
+    "[主浴/其他]安裝浴室鐵架": "[Kamar mandi utama/lainnya] Memasang rak besi di kamar mandi.",
+    "[主浴/開關切]排風扇未接電": "[Kamar mandi utama/sakelar] Kipas ventilasi belum tersambung listrik.",
+    "[玄關門/其他]大門兒童安全鎖無法發揮作用": "[Pintu masuk/lainnya] Kunci pengaman anak pada pintu utama tidak berfungsi."
   },
   "note": {
     "": "",
@@ -1179,7 +1186,11 @@
     "11/03已聯絡住戶設計師由設計師自行處理 故先行結案": "11/03: desainer penghuni telah dihubungi dan akan menanganinya sendiri, sehingga kasus ditutup terlebih dahulu.",
     "於11/02號 完成廚房櫃堤調整、廚具下方踢腳板細清": "Pada 11/02, penyesuaian lemari dapur dan pembersihan rinci papan alas di bawah kabinet dapur telah selesai.",
     "已協助拆板，取出廢線、復原完成": "Telah membantu membuka panel, mengeluarkan kabel yang tidak digunakan, dan mengembalikan kondisi semula.",
-    "查看溫控龍頭、反爾無漏水狀況，判斷牆上抹縫有縫隙導致洗澡時水流進去反滲出來 已先替除縫重新填補，請住戶在觀察": "Keran pengatur suhu dan katup diperiksa tanpa ditemukan kebocoran. Diduga celah pada nat dinding menyebabkan air mandi masuk lalu merembes kembali. Nat lama telah dibersihkan dan diisi ulang; penghuni diminta mengamati kembali."
+    "查看溫控龍頭、反爾無漏水狀況，判斷牆上抹縫有縫隙導致洗澡時水流進去反滲出來 已先替除縫重新填補，請住戶在觀察": "Keran pengatur suhu dan katup diperiksa tanpa ditemukan kebocoran. Diduga celah pada nat dinding menyebabkan air mandi masuk lalu merembes kembali. Nat lama telah dibersihkan dan diisi ulang; penghuni diminta mengamati kembali.",
+    "11/05已留言給住戶約時間11/5已完成": "Pada 11/05 telah meninggalkan pesan kepada penghuni untuk menjadwalkan waktu; selesai pada 11/5.",
+    "11/05已協助填充螺絲孔，重新上鎖，測試正常": "Pada 11/05 lubang sekrup telah diisi dan sekrup dipasang kembali; hasil pengujian normal.",
+    "11/05致電與住戶預約11/7上午9點到府上現勘調整": "Pada 11/05 penghuni ditelepon untuk menjadwalkan pemeriksaan dan penyesuaian di unit pada 11/7 pukul 9 pagi.",
+    "本次服務協助住戶修繕落地窗美容，現場與住戶確認沒問題": "Pada kunjungan ini perbaikan tampilan pintu kaca geser telah dilakukan dan penghuni mengonfirmasi di lokasi bahwa tidak ada masalah."
   },
   "trade": {
     "": "",
