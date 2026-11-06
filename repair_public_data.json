@@ -52,7 +52,7 @@
   },
   "details": {
     "A": {
-      "building": "A",
+      "building": "A棟",
       "records": [
         {
           "caseId": "A-0001",
@@ -627,7 +627,7 @@
       ]
     },
     "B": {
-      "building": "B",
+      "building": "B棟",
       "records": [
         {
           "caseId": "B-0001",
@@ -2092,7 +2092,7 @@
       ]
     },
     "C": {
-      "building": "C",
+      "building": "C棟",
       "records": [
         {
           "caseId": "C-0001",
@@ -3137,7 +3137,7 @@
       ]
     },
     "D": {
-      "building": "D",
+      "building": "D棟",
       "records": [
         {
           "caseId": "D-0001",
@@ -5442,7 +5442,7 @@
       ]
     },
     "E": {
-      "building": "E",
+      "building": "E棟",
       "records": [
         {
           "caseId": "E-0001",
@@ -6957,7 +6957,7 @@
       ]
     },
     "F": {
-      "building": "F",
+      "building": "F棟",
       "records": [
         {
           "caseId": "F-0001",
@@ -8082,7 +8082,7 @@
       ]
     },
     "G": {
-      "building": "G",
+      "building": "G棟",
       "records": [
         {
           "caseId": "G-0001",
