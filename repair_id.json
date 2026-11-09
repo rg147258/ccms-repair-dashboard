@@ -932,7 +932,17 @@
     "[主臥/網路]網路孔無法開起": "[Kamar tidur utama/jaringan] Port jaringan tidak dapat dibuka.",
     "[主浴/其他]安裝浴室鐵架": "[Kamar mandi utama/lainnya] Memasang rak besi di kamar mandi.",
     "[主浴/開關切]排風扇未接電": "[Kamar mandi utama/sakelar] Kipas ventilasi belum tersambung listrik.",
-    "[玄關門/其他]大門兒童安全鎖無法發揮作用": "[Pintu masuk/lainnya] Kunci pengaman anak pada pintu utama tidak berfungsi."
+    "[玄關門/其他]大門兒童安全鎖無法發揮作用": "[Pintu masuk/lainnya] Kunci pengaman anak pada pintu utama tidak berfungsi.",
+    "[玄關門/門框]驗進時發現玄關門、陽台門框有刮傷情形": "[Pintu masuk/kusen] Saat pemeriksaan ditemukan goresan pada pintu masuk dan kusen pintu balkon.",
+    "[主浴/浴室門檻]門檻邊角開裂": "[Kamar mandi utama/ambang pintu kamar mandi] Sudut tepi ambang pintu retak.",
+    "[公浴/其他]已入住三天，客浴非常臭，我已在去水位放了隔臭，仍無法解決問題": "[Kamar mandi bersama/lainnya] Sudah menempati unit selama tiga hari, tetapi kamar mandi tamu sangat bau. Penghalang bau telah dipasang pada saluran pembuangan, namun masalah belum teratasi.",
+    "[玄關門/其他]大門內側手把有凹陷痕跡": "[Pintu masuk/lainnya] Gagang di sisi dalam pintu utama memiliki bekas penyok.",
+    "[主浴/馬桶]11／2來修過，今天打開浴廁看地面又積水了，摸進水處濕濕的還在漏水，請儘速處理，謝謝": "[Kamar mandi utama/toilet] Sudah diperbaiki pada 11/2. Hari ini saat kamar mandi dibuka, lantai kembali tergenang. Area saluran masuk air terasa basah dan masih bocor. Mohon segera ditangani. Terima kasih.",
+    "[其他/牆面]B2 [車位已移除]車位後方 牆裂": "[Lainnya/dinding] Dinding di belakang [車位已移除] di B2 retak.",
+    "[玄關門/其他]損壞掉漆": "[Pintu masuk/lainnya] Rusak dan cat terkelupas.",
+    "[主浴/其他]浴室門框及鐵件疑似漏電，有被靜電電到，測電筆也有檢測出來": "[Kamar mandi utama/lainnya] Diduga ada kebocoran listrik pada kusen pintu kamar mandi dan komponen logam. Terasa sengatan seperti listrik statis dan pena penguji listrik juga mendeteksinya.",
+    "[主浴/門框]請看照片": "[Kamar mandi utama/kusen] Silakan lihat foto.",
+    "[玄關門/其他]對講機更新到此畫面，就沒有更進一步": "[Pintu masuk/lainnya] Interkom berhenti pada layar ini setelah pembaruan dan tidak melanjutkan."
   },
   "note": {
     "": "",
@@ -1181,8 +1191,8 @@
     "已請櫻花廠商現場處理，取出異物，測試正常": "Kontraktor Sakura telah diminta menangani di lokasi, mengeluarkan benda asing, dan pengujian menunjukkan kondisi normal.",
     "已請廠商遠端測試正常，致電住戶未接，已留言給住戶確認": "Kontraktor telah diminta melakukan pengujian jarak jauh dan hasilnya normal. Telepon kepada penghuni tidak dijawab; pesan telah ditinggalkan agar penghuni mengonfirmasi.",
     "115/11/03已清潔完成": "115/11/03: pembersihan telah selesai.",
-    "原工種：泥作粉刷": "Jenis pekerjaan asal: pekerjaan pasangan dan plesteran.",
-    "原工種：金屬": "Jenis pekerjaan asal: logam.",
+    "原工種：泥作粉刷": "Jenis pekerjaan semula: pasangan dan plesteran.",
+    "原工種：金屬": "Jenis pekerjaan semula: pekerjaan logam.",
     "11/03已聯絡住戶設計師由設計師自行處理 故先行結案": "11/03: desainer penghuni telah dihubungi dan akan menanganinya sendiri, sehingga kasus ditutup terlebih dahulu.",
     "於11/02號 完成廚房櫃堤調整、廚具下方踢腳板細清": "Pada 11/02, penyesuaian lemari dapur dan pembersihan rinci papan alas di bawah kabinet dapur telah selesai.",
     "已協助拆板，取出廢線、復原完成": "Telah membantu membuka panel, mengeluarkan kabel yang tidak digunakan, dan mengembalikan kondisi semula.",
@@ -1190,7 +1200,11 @@
     "11/05已留言給住戶約時間11/5已完成": "Pada 11/05 telah meninggalkan pesan kepada penghuni untuk menjadwalkan waktu; selesai pada 11/5.",
     "11/05已協助填充螺絲孔，重新上鎖，測試正常": "Pada 11/05 lubang sekrup telah diisi dan sekrup dipasang kembali; hasil pengujian normal.",
     "11/05致電與住戶預約11/7上午9點到府上現勘調整": "Pada 11/05 penghuni ditelepon untuk menjadwalkan pemeriksaan dan penyesuaian di unit pada 11/7 pukul 9 pagi.",
-    "本次服務協助住戶修繕落地窗美容，現場與住戶確認沒問題": "Pada kunjungan ini perbaikan tampilan pintu kaca geser telah dilakukan dan penghuni mengonfirmasi di lokasi bahwa tidak ada masalah."
+    "本次服務協助住戶修繕落地窗美容，現場與住戶確認沒問題": "Pada kunjungan ini perbaikan tampilan pintu kaca geser telah dilakukan dan penghuni mengonfirmasi di lokasi bahwa tidak ada masalah.",
+    "11/06已協助全裝修補清潔完成，鞋櫃修飾蓋已告知住戶是活動式沒問題": "Pada 11/06 pembersihan tambahan untuk pekerjaan interior telah selesai. Penghuni telah diberi tahu bahwa penutup dekoratif lemari sepatu memang dapat dilepas dan tidak bermasalah.",
+    "11/07已到府上協助調整、並告知住戶腳鍊如何調整": "Pada 11/07 penyesuaian telah dilakukan di unit dan penghuni diberi tahu cara menyetel engsel.",
+    "住戶已自行更換，舊品丟掉無法更換新的給他": "Penghuni telah menggantinya sendiri dan membuang barang lama sehingga barang pengganti baru tidak dapat diberikan.",
+    "1F內溝排水清潔通管，測試3F大量灌入泡泡水2F已不會再倒冒": "Saluran pembuangan di lantai 1 telah dibersihkan dan dilancarkan. Pengujian dengan menuangkan banyak air berbusa dari lantai 3 menunjukkan tidak ada lagi aliran balik di lantai 2."
   },
   "trade": {
     "": "",
