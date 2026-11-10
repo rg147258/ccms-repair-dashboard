@@ -19,6 +19,8 @@ a.metric{display:block;text-decoration:none}a.metric:hover,a.building:hover{box-
 @media(max-width:760px){.header-top{align-items:flex-start;flex-wrap:wrap}.building{padding:18px}.pie{width:125px;height:125px}.metric .label{line-height:1.4;min-height:2.8em}}
 @media(max-width:460px){.metrics{gap:10px}.metric{padding:15px}.metric .label{font-size:12px}.metric small{overflow-wrap:anywhere}.pie{width:150px;height:150px}.building .breakdown{grid-template-columns:repeat(2,minmax(0,1fr))}}
 .percentage{font-variant-numeric:tabular-nums;white-space:nowrap}.metric .percentage{font-size:16px}.breakdown .percentage{font-size:14px;color:var(--green)}
+
+#work-analysis{margin-top:36px;border-top:2px solid var(--line);padding-top:28px}.wa-eyebrow{font-size:12px;letter-spacing:.14em;color:var(--green);margin:0 0 5px}.wa-controls{display:flex;gap:12px;flex-wrap:wrap}.wa-controls label{font-size:13px}.wa-top{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin:20px 0}.wa-top>div{padding:18px;background:#e6eee5;border-radius:14px}.wa-top h3{font-size:18px;margin:8px 0}.wa-top strong{font-size:26px}.wa-top small{font-size:13px;font-weight:400}.wa-table{overflow-x:auto;margin-top:16px;border:1px solid var(--line);border-radius:14px;background:white}.wa-table table{border-collapse:collapse;width:100%;min-width:640px;text-align:left;font-size:14px}.wa-table caption{text-align:left;padding:14px;font-weight:650}.wa-table th,.wa-table td{padding:12px 15px;border-top:1px solid var(--line)}.wa-table thead{background:#e8eee5}.wa-bar{display:block;width:150px;background:#edf1ec;height:6px;border-radius:6px;margin-top:7px}.wa-bar i{display:block;height:100%;background:var(--green);border-radius:6px}.wa-method{margin:18px 0;padding:16px;background:#fff;border:1px solid var(--line);border-radius:14px;font-size:13px}.wa-method summary{cursor:pointer;font-weight:650}.wa-summary-heading{margin-top:30px}.wa-buildings{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin-bottom:16px}.wa-buildings article{padding:22px;background:white;border:1px solid var(--line);border-radius:16px}.wa-buildings h3{margin:0 0 10px;font-size:22px}.wa-buildings h3 span{float:right;font-size:14px;color:var(--open);padding-top:5px}.wa-buildings p{font-size:14px}.wa-focus{font-weight:650;color:var(--green)}.wa-buildings a{display:inline-block;margin-top:12px;color:var(--green)}@media(max-width:760px){#work-analysis>.section-head{display:block}.wa-controls{margin-top:16px}.wa-top{grid-template-columns:1fr}.wa-buildings{grid-template-columns:1fr}.wa-buildings h3 span{float:none;display:block}}
 </style>
 <script src="./i18n.js"></script>
 <script src="./repair-data.js"></script>
@@ -33,8 +35,9 @@ a.metric{display:block;text-decoration:none}a.metric:hover,a.building:hover{box-
 <div class="empty" id="empty"><div class="empty-icon" aria-hidden="true"><svg width="33" height="33" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="5" y="5" width="22" height="23" rx="3"/><path d="M11 3v5m10-5v5M5 12h22m-16 6h3m4 0h3m-10 5h3"/></svg></div><h3>資料確認後，進度就會在這裡。</h3><p>目前沒有已核實的統計可供發布。完成資料與狀態規則查核後，再更新各棟彙總。</p><span class="badge">尚無資料 · 不以示範數字代替</span></div>
 <div id="buildings" class="buildings"></div><div class="legend" id="legend" hidden><span><i class="swatch" style="background:var(--open)"></i>未處理</span><span><i class="swatch" style="background:var(--work)"></i>處理中</span><span><i class="swatch" style="background:var(--done)"></i>已完成</span></div>
 </section><div class="rules"><p>點選棟別卡片查看公開修繕明細。<br><span id="rules-text">狀態統計規則待核定；尚未使用日期推算狀態。</span> 資料為查核時間的快照，並非即時進度。</p><span class="pill" id="rule-state">統計規則待核定</span></div>
-</main><footer class="wrap foot"><p>修繕統計 · 公開彙總</p><p>公開明細已遮除個人與門禁資訊</p></footer>
+<section id="work-analysis" data-no-i18n aria-label="工項分析與各棟修繕重點"></section></main><footer class="wrap foot"><p>修繕統計 · 公開彙總</p><p>公開明細已遮除個人與門禁資訊</p></footer>
 
+<script src="./work-analysis.js"></script>
 <script>
 'use strict';
 (async()=>{
@@ -43,6 +46,7 @@ const keys=(o,allowed)=>o&&typeof o==='object'&&!Array.isArray(o)&&Object.keys(o
 const validTime=v=>typeof v==='string'&&/^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}(?:Z|[+-]\d{2}:\d{2})$/.test(v)&&Number.isFinite(Date.parse(v));
 let data;
 try{const response=await fetch('./repair_public_data.json',{cache:'no-store'});if(!response.ok)throw Error();const publicData=RepairData.normalize(await response.json());
+ window.workAnalysisData=publicData;
  if(!keys(publicData,['aggregates','details','verifiedAt'])||!keys(publicData.aggregates,[...'ABCDEFG'])||!validTime(publicData.verifiedAt))throw Error();
  data={schemaVersion:'1.1',statusRule:'approved_explicit',buildings:Object.entries(publicData.aggregates).map(([letter,a])=>({building:letter+'棟',...a,verifiedAt:publicData.details[letter].verifiedAt||publicData.verifiedAt}))};
  if(!keys(data,['schemaVersion','statusRule','buildings'])||data.schemaVersion!=='1.1'||!Array.isArray(data.buildings)||data.buildings.length>100)throw Error();
@@ -72,6 +76,7 @@ function render(selected){$('buildings').replaceChildren();for(const b of rows.f
  const checked=nodeTime(b.verifiedAt);if(RepairData.mismatches.length)checked.textContent='待重新查核';card.append(top,bar,details,checked);$('buildings').append(card);}}
 function nodeTime(value){const p=document.createElement('p');p.className='sub';p.textContent='查核：'+dateFormat.format(new Date(value))+'（台北）';return p;}
 $('building-filter').addEventListener('change',e=>render(e.target.value));render('');
+WorkAnalysis.mount(window.workAnalysisData);
 })();
 </script>
 </body></html>
