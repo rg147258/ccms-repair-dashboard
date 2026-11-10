@@ -8,24 +8,24 @@
       "needs_review": 0
     },
     "B": {
-      "total": 150,
-      "open": 23,
-      "working": 3,
-      "completed": 124,
+      "total": 151,
+      "open": 22,
+      "working": 4,
+      "completed": 125,
       "needs_review": 0
     },
     "C": {
-      "total": 104,
-      "open": 1,
-      "working": 15,
-      "completed": 88,
+      "total": 105,
+      "open": 2,
+      "working": 11,
+      "completed": 92,
       "needs_review": 0
     },
     "D": {
       "total": 232,
       "open": 24,
-      "working": 16,
-      "completed": 192,
+      "working": 14,
+      "completed": 194,
       "needs_review": 0
     },
     "E": {
@@ -43,8 +43,8 @@
       "needs_review": 0
     },
     "G": {
-      "total": 156,
-      "open": 16,
+      "total": 157,
+      "open": 17,
       "working": 19,
       "completed": 121,
       "needs_review": 0
@@ -2076,8 +2076,8 @@
           "unit": "B1",
           "floor": "3F",
           "trade": "弱電",
-          "status": "處理中",
-          "completeDate": ""
+          "status": "已完成",
+          "completeDate": "2026/11/07"
         },
         {
           "caseId": "B-0146",
@@ -2096,7 +2096,7 @@
           "unit": "B1",
           "floor": "4F",
           "trade": "門框扇",
-          "status": "未處理",
+          "status": "處理中",
           "completeDate": ""
         },
         {
@@ -2126,6 +2126,16 @@
           "unit": "B3",
           "floor": "14F",
           "trade": "衛浴設備",
+          "status": "處理中",
+          "completeDate": ""
+        },
+        {
+          "caseId": "B-0151",
+          "description": "[臥室一/其他]主臥門擋脫落",
+          "note": "",
+          "unit": "B2",
+          "floor": "10F",
+          "trade": "門框扇",
           "status": "未處理",
           "completeDate": ""
         }
@@ -3089,8 +3099,8 @@
           "floor": "06F",
           "description": "[臥室一/門扇]底部門縫過窄，開關門會卡卡的不順",
           "trade": "門框扇",
-          "status": "處理中",
-          "completeDate": "",
+          "status": "已完成",
+          "completeDate": "2026/11/04",
           "note": "",
           "unit": "C1"
         },
@@ -3099,8 +3109,8 @@
           "floor": "06F",
           "description": "[臥室二/門扇]底部門縫過窄，開關門會卡卡的不順",
           "trade": "門框扇",
-          "status": "處理中",
-          "completeDate": "",
+          "status": "已完成",
+          "completeDate": "2026/11/04",
           "note": "",
           "unit": "C1"
         },
@@ -3109,8 +3119,8 @@
           "floor": "06F",
           "description": "[廚房/門扇]底部門縫過窄，開關門會卡卡的不順\n（目前壓條還沒黏上去，因為黏上去之後就打不開了）",
           "trade": "門框扇",
-          "status": "處理中",
-          "completeDate": "",
+          "status": "已完成",
+          "completeDate": "2026/11/04",
           "note": "",
           "unit": "C1"
         },
@@ -3167,11 +3177,21 @@
         {
           "caseId": "C-0104",
           "description": "[主浴/開關切]排風扇未接電",
-          "note": "",
+          "note": "現場電箱開關未開啟，功能測試正常",
           "unit": "C7",
           "floor": "4F",
           "trade": "水電",
-          "status": "處理中",
+          "status": "已完成",
+          "completeDate": "2026/11/09"
+        },
+        {
+          "caseId": "C-0105",
+          "description": "[前陽/清潔]陽台磁磚跑出白色的污漬",
+          "note": "",
+          "unit": "C6",
+          "floor": "15F",
+          "trade": "磁磚",
+          "status": "未處理",
           "completeDate": ""
         }
       ]
@@ -3294,7 +3314,7 @@
           "floor": "2F",
           "description": "前陽台鋁企口維修孔框生鏽",
           "trade": "其他",
-          "status": "處理中",
+          "status": "已完成",
           "completeDate": "",
           "note": "[門禁資訊已移除]   鋁企口框備料中11/9前完成",
           "unit": "D2"
@@ -4754,7 +4774,7 @@
           "floor": "13F",
           "description": "工作陽台鋁企口框生鏽換新",
           "trade": "其他",
-          "status": "處理中",
+          "status": "已完成",
           "completeDate": "",
           "note": "[門禁資訊已移除]鋁企口框備料中11/9前完成",
           "unit": "D3"
@@ -5421,7 +5441,7 @@
         },
         {
           "caseId": "D-0229",
-          "floor": "06F",
+          "floor": "6F",
           "description": "[主臥/其他]主臥室與客房 兩個緊急壓扣都沒功能\n1.室內不會響\n2.管理室也沒有收到通知",
           "trade": "水電",
           "status": "處理中",
@@ -9713,9 +9733,19 @@
           "trade": "弱電",
           "status": "未處理",
           "completeDate": ""
+        },
+        {
+          "caseId": "G-0158",
+          "description": "[臥室一/更換]整理的時候發現  因為已經完成細清 窗戶終於重見光明  從側面斜角度看下去 發現窗戶玻璃外有一刮痕\n因為驗屋的時候沒有注意到  現在才發現  如果有可能可否更換這片玻璃 (如果只需要美容也是OK的 但因為在外面 不是室內 施工人員安全考量  或許更換比較容易) \n如果有需要我也願意一起分攤錢 因為目前不會影響使用但影響美觀及日後擔心 熱漲冷縮裂開 再麻煩告知  ~~謝謝",
+          "note": "原工種：玻璃",
+          "unit": "G8",
+          "floor": "10F",
+          "trade": "其他",
+          "status": "未處理",
+          "completeDate": ""
         }
       ]
     }
   },
-  "verifiedAt": "2026-11-09T02:07:56Z"
+  "verifiedAt": "2026-11-10T02:25:24Z"
 }

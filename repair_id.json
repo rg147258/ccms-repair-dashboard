@@ -942,7 +942,10 @@
     "[玄關門/其他]損壞掉漆": "[Pintu masuk/lainnya] Rusak dan cat terkelupas.",
     "[主浴/其他]浴室門框及鐵件疑似漏電，有被靜電電到，測電筆也有檢測出來": "[Kamar mandi utama/lainnya] Diduga ada kebocoran listrik pada kusen pintu kamar mandi dan komponen logam. Terasa sengatan seperti listrik statis dan pena penguji listrik juga mendeteksinya.",
     "[主浴/門框]請看照片": "[Kamar mandi utama/kusen] Silakan lihat foto.",
-    "[玄關門/其他]對講機更新到此畫面，就沒有更進一步": "[Pintu masuk/lainnya] Interkom berhenti pada layar ini setelah pembaruan dan tidak melanjutkan."
+    "[玄關門/其他]對講機更新到此畫面，就沒有更進一步": "[Pintu masuk/lainnya] Interkom berhenti pada layar ini setelah pembaruan dan tidak melanjutkan.",
+    "[臥室一/其他]主臥門擋脫落": "[Kamar tidur pertama/lainnya] Penahan pintu kamar tidur utama terlepas.",
+    "[前陽/清潔]陽台磁磚跑出白色的污漬": "[Balkon depan/pembersihan] Muncul noda putih pada ubin balkon.",
+    "[臥室一/更換]整理的時候發現  因為已經完成細清 窗戶終於重見光明  從側面斜角度看下去 發現窗戶玻璃外有一刮痕\n因為驗屋的時候沒有注意到  現在才發現  如果有可能可否更換這片玻璃 (如果只需要美容也是OK的 但因為在外面 不是室內 施工人員安全考量  或許更換比較容易) \n如果有需要我也願意一起分攤錢 因為目前不會影響使用但影響美觀及日後擔心 熱漲冷縮裂開 再麻煩告知  ~~謝謝": "[Kamar tidur pertama/penggantian] Saat merapikan, setelah pembersihan menyeluruh selesai dan jendela akhirnya terlihat jelas, ditemukan goresan di bagian luar kaca ketika dilihat dari sudut miring.\nHal ini tidak diperhatikan saat pemeriksaan unit dan baru terlihat sekarang. Jika memungkinkan, apakah kaca ini bisa diganti? Perbaikan tampilan saja juga boleh, tetapi karena goresan berada di sisi luar, bukan di dalam, penggantian mungkin lebih mudah dengan mempertimbangkan keselamatan pekerja.\nJika diperlukan, saya juga bersedia ikut menanggung biayanya. Saat ini tidak mengganggu penggunaan, tetapi mengganggu penampilan dan saya khawatir kaca dapat retak kelak akibat pemuaian dan penyusutan karena perubahan suhu. Mohon informasinya. Terima kasih."
   },
   "note": {
     "": "",
@@ -1204,7 +1207,9 @@
     "11/06已協助全裝修補清潔完成，鞋櫃修飾蓋已告知住戶是活動式沒問題": "Pada 11/06 pembersihan tambahan untuk pekerjaan interior telah selesai. Penghuni telah diberi tahu bahwa penutup dekoratif lemari sepatu memang dapat dilepas dan tidak bermasalah.",
     "11/07已到府上協助調整、並告知住戶腳鍊如何調整": "Pada 11/07 penyesuaian telah dilakukan di unit dan penghuni diberi tahu cara menyetel engsel.",
     "住戶已自行更換，舊品丟掉無法更換新的給他": "Penghuni telah menggantinya sendiri dan membuang barang lama sehingga barang pengganti baru tidak dapat diberikan.",
-    "1F內溝排水清潔通管，測試3F大量灌入泡泡水2F已不會再倒冒": "Saluran pembuangan di lantai 1 telah dibersihkan dan dilancarkan. Pengujian dengan menuangkan banyak air berbusa dari lantai 3 menunjukkan tidak ada lagi aliran balik di lantai 2."
+    "1F內溝排水清潔通管，測試3F大量灌入泡泡水2F已不會再倒冒": "Saluran pembuangan di lantai 1 telah dibersihkan dan dilancarkan. Pengujian dengan menuangkan banyak air berbusa dari lantai 3 menunjukkan tidak ada lagi aliran balik di lantai 2.",
+    "原工種：玻璃": "Jenis pekerjaan semula: kaca.",
+    "現場電箱開關未開啟，功能測試正常": "Sakelar pada panel listrik di lokasi belum dinyalakan; hasil pengujian fungsi normal."
   },
   "trade": {
     "": "",
