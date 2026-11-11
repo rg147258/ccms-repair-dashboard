@@ -9,44 +9,44 @@
     },
     "B": {
       "total": 151,
-      "open": 22,
-      "working": 4,
-      "completed": 125,
+      "open": 19,
+      "working": 5,
+      "completed": 127,
       "needs_review": 0
     },
     "C": {
-      "total": 105,
-      "open": 2,
+      "total": 106,
+      "open": 3,
       "working": 11,
       "completed": 92,
       "needs_review": 0
     },
     "D": {
       "total": 232,
-      "open": 24,
-      "working": 14,
-      "completed": 194,
+      "open": 22,
+      "working": 8,
+      "completed": 202,
       "needs_review": 0
     },
     "E": {
-      "total": 152,
-      "open": 9,
+      "total": 154,
+      "open": 11,
       "working": 4,
       "completed": 139,
       "needs_review": 0
     },
     "F": {
-      "total": 112,
+      "total": 114,
       "open": 0,
       "working": 3,
-      "completed": 109,
+      "completed": 111,
       "needs_review": 0
     },
     "G": {
       "total": 157,
-      "open": 17,
-      "working": 19,
-      "completed": 121,
+      "open": 2,
+      "working": 13,
+      "completed": 142,
       "needs_review": 0
     }
   },
@@ -2106,8 +2106,8 @@
           "unit": "B6",
           "floor": "7F",
           "trade": "石材",
-          "status": "未處理",
-          "completeDate": ""
+          "status": "已完成",
+          "completeDate": "2026/11/10"
         },
         {
           "caseId": "B-0149",
@@ -2116,8 +2116,8 @@
           "unit": "B6",
           "floor": "7F",
           "trade": "石材",
-          "status": "未處理",
-          "completeDate": ""
+          "status": "已完成",
+          "completeDate": "2026/11/10"
         },
         {
           "caseId": "B-0150",
@@ -2136,7 +2136,7 @@
           "unit": "B2",
           "floor": "10F",
           "trade": "門框扇",
-          "status": "未處理",
+          "status": "處理中",
           "completeDate": ""
         }
       ]
@@ -3193,6 +3193,16 @@
           "trade": "磁磚",
           "status": "未處理",
           "completeDate": ""
+        },
+        {
+          "caseId": "C-0106",
+          "description": "[前陽/欄杆玻璃]欄杆玻璃鬆動",
+          "note": "",
+          "unit": "C2",
+          "floor": "13F",
+          "trade": "鋁窗及玻璃",
+          "status": "未處理",
+          "completeDate": ""
         }
       ]
     },
@@ -4024,7 +4034,7 @@
           "floor": "7F",
           "description": "3間浴室檯面打磨",
           "trade": "其他",
-          "status": "未處理",
+          "status": "已完成",
           "completeDate": "",
           "note": "屋主說要等裝修完成再通知處理",
           "unit": "D2"
@@ -4524,7 +4534,7 @@
           "floor": "11F",
           "description": "主浴門框貼皮破損",
           "trade": "門框扇",
-          "status": "處理中",
+          "status": "已完成",
           "completeDate": "",
           "note": "10/30工班來現場屋主不在改約11/6",
           "unit": "D2"
@@ -5274,8 +5284,8 @@
           "floor": "12F",
           "description": "工陽地板排水地排損壞",
           "trade": "水電",
-          "status": "處理中",
-          "completeDate": "",
+          "status": "已完成",
+          "completeDate": "2026/11/10",
           "note": "10/29已請屋主排可進戶內修繕時間",
           "unit": "D3"
         },
@@ -5284,8 +5294,8 @@
           "floor": "12F",
           "description": "廚房壁磚目前僅用批土補起來而已，現在看批土邊邊沒有完全黏著",
           "trade": "磁磚",
-          "status": "處理中",
-          "completeDate": "",
+          "status": "已完成",
+          "completeDate": "2026/11/10",
           "note": "10/29已請屋主排可進戶內修繕時間",
           "unit": "D3"
         },
@@ -5304,8 +5314,8 @@
           "floor": "6F",
           "description": "主浴美容1.主浴門框矽利康凹凸不平有洞，需補強。\n2.主浴門下方的止水條會卡在門檻外，這樣是否正常呢？謝謝",
           "trade": "門框扇",
-          "status": "處理中",
-          "completeDate": "",
+          "status": "已完成",
+          "completeDate": "2026/11/10",
           "note": "復發；矽利康同R79(已完成OK)，止水條為新問題",
           "unit": "D5"
         },
@@ -5344,7 +5354,7 @@
           "floor": "9F",
           "description": "廚房、主浴、客浴木門未裝",
           "trade": "",
-          "status": "處理中",
+          "status": "已完成",
           "completeDate": "",
           "note": "10/30廠商來手受傷無法安裝，11/6安裝完成",
           "unit": "D3"
@@ -5444,8 +5454,8 @@
           "floor": "6F",
           "description": "[主臥/其他]主臥室與客房 兩個緊急壓扣都沒功能\n1.室內不會響\n2.管理室也沒有收到通知",
           "trade": "水電",
-          "status": "處理中",
-          "completeDate": "",
+          "status": "已完成",
+          "completeDate": "2026/11/10",
           "note": "屋主水電裝修中自行拆除，待屋主安裝回後再測試",
           "unit": "D2"
         },
@@ -5454,8 +5464,8 @@
           "floor": "2F",
           "description": "[主浴/淋浴門檻]主衛浴門檻裂",
           "trade": "石材",
-          "status": "處理中",
-          "completeDate": "",
+          "status": "已完成",
+          "completeDate": "2026/11/10",
           "note": "",
           "unit": "D3"
         },
@@ -5506,7 +5516,7 @@
           "unit": "D3",
           "floor": "8F",
           "trade": "門框扇",
-          "status": "未處理",
+          "status": "處理中",
           "completeDate": ""
         },
         {
@@ -7043,6 +7053,26 @@
           "trade": "其他",
           "status": "未處理",
           "completeDate": ""
+        },
+        {
+          "caseId": "E-0153",
+          "description": "[公浴/其他]「主臥浴室」裡淋浴門地板的私立康裡面有水泡，「客浴的淋浴門地板」的私立康裡面外面都有水泡，等於2間浴室淋浴門內外地板的私立康都有好幾個水泡，麻煩處理，謝謝",
+          "note": "",
+          "unit": "E3",
+          "floor": "7F",
+          "trade": "衛浴設備",
+          "status": "未處理",
+          "completeDate": ""
+        },
+        {
+          "caseId": "E-0154",
+          "description": "[主浴/龍頭]主臥浴室浴缸龍頭漏水",
+          "note": "",
+          "unit": "E1",
+          "floor": "15F",
+          "trade": "衛浴設備",
+          "status": "未處理",
+          "completeDate": ""
         }
       ]
     },
@@ -8168,6 +8198,26 @@
           "completeDate": "2026/11/06",
           "note": "11/06已協助全裝修補清潔完成，鞋櫃修飾蓋已告知住戶是活動式沒問題",
           "unit": "F2"
+        },
+        {
+          "caseId": "F-0119",
+          "description": "[前陽/開關切]陽台燈無法關閉，跟相對應開關無呼應",
+          "note": "已留言給住戶，住戶已了解",
+          "unit": "F6",
+          "floor": "2F",
+          "trade": "水電",
+          "status": "已完成",
+          "completeDate": "2026/11/11"
+        },
+        {
+          "caseId": "F-0120",
+          "description": "[玄關門/開關切]玄關開關按鍵開關不順，容易脫落，玄關燈閃爍",
+          "note": "以先留言給住戶，請住戶裝修廠商先行查看",
+          "unit": "F6",
+          "floor": "2F",
+          "trade": "水電",
+          "status": "已完成",
+          "completeDate": "2026/11/11"
         }
       ]
     },
@@ -9249,9 +9299,9 @@
           "floor": "8F",
           "description": "室內地板磁磚裂",
           "trade": "",
-          "status": "未處理",
+          "status": "處理中",
           "completeDate": "",
-          "note": "",
+          "note": "已約三次住戶皆改時間",
           "unit": "G6"
         },
         {
@@ -9259,9 +9309,9 @@
           "floor": "8F",
           "description": "浴室乾溼分離會滲水",
           "trade": "",
-          "status": "未處理",
+          "status": "處理中",
           "completeDate": "",
-          "note": "",
+          "note": "已約三次住戶皆改時間",
           "unit": "G6"
         },
         {
@@ -9289,7 +9339,7 @@
           "floor": "9F",
           "description": "主浴上櫃側邊插座後方板未密合",
           "trade": "",
-          "status": "處理中",
+          "status": "已完成",
           "completeDate": "",
           "note": "[門禁資訊已移除]",
           "unit": "G2"
@@ -9319,7 +9369,7 @@
           "floor": "3F",
           "description": "廁所馬桶噴水停不下來",
           "trade": "",
-          "status": "未處理",
+          "status": "已完成",
           "completeDate": "",
           "note": "",
           "unit": "G1"
@@ -9399,7 +9449,7 @@
           "floor": "4F",
           "description": "大門密合不不確實，造成門鎖開啟時會發出異常的聲音",
           "trade": "",
-          "status": "處理中",
+          "status": "已完成",
           "completeDate": "",
           "note": "安排11/7廠商修繕",
           "unit": "G5"
@@ -9409,7 +9459,7 @@
           "floor": "4F",
           "description": "近兩周不定時會從電箱傳來咚咚咚的聲音",
           "trade": "",
-          "status": "處理中",
+          "status": "已完成",
           "completeDate": "",
           "note": "",
           "unit": "G5"
@@ -9419,7 +9469,7 @@
           "floor": "14F",
           "description": "主、客浴下櫃門片高低差調整",
           "trade": "",
-          "status": "處理中",
+          "status": "已完成",
           "completeDate": "",
           "note": "",
           "unit": "G1"
@@ -9439,7 +9489,7 @@
           "floor": "14F",
           "description": "主浴壁掛架鎖點重新美容",
           "trade": "",
-          "status": "處理中",
+          "status": "已完成",
           "completeDate": "",
           "note": "",
           "unit": "G1"
@@ -9449,7 +9499,7 @@
           "floor": "14F",
           "description": "廚具龍頭未密合調整",
           "trade": "",
-          "status": "處理中",
+          "status": "已完成",
           "completeDate": "",
           "note": "",
           "unit": "G1"
@@ -9469,7 +9519,7 @@
           "floor": "14F",
           "description": "缺陽台活動置物架、掃除壁掛架",
           "trade": "",
-          "status": "處理中",
+          "status": "已完成",
           "completeDate": "",
           "note": "",
           "unit": "G1"
@@ -9489,7 +9539,7 @@
           "floor": "14F",
           "description": "主浴櫃內清潔；龍頭沒水",
           "trade": "",
-          "status": "處理中",
+          "status": "已完成",
           "completeDate": "",
           "note": "",
           "unit": "G1"
@@ -9499,7 +9549,7 @@
           "floor": "14F",
           "description": "馬桶新故障更換(客浴)",
           "trade": "",
-          "status": "處理中",
+          "status": "已完成",
           "completeDate": "",
           "note": "",
           "unit": "G1"
@@ -9539,9 +9589,9 @@
           "floor": "08F",
           "description": "[其他/牆面油漆]窗邊油漆受損",
           "trade": "油漆",
-          "status": "未處理",
+          "status": "處理中",
           "completeDate": "",
-          "note": "",
+          "note": "同上一項",
           "unit": "G8"
         },
         {
@@ -9549,9 +9599,9 @@
           "floor": "08F",
           "description": "[其他/牆面油漆]窗邊油漆受損",
           "trade": "油漆",
-          "status": "未處理",
+          "status": "處理中",
           "completeDate": "",
-          "note": "",
+          "note": "自行施工造成需報價維修",
           "unit": "G8"
         },
         {
@@ -9569,7 +9619,7 @@
           "floor": "9F",
           "description": "[玄關門/門扇]*10/13交屋，11/1今來看，大門從外面看，有一處明顯被撞到刮傷，也有其他的髒污，請幫忙填補恢復完成。\n*有跟經理反應，經理也陪同上去看，懷疑是被旁邊兩戶施工時師傅撞到，也請經聯繫旁邊兩戶鄰居如果施工要小心，禁止碰到大門",
           "trade": "門框扇",
-          "status": "未處理",
+          "status": "已完成",
           "completeDate": "",
           "note": "",
           "unit": "G2"
@@ -9599,7 +9649,7 @@
           "floor": "2F",
           "description": "[其他/同意過戶撥款，交屋時複驗]監視器靠近大門的監視器故障無法使用看不到視訊也沒有聲音",
           "trade": "其他",
-          "status": "未處理",
+          "status": "已完成",
           "completeDate": "",
           "note": "",
           "unit": "G5"
@@ -9609,7 +9659,7 @@
           "floor": "3F",
           "description": "[主臥/門框]主臥室門框左右二側有瑕疵",
           "trade": "門框扇",
-          "status": "處理中",
+          "status": "已完成",
           "completeDate": "",
           "note": "",
           "unit": "G3"
@@ -9619,7 +9669,7 @@
           "floor": "3F",
           "description": "[臥室一/框扇]1、次臥窗溝變形\n2、主臥、次臥門框瑕疵\n    （以上皆與[人員已移除]現場會勘）",
           "trade": "鋁窗及玻璃",
-          "status": "處理中",
+          "status": "已完成",
           "completeDate": "",
           "note": "",
           "unit": "G3"
@@ -9629,7 +9679,7 @@
           "floor": "9F",
           "description": "[公浴/浴櫃]1.浴室上方的插座面板未密合，請重新處理完整，避免日後碰到水進去就會變形巧起\n*洗手水盆有側面的填膠有縫隙，請重新補平",
           "trade": "衛浴設備",
-          "status": "處理中",
+          "status": "已完成",
           "completeDate": "",
           "note": "",
           "unit": "G2"
@@ -9669,7 +9719,7 @@
           "floor": "5F",
           "description": "[客廳/牆面油漆]這陣子鄰居都在施工 \n然後牆壁就出現了裂縫 ",
           "trade": "油漆",
-          "status": "未處理",
+          "status": "已完成",
           "completeDate": "",
           "note": "",
           "unit": "G7"
@@ -9679,7 +9729,7 @@
           "floor": "5F",
           "description": "[客廳/牆面油漆]這陣子鄰居都在施工 \n然後牆壁就出現了裂縫 \n",
           "trade": "油漆",
-          "status": "未處理",
+          "status": "已完成",
           "completeDate": "",
           "note": "",
           "unit": "G7"
@@ -9687,11 +9737,11 @@
         {
           "caseId": "G-0153",
           "description": "[其他/清潔]一樓信箱被刮很深一道 掉漆",
-          "note": "",
+          "note": "此為公設缺失，後續會一同安排廠商處理",
           "unit": "G3",
           "floor": "4F",
           "trade": "其他",
-          "status": "未處理",
+          "status": "處理中",
           "completeDate": ""
         },
         {
@@ -9701,7 +9751,7 @@
           "unit": "G1",
           "floor": "2F",
           "trade": "其他",
-          "status": "未處理",
+          "status": "已完成",
           "completeDate": ""
         },
         {
@@ -9711,7 +9761,7 @@
           "unit": "G6",
           "floor": "9F",
           "trade": "水電",
-          "status": "未處理",
+          "status": "已完成",
           "completeDate": ""
         },
         {
@@ -9721,7 +9771,7 @@
           "unit": "G6",
           "floor": "9F",
           "trade": "門框扇",
-          "status": "未處理",
+          "status": "已完成",
           "completeDate": ""
         },
         {
@@ -9731,21 +9781,21 @@
           "unit": "G5",
           "floor": "11F",
           "trade": "弱電",
-          "status": "未處理",
+          "status": "已完成",
           "completeDate": ""
         },
         {
           "caseId": "G-0158",
           "description": "[臥室一/更換]整理的時候發現  因為已經完成細清 窗戶終於重見光明  從側面斜角度看下去 發現窗戶玻璃外有一刮痕\n因為驗屋的時候沒有注意到  現在才發現  如果有可能可否更換這片玻璃 (如果只需要美容也是OK的 但因為在外面 不是室內 施工人員安全考量  或許更換比較容易) \n如果有需要我也願意一起分攤錢 因為目前不會影響使用但影響美觀及日後擔心 熱漲冷縮裂開 再麻煩告知  ~~謝謝",
-          "note": "原工種：玻璃",
+          "note": "原工種：玻璃\n已聯絡玻璃廠商製料",
           "unit": "G8",
           "floor": "10F",
           "trade": "其他",
-          "status": "未處理",
+          "status": "處理中",
           "completeDate": ""
         }
       ]
     }
   },
-  "verifiedAt": "2026-11-10T02:25:24Z"
+  "verifiedAt": "2026-11-11T04:37:19Z"
 }
