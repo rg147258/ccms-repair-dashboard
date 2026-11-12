@@ -950,7 +950,11 @@
     "[公浴/其他]「主臥浴室」裡淋浴門地板的私立康裡面有水泡，「客浴的淋浴門地板」的私立康裡面外面都有水泡，等於2間浴室淋浴門內外地板的私立康都有好幾個水泡，麻煩處理，謝謝": "[Kamar mandi bersama/lainnya] Terdapat gelembung di dalam silikon pada lantai dekat pintu pancuran kamar mandi utama. Di kamar mandi tamu, gelembung terdapat di dalam dan di permukaan silikon pada lantai dekat pintu pancuran. Jadi, silikon pada lantai di sisi dalam dan luar pintu pancuran kedua kamar mandi memiliki beberapa gelembung. Mohon ditangani. Terima kasih.",
     "[主浴/龍頭]主臥浴室浴缸龍頭漏水": "[Kamar mandi utama/keran] Keran bak mandi di kamar mandi utama bocor.",
     "[前陽/開關切]陽台燈無法關閉，跟相對應開關無呼應": "[Balkon depan/sakelar] Lampu balkon tidak dapat dimatikan dan tidak merespons sakelar yang sesuai.",
-    "[玄關門/開關切]玄關開關按鍵開關不順，容易脫落，玄關燈閃爍": "[Area pintu masuk/sakelar] Tombol sakelar di area pintu masuk tidak lancar dan mudah terlepas; lampu area pintu masuk berkedip."
+    "[玄關門/開關切]玄關開關按鍵開關不順，容易脫落，玄關燈閃爍": "[Area pintu masuk/sakelar] Tombol sakelar di area pintu masuk tidak lancar dan mudah terlepas; lampu area pintu masuk berkedip.",
+    "[公浴/壁磚]第一張圖: 清洗完客浴之後一段時間，在淋浴間圈起的交縫處，會慢慢滲出水滴往地板流，需補強防水或填縫\n第二章圖: 客浴的地板磁磚填縫處有凹洞（在門口處附近)，需填補縫隙": "[Kamar mandi bersama/ubin dinding] Foto pertama: Beberapa waktu setelah kamar mandi tamu dibersihkan, tetesan air perlahan merembes dari sambungan yang dilingkari di area pancuran lalu mengalir ke lantai. Lapisan kedap air atau pengisian nat perlu diperkuat.\nFoto kedua: Terdapat lubang pada nat ubin lantai kamar mandi tamu di dekat pintu masuk; celah tersebut perlu diisi.",
+    "[主浴/其他]昨天前天外勞來修理浴室漏水的問題，結果發現敲破了好幾塊地磚。": "[Kamar mandi utama/lainnya] Pekerja asing datang kemarin dan sehari sebelumnya untuk memperbaiki kebocoran kamar mandi. Setelah itu ditemukan beberapa ubin lantai telah pecah.",
+    "[主浴/龍頭]主衛浴浴缸水龍頭出水量較小": "[Kamar mandi utama/keran] Aliran air dari keran bak mandi di kamar mandi utama terlalu kecil.",
+    "[主臥/插座]主臥插座沒有電": "[Kamar tidur utama/stopkontak] Stopkontak di kamar tidur utama tidak memiliki aliran listrik."
   },
   "note": {
     "": "",
@@ -1221,7 +1225,9 @@
     "此為公設缺失，後續會一同安排廠商處理": "Ini merupakan kerusakan fasilitas bersama; penanganannya akan dijadwalkan bersama kontraktor.",
     "原工種：玻璃\n已聯絡玻璃廠商製料": "Jenis pekerjaan semula: kaca.\nKontraktor kaca telah dihubungi untuk menyiapkan material.",
     "已留言給住戶，住戶已了解": "Pesan telah ditinggalkan untuk penghuni dan penghuni sudah memahami.",
-    "以先留言給住戶，請住戶裝修廠商先行查看": "Pesan telah ditinggalkan terlebih dahulu untuk penghuni agar kontraktor interior penghuni memeriksanya terlebih dahulu."
+    "以先留言給住戶，請住戶裝修廠商先行查看": "Pesan telah ditinggalkan terlebih dahulu untuk penghuni agar kontraktor interior penghuni memeriksanya terlebih dahulu.",
+    "類型:石材\n已協助清潔白華，滲水抹縫區清除，重新填補": "Jenis: batu.\nEndapan putih telah dibersihkan; nat di area rembesan air dibersihkan dan diisi ulang.",
+    "類型:水電\n內有白泡棉異物已取出，測試灌水正常": "Jenis: air dan listrik.\nBenda asing berupa busa putih di dalam telah dikeluarkan; pengujian dengan mengalirkan air menunjukkan kondisi normal."
   },
   "trade": {
     "": "",

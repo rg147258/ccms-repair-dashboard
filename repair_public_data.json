@@ -1,8 +1,8 @@
 {
   "aggregates": {
     "A": {
-      "total": 57,
-      "open": 0,
+      "total": 58,
+      "open": 1,
       "working": 3,
       "completed": 54,
       "needs_review": 0
@@ -15,17 +15,17 @@
       "needs_review": 0
     },
     "C": {
-      "total": 106,
-      "open": 3,
+      "total": 107,
+      "open": 4,
       "working": 11,
       "completed": 92,
       "needs_review": 0
     },
     "D": {
-      "total": 232,
-      "open": 22,
-      "working": 8,
-      "completed": 202,
+      "total": 233,
+      "open": 21,
+      "working": 9,
+      "completed": 203,
       "needs_review": 0
     },
     "E": {
@@ -38,13 +38,13 @@
     "F": {
       "total": 114,
       "open": 0,
-      "working": 3,
-      "completed": 111,
+      "working": 1,
+      "completed": 113,
       "needs_review": 0
     },
     "G": {
-      "total": 157,
-      "open": 2,
+      "total": 158,
+      "open": 3,
       "working": 13,
       "completed": 142,
       "needs_review": 0
@@ -623,6 +623,16 @@
           "completeDate": "2026/11/05",
           "note": "11/05已留言給住戶約時間11/5已完成",
           "unit": "A1"
+        },
+        {
+          "caseId": "A-0061",
+          "description": "[公浴/壁磚]第一張圖: 清洗完客浴之後一段時間，在淋浴間圈起的交縫處，會慢慢滲出水滴往地板流，需補強防水或填縫\n第二章圖: 客浴的地板磁磚填縫處有凹洞（在門口處附近)，需填補縫隙",
+          "note": "",
+          "unit": "A1",
+          "floor": "14F",
+          "trade": "磁磚",
+          "status": "未處理",
+          "completeDate": ""
         }
       ]
     },
@@ -3203,6 +3213,16 @@
           "trade": "鋁窗及玻璃",
           "status": "未處理",
           "completeDate": ""
+        },
+        {
+          "caseId": "C-0107",
+          "description": "[主浴/其他]昨天前天外勞來修理浴室漏水的問題，結果發現敲破了好幾塊地磚。",
+          "note": "",
+          "unit": "C7",
+          "floor": "10F",
+          "trade": "衛浴設備",
+          "status": "未處理",
+          "completeDate": ""
         }
       ]
     },
@@ -4264,7 +4284,7 @@
           "floor": "8F",
           "description": "全室地板清潔，切勿在室內抽菸，窗戶要關",
           "trade": "工務所",
-          "status": "未處理",
+          "status": "已完成",
           "completeDate": "",
           "note": "屋主說要等裝修完成再通知處理",
           "unit": "D5"
@@ -5528,6 +5548,16 @@
           "trade": "衛浴設備",
           "status": "已完成",
           "completeDate": "2026/11/07"
+        },
+        {
+          "caseId": "D-0238",
+          "description": "[主浴/龍頭]主衛浴浴缸水龍頭出水量較小",
+          "note": "",
+          "unit": "D1",
+          "floor": "1F",
+          "trade": "衛浴設備",
+          "status": "處理中",
+          "completeDate": ""
         }
       ]
     },
@@ -8054,9 +8084,9 @@
           "floor": "13F",
           "description": "前陽石材檯面磁磚白痕",
           "trade": "石材",
-          "status": "處理中",
-          "completeDate": "",
-          "note": "類型:石材",
+          "status": "已完成",
+          "completeDate": "2026/11/11",
+          "note": "類型:石材\n已協助清潔白華，滲水抹縫區清除，重新填補",
           "unit": "F8"
         },
         {
@@ -8064,9 +8094,9 @@
           "floor": "13F",
           "description": "前陽地板排水左邊排水孔水無法順利往下流",
           "trade": "水電",
-          "status": "處理中",
-          "completeDate": "",
-          "note": "類型:水電",
+          "status": "已完成",
+          "completeDate": "2026/11/11",
+          "note": "類型:水電\n內有白泡棉異物已取出，測試灌水正常",
           "unit": "F8"
         },
         {
@@ -9793,9 +9823,19 @@
           "trade": "其他",
           "status": "處理中",
           "completeDate": ""
+        },
+        {
+          "caseId": "G-0159",
+          "description": "[主臥/插座]主臥插座沒有電",
+          "note": "",
+          "unit": "G2",
+          "floor": "6F",
+          "trade": "水電",
+          "status": "未處理",
+          "completeDate": ""
         }
       ]
     }
   },
-  "verifiedAt": "2026-11-11T04:37:19Z"
+  "verifiedAt": "2026-11-12T01:40:36Z"
 }
