@@ -954,7 +954,28 @@
     "[公浴/壁磚]第一張圖: 清洗完客浴之後一段時間，在淋浴間圈起的交縫處，會慢慢滲出水滴往地板流，需補強防水或填縫\n第二章圖: 客浴的地板磁磚填縫處有凹洞（在門口處附近)，需填補縫隙": "[Kamar mandi bersama/ubin dinding] Foto pertama: Beberapa waktu setelah kamar mandi tamu dibersihkan, tetesan air perlahan merembes dari sambungan yang dilingkari di area pancuran lalu mengalir ke lantai. Lapisan kedap air atau pengisian nat perlu diperkuat.\nFoto kedua: Terdapat lubang pada nat ubin lantai kamar mandi tamu di dekat pintu masuk; celah tersebut perlu diisi.",
     "[主浴/其他]昨天前天外勞來修理浴室漏水的問題，結果發現敲破了好幾塊地磚。": "[Kamar mandi utama/lainnya] Pekerja asing datang kemarin dan sehari sebelumnya untuk memperbaiki kebocoran kamar mandi. Setelah itu ditemukan beberapa ubin lantai telah pecah.",
     "[主浴/龍頭]主衛浴浴缸水龍頭出水量較小": "[Kamar mandi utama/keran] Aliran air dari keran bak mandi di kamar mandi utama terlalu kecil.",
-    "[主臥/插座]主臥插座沒有電": "[Kamar tidur utama/stopkontak] Stopkontak di kamar tidur utama tidak memiliki aliran listrik."
+    "[主臥/插座]主臥插座沒有電": "[Kamar tidur utama/stopkontak] Stopkontak di kamar tidur utama tidak memiliki aliran listrik.",
+    "[玄關門/門框]設計師來貼保護層發現門框有凹痕": "[Pintu masuk/kusen] Saat desainer datang memasang lapisan pelindung, ditemukan penyok pada kusen pintu.",
+    "[前陽/壁磚]破損": "[Balkon depan/ubin dinding] Rusak.",
+    "[客廳/其他]鞋櫃下方通風石材破損": "[Ruang tamu/lainnya] Batu pada bagian ventilasi di bawah lemari sepatu rusak.",
+    "[玄關門/門扇]破損": "[Pintu masuk/daun pintu] Rusak.",
+    "[前陽/其他]看似刮傷": "[Balkon depan/lainnya] Tampak seperti goresan.",
+    "[前陽/其他]表面有凹": "[Balkon depan/lainnya] Permukaan penyok.",
+    "[前陽/其他]前陽台公管多處掉漆": "[Balkon depan/lainnya] Cat pada pipa bersama di balkon depan terkelupas di beberapa tempat.",
+    "[玄關門/門扇]玄關門電子鎖髒污（屋內側）": "[Pintu masuk/daun pintu] Kunci elektronik pintu masuk kotor di sisi dalam unit.",
+    "[工陽/包版]陽台總進水維修孔無法開啟（上方預留空間太窄）": "[Balkon servis/panel penutup] Lubang akses perawatan saluran air masuk utama di balkon tidak dapat dibuka karena ruang yang disediakan di bagian atas terlalu sempit.",
+    "[廚房/其他]瓦斯爐沒有爐心及腳架（兩個都沒有）": "[Dapur/lainnya] Kompor gas tidak memiliki kepala tungku dan penyangga panci; keduanya tidak ada.",
+    "[主臥/其他]緊急鈴沒有作動": "[Kamar tidur utama/lainnya] Bel darurat tidak berfungsi.",
+    "[前陽/其他]陽台置物架金屬材質變質": "[Balkon depan/lainnya] Material logam rak penyimpanan balkon mengalami perubahan atau kerusakan.",
+    "[主臥/其他]客廳，主臥室，次臥二跟廚房的煙霧偵測器孔（共4個地方）沒對準有縫隙，請幫忙調整，謝謝": "[Kamar tidur utama/lainnya] Lubang detektor asap di ruang tamu, kamar tidur utama, kamar tidur kedua, dan dapur (total empat tempat) tidak sejajar dan memiliki celah. Mohon disesuaikan. Terima kasih.",
+    "[公浴/其他]燈具閃爍": "[Kamar mandi bersama/lainnya] Lampu berkedip.",
+    "[臥室二/鋁窗玻璃]1.靠近廚房的房間窗框有刮痕\n2.電視牆後的次臥窗框及玻璃上有白色油漆噴濺的小點": "[Kamar tidur kedua/jendela aluminium dan kaca] 1. Kusen jendela kamar di dekat dapur tergores.\n2. Terdapat bintik-bintik percikan cat putih pada kusen jendela dan kaca kamar tidur kedua di belakang dinding televisi.",
+    "[主浴/鏡箱]「主浴室」跟「客浴室」2間的鏡子上下都有高低差，縫隙大，麻煩幫忙調整，謝謝": "[Kamar mandi utama/lemari cermin] Cermin di kamar mandi utama dan kamar mandi tamu tidak sejajar ketinggiannya pada bagian atas dan bawah serta memiliki celah besar. Mohon disesuaikan. Terima kasih.",
+    "[臥室一/鋁窗玻璃]玻璃有一個破洞，是玻璃做成的時候內包含在裡面，並非人為或後天損壞，需要現場勘查，請與我聯絡。": "[Kamar tidur pertama/jendela aluminium dan kaca] Terdapat lubang pada kaca yang sudah terkandung di dalamnya saat kaca dibuat, bukan akibat kerusakan oleh manusia atau setelah pemasangan. Diperlukan pemeriksaan di lokasi; mohon hubungi saya.",
+    "[其他/牆面油漆]表面破損，請協助美容，謝謝": "[Lainnya/cat dinding] Permukaan rusak. Mohon dibantu perbaikan tampilannya. Terima kasih.",
+    "[主臥/插座]沒有電": "[Kamar tidur utama/stopkontak] Tidak ada aliran listrik.",
+    "[廚房/門框]未入住 邊條發霉": "[Dapur/kusen] Belum ditempati, tetapi lis tepi sudah berjamur.",
+    "[臥室一/毛巾桿]未入住 就生鏽了": "[Kamar tidur pertama/batang handuk] Sudah berkarat meskipun belum ditempati."
   },
   "note": {
     "": "",
@@ -1227,7 +1248,9 @@
     "已留言給住戶，住戶已了解": "Pesan telah ditinggalkan untuk penghuni dan penghuni sudah memahami.",
     "以先留言給住戶，請住戶裝修廠商先行查看": "Pesan telah ditinggalkan terlebih dahulu untuk penghuni agar kontraktor interior penghuni memeriksanya terlebih dahulu.",
     "類型:石材\n已協助清潔白華，滲水抹縫區清除，重新填補": "Jenis: batu.\nEndapan putih telah dibersihkan; nat di area rembesan air dibersihkan dan diisi ulang.",
-    "類型:水電\n內有白泡棉異物已取出，測試灌水正常": "Jenis: air dan listrik.\nBenda asing berupa busa putih di dalam telah dikeluarkan; pengujian dengan mengalirkan air menunjukkan kondisi normal."
+    "類型:水電\n內有白泡棉異物已取出，測試灌水正常": "Jenis: air dan listrik.\nBenda asing berupa busa putih di dalam telah dikeluarkan; pengujian dengan mengalirkan air menunjukkan kondisi normal.",
+    "已於現場點交完畢，數量正確，謝謝。": "Serah terima di lokasi telah selesai dan jumlahnya sesuai. Terima kasih.",
+    "修繕完成，請簽收，謝謝您": "Perbaikan telah selesai. Mohon tanda tangan penerimaan. Terima kasih."
   },
   "trade": {
     "": "",
