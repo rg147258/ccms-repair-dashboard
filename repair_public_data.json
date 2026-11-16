@@ -8,8 +8,8 @@
       "needs_review": 0
     },
     "B": {
-      "total": 158,
-      "open": 26,
+      "total": 159,
+      "open": 27,
       "working": 5,
       "completed": 127,
       "needs_review": 0
@@ -29,8 +29,8 @@
       "needs_review": 0
     },
     "E": {
-      "total": 160,
-      "open": 4,
+      "total": 161,
+      "open": 5,
       "working": 8,
       "completed": 148,
       "needs_review": 0
@@ -43,8 +43,8 @@
       "needs_review": 0
     },
     "G": {
-      "total": 161,
-      "open": 6,
+      "total": 162,
+      "open": 7,
       "working": 13,
       "completed": 142,
       "needs_review": 0
@@ -2218,6 +2218,16 @@
           "trade": "油漆",
           "status": "未處理",
           "completeDate": ""
+        },
+        {
+          "caseId": "B-0159",
+          "unit": "B3",
+          "floor": "2F",
+          "description": "[其他/其他]對講機壞",
+          "trade": "水電",
+          "status": "未處理",
+          "completeDate": "",
+          "note": ""
         }
       ]
     },
@@ -7283,6 +7293,16 @@
           "trade": "油漆",
           "status": "未處理",
           "completeDate": ""
+        },
+        {
+          "caseId": "E-0161",
+          "unit": "E3",
+          "floor": "7F",
+          "description": "[前陽/清潔]前陽台有一大塊殘膠，還有好幾處有水泥黏住髒污（照片放不下）；前陽台最右側女兒牆有縫隙需填縫；陽台女兒牆與地面銜接整排顏色不一致",
+          "trade": "磁磚",
+          "status": "未處理",
+          "completeDate": "",
+          "note": ""
         }
       ]
     },
@@ -10043,9 +10063,19 @@
           "trade": "衛浴設備",
           "status": "未處理",
           "completeDate": ""
+        },
+        {
+          "caseId": "G-0163",
+          "unit": "G1",
+          "floor": "13F",
+          "description": "[其他/牆面油漆]門口烤漆 交屋前門口烤油漆沒幫我補",
+          "trade": "油漆",
+          "status": "未處理",
+          "completeDate": "",
+          "note": ""
         }
       ]
     }
   },
-  "verifiedAt": "2026-11-14T02:46:00Z"
+  "verifiedAt": "2026-11-16T04:22:42Z"
 }
