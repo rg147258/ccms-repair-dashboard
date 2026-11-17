@@ -2231,7 +2231,7 @@
         },
         {
           "caseId": "B-0160",
-          "unit": "B7－3F",
+          "unit": "B7",
           "floor": "3F",
           "description": "[主浴/龍頭]水龍頭會滴水",
           "trade": "衛浴設備",
@@ -8460,8 +8460,8 @@
           "completeDate": "2026/11/11"
         },
         {
-          "caseId": "F-0115",
-          "unit": "F1－10F",
+          "caseId": "F-0121",
+          "unit": "F1",
           "floor": "10F",
           "description": "[公浴/面盆]檯面細例康脫落",
           "trade": "衛浴設備",
@@ -8470,8 +8470,8 @@
           "note": ""
         },
         {
-          "caseId": "F-0116",
-          "unit": "F1－10F",
+          "caseId": "F-0122",
+          "unit": "F1",
           "floor": "10F",
           "description": "[臥室一/門框]次卧門框脫皮及主臥門框條損傷",
           "trade": "門框扇",
@@ -8480,8 +8480,8 @@
           "note": ""
         },
         {
-          "caseId": "F-0117",
-          "unit": "F1－10F",
+          "caseId": "F-0123",
+          "unit": "F1",
           "floor": "10F",
           "description": "[廚房/其他]橫桿脫漆，螺絲不平",
           "trade": "廚具",
@@ -10116,7 +10116,7 @@
         },
         {
           "caseId": "G-0164",
-          "unit": "G2－3F",
+          "unit": "G2",
           "floor": "3F",
           "description": "[公浴/龍頭]沒有連篷頭",
           "trade": "衛浴設備",
@@ -10126,7 +10126,7 @@
         },
         {
           "caseId": "G-0165",
-          "unit": "G2－3F",
+          "unit": "G2",
           "floor": "3F",
           "description": "[玄關門/門扇]有刮痕",
           "trade": "門框扇",
@@ -10136,7 +10136,7 @@
         },
         {
           "caseId": "G-0166",
-          "unit": "G2－3F",
+          "unit": "G2",
           "floor": "3F",
           "description": "[前陽/壁磚]有洞",
           "trade": "磁磚",
@@ -10147,5 +10147,5 @@
       ]
     }
   },
-  "verifiedAt": "2026-11-17T00:35:38Z"
+  "verifiedAt": "2026-11-17T00:38:03Z"
 }
