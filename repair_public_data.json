@@ -8,16 +8,16 @@
       "needs_review": 0
     },
     "B": {
-      "total": 159,
+      "total": 160,
       "open": 27,
-      "working": 5,
+      "working": 6,
       "completed": 127,
       "needs_review": 0
     },
     "C": {
       "total": 112,
-      "open": 3,
-      "working": 13,
+      "open": 1,
+      "working": 15,
       "completed": 96,
       "needs_review": 0
     },
@@ -30,21 +30,21 @@
     },
     "E": {
       "total": 161,
-      "open": 5,
+      "open": 3,
       "working": 8,
-      "completed": 148,
+      "completed": 150,
       "needs_review": 0
     },
     "F": {
-      "total": 114,
-      "open": 0,
+      "total": 117,
+      "open": 3,
       "working": 1,
       "completed": 113,
       "needs_review": 0
     },
     "G": {
-      "total": 162,
-      "open": 7,
+      "total": 165,
+      "open": 10,
       "working": 13,
       "completed": 142,
       "needs_review": 0
@@ -2225,6 +2225,16 @@
           "floor": "2F",
           "description": "[其他/其他]對講機壞",
           "trade": "水電",
+          "status": "處理中",
+          "completeDate": "",
+          "note": ""
+        },
+        {
+          "caseId": "B-0160",
+          "unit": "B7－3F",
+          "floor": "3F",
+          "description": "[主浴/龍頭]水龍頭會滴水",
+          "trade": "衛浴設備",
           "status": "未處理",
           "completeDate": "",
           "note": ""
@@ -3311,7 +3321,7 @@
           "unit": "C6",
           "floor": "2F",
           "trade": "門框扇",
-          "status": "未處理",
+          "status": "處理中",
           "completeDate": ""
         },
         {
@@ -3321,7 +3331,7 @@
           "unit": "C6",
           "floor": "2F",
           "trade": "其他",
-          "status": "未處理",
+          "status": "處理中",
           "completeDate": ""
         },
         {
@@ -7221,8 +7231,8 @@
           "unit": "E3",
           "floor": "7F",
           "trade": "衛浴設備",
-          "status": "處理中",
-          "completeDate": ""
+          "status": "已完成",
+          "completeDate": "2026/11/13"
         },
         {
           "caseId": "E-0154",
@@ -7231,8 +7241,8 @@
           "unit": "E1",
           "floor": "15F",
           "trade": "衛浴設備",
-          "status": "處理中",
-          "completeDate": ""
+          "status": "已完成",
+          "completeDate": "2026/11/14"
         },
         {
           "caseId": "E-0155",
@@ -7251,7 +7261,7 @@
           "unit": "E2",
           "floor": "5F",
           "trade": "衛浴設備",
-          "status": "未處理",
+          "status": "處理中",
           "completeDate": ""
         },
         {
@@ -7281,7 +7291,7 @@
           "unit": "E2",
           "floor": "5F",
           "trade": "鋁窗及玻璃",
-          "status": "未處理",
+          "status": "處理中",
           "completeDate": ""
         },
         {
@@ -8448,6 +8458,36 @@
           "trade": "水電",
           "status": "已完成",
           "completeDate": "2026/11/11"
+        },
+        {
+          "caseId": "F-0115",
+          "unit": "F1－10F",
+          "floor": "10F",
+          "description": "[公浴/面盆]檯面細例康脫落",
+          "trade": "衛浴設備",
+          "status": "未處理",
+          "completeDate": "",
+          "note": ""
+        },
+        {
+          "caseId": "F-0116",
+          "unit": "F1－10F",
+          "floor": "10F",
+          "description": "[臥室一/門框]次卧門框脫皮及主臥門框條損傷",
+          "trade": "門框扇",
+          "status": "未處理",
+          "completeDate": "",
+          "note": ""
+        },
+        {
+          "caseId": "F-0117",
+          "unit": "F1－10F",
+          "floor": "10F",
+          "description": "[廚房/其他]橫桿脫漆，螺絲不平",
+          "trade": "廚具",
+          "status": "未處理",
+          "completeDate": "",
+          "note": ""
         }
       ]
     },
@@ -10073,9 +10113,39 @@
           "status": "未處理",
           "completeDate": "",
           "note": ""
+        },
+        {
+          "caseId": "G-0164",
+          "unit": "G2－3F",
+          "floor": "3F",
+          "description": "[公浴/龍頭]沒有連篷頭",
+          "trade": "衛浴設備",
+          "status": "未處理",
+          "completeDate": "",
+          "note": ""
+        },
+        {
+          "caseId": "G-0165",
+          "unit": "G2－3F",
+          "floor": "3F",
+          "description": "[玄關門/門扇]有刮痕",
+          "trade": "門框扇",
+          "status": "未處理",
+          "completeDate": "",
+          "note": ""
+        },
+        {
+          "caseId": "G-0166",
+          "unit": "G2－3F",
+          "floor": "3F",
+          "description": "[前陽/壁磚]有洞",
+          "trade": "磁磚",
+          "status": "未處理",
+          "completeDate": "",
+          "note": ""
         }
       ]
     }
   },
-  "verifiedAt": "2026-11-16T04:22:42Z"
+  "verifiedAt": "2026-11-17T00:35:38Z"
 }

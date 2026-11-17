@@ -978,7 +978,14 @@
     "[臥室一/毛巾桿]未入住 就生鏽了": "[Kamar tidur pertama/batang handuk] Sudah berkarat meskipun belum ditempati.",
     "[其他/其他]對講機壞": "[Lainnya/lainnya] Interkom rusak.",
     "[前陽/清潔]前陽台有一大塊殘膠，還有好幾處有水泥黏住髒污（照片放不下）；前陽台最右側女兒牆有縫隙需填縫；陽台女兒牆與地面銜接整排顏色不一致": "[Balkon depan/pembersihan] Terdapat sisa lem yang besar serta beberapa bagian dengan semen menempel dan kotoran di balkon depan (semua foto tidak dapat dimuat); celah pada dinding pembatas paling kanan balkon depan perlu diisi; warna sepanjang sambungan dinding pembatas balkon dengan lantai tidak seragam.",
-    "[其他/牆面油漆]門口烤漆 交屋前門口烤油漆沒幫我補": "[Lainnya/cat dinding] Cat pada bagian pintu masuk belum diperbaiki sebelum serah terima unit."
+    "[其他/牆面油漆]門口烤漆 交屋前門口烤油漆沒幫我補": "[Lainnya/cat dinding] Cat pada bagian pintu masuk belum diperbaiki sebelum serah terima unit.",
+    "[公浴/龍頭]沒有連篷頭": "[Kamar mandi umum/keran] Kepala pancuran tidak tersedia.",
+    "[玄關門/門扇]有刮痕": "[Pintu masuk/daun pintu] Terdapat goresan.",
+    "[前陽/壁磚]有洞": "[Balkon depan/ubin dinding] Terdapat lubang.",
+    "[公浴/面盆]檯面細例康脫落": "[Kamar mandi umum/wastafel] Silikon pada permukaan meja terlepas.",
+    "[臥室一/門框]次卧門框脫皮及主臥門框條損傷": "[Kamar tidur pertama/kusen pintu] Lapisan kusen pintu kamar tidur tambahan mengelupas dan lis kusen pintu kamar tidur utama rusak.",
+    "[廚房/其他]橫桿脫漆，螺絲不平": "[Dapur/lainnya] Cat pada batang horizontal mengelupas dan sekrup tidak rata.",
+    "[主浴/龍頭]水龍頭會滴水": "[Kamar mandi utama/keran] Keran menetes."
   },
   "note": {
     "": "",
