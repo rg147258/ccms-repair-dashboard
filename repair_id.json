@@ -985,7 +985,18 @@
     "[公浴/面盆]檯面細例康脫落": "[Kamar mandi umum/wastafel] Silikon pada permukaan meja terlepas.",
     "[臥室一/門框]次卧門框脫皮及主臥門框條損傷": "[Kamar tidur pertama/kusen pintu] Lapisan kusen pintu kamar tidur tambahan mengelupas dan lis kusen pintu kamar tidur utama rusak.",
     "[廚房/其他]橫桿脫漆，螺絲不平": "[Dapur/lainnya] Cat pada batang horizontal mengelupas dan sekrup tidak rata.",
-    "[主浴/龍頭]水龍頭會滴水": "[Kamar mandi utama/keran] Keran menetes."
+    "[主浴/龍頭]水龍頭會滴水": "[Kamar mandi utama/keran] Keran menetes.",
+    "主浴，客浴，填縫不實，瓷磚縫隙太大。": "Isian nat ubin dinding di kedua kamar mandi tidak padat dan celah antarubin terlalu lebar.",
+    "廚房出入後陽台門開啓時卡卡的\n（11/10全裝修交屋後，使用即有此現象）": "Pintu dari dapur ke balkon belakang terasa seret saat dibuka. Kondisi ini sudah terjadi sejak serah terima unit selesai renovasi pada 10 November.",
+    "為何地磚出現平整的裂痕？": "Apa penyebab retakan lurus pada ubin lantai kamar tidur utama?",
+    "大門旁門牌下方掉漆": "Cat mengelupas di bawah pelat nomor rumah di samping pintu utama.",
+    "工作後陽台瓦斯熱水器底下的水龍頭微微滲漏": "Keran di bawah pemanas air gas di balkon servis belakang sedikit bocor.",
+    "紗窗無法正確收合": "Kasa jendela tidak dapat ditutup dengan benar.",
+    "花澆水花灑故障": "Penyiram tanaman tidak berfungsi.",
+    "花灑不能出水": "Penyiram tanaman tidak mengeluarkan air.",
+    "停車場車檔破損 [車位編號已遮除]": "Pembatas roda di area parkir rusak [nomor petak disamarkan].",
+    "窗外夕利康需修補": "Silikon di bagian luar jendela perlu diperbaiki.",
+    "門鎖設定故障，大門無法即時上鎖": "Pengaturan kunci pintu bermasalah sehingga pintu utama tidak langsung terkunci."
   },
   "note": {
     "": "",
@@ -1260,7 +1271,8 @@
     "類型:石材\n已協助清潔白華，滲水抹縫區清除，重新填補": "Jenis: batu.\nEndapan putih telah dibersihkan; nat di area rembesan air dibersihkan dan diisi ulang.",
     "類型:水電\n內有白泡棉異物已取出，測試灌水正常": "Jenis: air dan listrik.\nBenda asing berupa busa putih di dalam telah dikeluarkan; pengujian dengan mengalirkan air menunjukkan kondisi normal.",
     "已於現場點交完畢，數量正確，謝謝。": "Serah terima di lokasi telah selesai dan jumlahnya sesuai. Terima kasih.",
-    "修繕完成，請簽收，謝謝您": "Perbaikan telah selesai. Mohon tanda tangan penerimaan. Terima kasih."
+    "修繕完成，請簽收，謝謝您": "Perbaikan telah selesai. Mohon tanda tangan penerimaan. Terima kasih.",
+    "11/12已留言給住戶約時間": "Pada 12 November, pesan dikirim kepada penghuni untuk mengatur jadwal."
   },
   "trade": {
     "": "",
