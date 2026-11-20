@@ -2,35 +2,35 @@
   "aggregates": {
     "A": {
       "total": 60,
-      "open": 1,
-      "working": 5,
+      "open": 0,
+      "working": 6,
       "completed": 54,
       "needs_review": 0
     },
     "B": {
       "total": 162,
-      "open": 29,
-      "working": 6,
-      "completed": 127,
+      "open": 21,
+      "working": 12,
+      "completed": 129,
       "needs_review": 0
     },
     "C": {
       "total": 113,
-      "open": 2,
-      "working": 14,
-      "completed": 97,
+      "open": 1,
+      "working": 12,
+      "completed": 100,
       "needs_review": 0
     },
     "D": {
       "total": 237,
-      "open": 18,
-      "working": 5,
+      "open": 15,
+      "working": 8,
       "completed": 214,
       "needs_review": 0
     },
     "E": {
-      "total": 162,
-      "open": 1,
+      "total": 163,
+      "open": 2,
       "working": 6,
       "completed": 155,
       "needs_review": 0
@@ -649,7 +649,7 @@
           "floor": "15F",
           "description": "廚房出入後陽台門開啓時卡卡的\n（11/10全裝修交屋後，使用即有此現象）",
           "trade": "其他",
-          "status": "未處理",
+          "status": "處理中",
           "completeDate": "",
           "note": "",
           "unit": "A1"
@@ -2176,8 +2176,8 @@
           "unit": "B3",
           "floor": "5F",
           "trade": "門框扇",
-          "status": "未處理",
-          "completeDate": ""
+          "status": "已完成",
+          "completeDate": "2026/11/16"
         },
         {
           "caseId": "B-0153",
@@ -2186,7 +2186,7 @@
           "unit": "B2",
           "floor": "6F",
           "trade": "磁磚",
-          "status": "未處理",
+          "status": "處理中",
           "completeDate": ""
         },
         {
@@ -2196,7 +2196,7 @@
           "unit": "B2",
           "floor": "6F",
           "trade": "石材",
-          "status": "未處理",
+          "status": "處理中",
           "completeDate": ""
         },
         {
@@ -2206,7 +2206,7 @@
           "unit": "B2",
           "floor": "6F",
           "trade": "門框扇",
-          "status": "未處理",
+          "status": "處理中",
           "completeDate": ""
         },
         {
@@ -2216,7 +2216,7 @@
           "unit": "B2",
           "floor": "6F",
           "trade": "鋁窗及玻璃",
-          "status": "未處理",
+          "status": "處理中",
           "completeDate": ""
         },
         {
@@ -2226,7 +2226,7 @@
           "unit": "B2",
           "floor": "6F",
           "trade": "磁磚",
-          "status": "未處理",
+          "status": "處理中",
           "completeDate": ""
         },
         {
@@ -2236,7 +2236,7 @@
           "unit": "B2",
           "floor": "6F",
           "trade": "油漆",
-          "status": "未處理",
+          "status": "處理中",
           "completeDate": ""
         },
         {
@@ -2255,8 +2255,8 @@
           "floor": "3F",
           "description": "[主浴/龍頭]水龍頭會滴水",
           "trade": "衛浴設備",
-          "status": "未處理",
-          "completeDate": "",
+          "status": "已完成",
+          "completeDate": "2026/11/17",
           "note": ""
         },
         {
@@ -3289,8 +3289,8 @@
           "floor": "7F",
           "description": "[主臥/其他]在主臥空間裏能聽到樓上的流水聲，且音量超級大聲已影響睡眠品質，望能儘速處理",
           "trade": "水電",
-          "status": "處理中",
-          "completeDate": "",
+          "status": "已完成",
+          "completeDate": "2026/11/19",
           "note": "",
           "unit": "C7"
         },
@@ -3361,8 +3361,8 @@
           "unit": "C6",
           "floor": "2F",
           "trade": "門框扇",
-          "status": "處理中",
-          "completeDate": ""
+          "status": "已完成",
+          "completeDate": "2026/11/19"
         },
         {
           "caseId": "C-0109",
@@ -3371,8 +3371,8 @@
           "unit": "C6",
           "floor": "2F",
           "trade": "其他",
-          "status": "處理中",
-          "completeDate": ""
+          "status": "已完成",
+          "completeDate": "2026/11/19"
         },
         {
           "caseId": "C-0110",
@@ -3409,7 +3409,7 @@
           "floor": "14F",
           "description": "窗外夕利康需修補",
           "trade": "鋁窗及玻璃",
-          "status": "未處理",
+          "status": "處理中",
           "completeDate": "",
           "note": "",
           "unit": "C2"
@@ -5754,7 +5754,7 @@
           "floor": "5F",
           "description": "主浴，客浴，填縫不實，瓷磚縫隙太大。",
           "trade": "磁磚",
-          "status": "未處理",
+          "status": "處理中",
           "completeDate": "",
           "note": "",
           "unit": "D2"
@@ -5764,7 +5764,7 @@
           "floor": "1F",
           "description": "花澆水花灑故障",
           "trade": "園藝",
-          "status": "未處理",
+          "status": "處理中",
           "completeDate": "",
           "note": "",
           "unit": "D1"
@@ -5774,7 +5774,7 @@
           "floor": "1F",
           "description": "花灑不能出水",
           "trade": "園藝",
-          "status": "未處理",
+          "status": "處理中",
           "completeDate": "",
           "note": "",
           "unit": "D1"
@@ -7409,6 +7409,16 @@
           "floor": "5F",
           "description": "紗窗無法正確收合",
           "trade": "鋁窗及玻璃",
+          "status": "未處理",
+          "completeDate": "",
+          "note": "",
+          "unit": "E2"
+        },
+        {
+          "caseId": "E-0163",
+          "floor": "3F",
+          "description": "主臥的窗戶安全釦卡住",
+          "trade": "門框扇",
           "status": "未處理",
           "completeDate": "",
           "note": "",
@@ -10257,5 +10267,5 @@
       ]
     }
   },
-  "verifiedAt": "2026-11-19T06:35:26Z"
+  "verifiedAt": "2026-11-20T04:30:12Z"
 }
