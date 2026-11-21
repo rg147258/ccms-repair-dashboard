@@ -3,13 +3,13 @@
     "A": {
       "total": 60,
       "open": 0,
-      "working": 6,
-      "completed": 54,
+      "working": 5,
+      "completed": 55,
       "needs_review": 0
     },
     "B": {
-      "total": 162,
-      "open": 21,
+      "total": 164,
+      "open": 23,
       "working": 12,
       "completed": 129,
       "needs_review": 0
@@ -17,13 +17,13 @@
     "C": {
       "total": 113,
       "open": 1,
-      "working": 12,
-      "completed": 100,
+      "working": 11,
+      "completed": 101,
       "needs_review": 0
     },
     "D": {
-      "total": 237,
-      "open": 15,
+      "total": 240,
+      "open": 18,
       "working": 8,
       "completed": 214,
       "needs_review": 0
@@ -36,8 +36,8 @@
       "needs_review": 0
     },
     "F": {
-      "total": 117,
-      "open": 0,
+      "total": 118,
+      "open": 1,
       "working": 2,
       "completed": 115,
       "needs_review": 0
@@ -649,8 +649,8 @@
           "floor": "15F",
           "description": "廚房出入後陽台門開啓時卡卡的\n（11/10全裝修交屋後，使用即有此現象）",
           "trade": "其他",
-          "status": "處理中",
-          "completeDate": "",
+          "status": "已完成",
+          "completeDate": "2026/11/20",
           "note": "",
           "unit": "A1"
         }
@@ -2278,6 +2278,26 @@
           "completeDate": "",
           "note": "",
           "unit": "B7"
+        },
+        {
+          "caseId": "B-0163",
+          "floor": "9F",
+          "description": "廚房附的電池尚未始用已沒電",
+          "trade": "廚具",
+          "status": "未處理",
+          "completeDate": "",
+          "note": "",
+          "unit": "B3"
+        },
+        {
+          "caseId": "B-0164",
+          "floor": "9F",
+          "description": "紗窗無法正常開，會卡住",
+          "trade": "門框扇",
+          "status": "未處理",
+          "completeDate": "",
+          "note": "",
+          "unit": "B3"
         }
       ]
     },
@@ -3351,8 +3371,8 @@
           "unit": "C7",
           "floor": "10F",
           "trade": "衛浴設備",
-          "status": "處理中",
-          "completeDate": ""
+          "status": "已完成",
+          "completeDate": "2026/11/20"
         },
         {
           "caseId": "C-0108",
@@ -5788,6 +5808,36 @@
           "completeDate": "",
           "note": "",
           "unit": "D2"
+        },
+        {
+          "caseId": "D-0243",
+          "floor": "6F",
+          "description": "鋁門有刮痕需美容，另請問是否有地方可以買修補的顏料及其色號是什麼？謝謝您",
+          "trade": "門框扇",
+          "status": "未處理",
+          "completeDate": "",
+          "note": "",
+          "unit": "D5"
+        },
+        {
+          "caseId": "D-0244",
+          "floor": "6F",
+          "description": "地磚邊修補美容",
+          "trade": "磁磚",
+          "status": "未處理",
+          "completeDate": "",
+          "note": "",
+          "unit": "D5"
+        },
+        {
+          "caseId": "D-0245",
+          "floor": "2F",
+          "description": "地磚一開始是有空磚，後來有補針後就沒空磚現象，前兩天吸地時才發現磁磚裂縫。\n後門開門關節很卡，門很重不流暢",
+          "trade": "磁磚",
+          "status": "未處理",
+          "completeDate": "",
+          "note": "",
+          "unit": "D3"
         }
       ]
     },
@@ -8598,6 +8648,16 @@
           "status": "處理中",
           "completeDate": "",
           "note": ""
+        },
+        {
+          "caseId": "F-0124",
+          "floor": "10F",
+          "description": "IH爐不平整",
+          "trade": "廚具",
+          "status": "未處理",
+          "completeDate": "",
+          "note": "",
+          "unit": "F1"
         }
       ]
     },
@@ -10267,5 +10327,5 @@
       ]
     }
   },
-  "verifiedAt": "2026-11-20T04:30:12Z"
+  "verifiedAt": "2026-11-21T04:55:04Z"
 }
