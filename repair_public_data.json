@@ -1,8 +1,8 @@
 {
   "aggregates": {
     "A": {
-      "total": 60,
-      "open": 0,
+      "total": 61,
+      "open": 1,
       "working": 5,
       "completed": 55,
       "needs_review": 0
@@ -22,15 +22,15 @@
       "needs_review": 0
     },
     "D": {
-      "total": 240,
-      "open": 18,
-      "working": 8,
+      "total": 241,
+      "open": 14,
+      "working": 13,
       "completed": 214,
       "needs_review": 0
     },
     "E": {
-      "total": 163,
-      "open": 2,
+      "total": 164,
+      "open": 3,
       "working": 6,
       "completed": 155,
       "needs_review": 0
@@ -43,8 +43,8 @@
       "needs_review": 0
     },
     "G": {
-      "total": 166,
-      "open": 4,
+      "total": 171,
+      "open": 9,
       "working": 19,
       "completed": 143,
       "needs_review": 0
@@ -653,6 +653,16 @@
           "completeDate": "2026/11/20",
           "note": "",
           "unit": "A1"
+        },
+        {
+          "caseId": "A-0064",
+          "unit": "A1",
+          "floor": "7F",
+          "description": "墊片安裝疑似不確實，請檢查。",
+          "trade": "衛浴設備",
+          "status": "未處理",
+          "completeDate": "",
+          "note": ""
         }
       ]
     },
@@ -5804,7 +5814,7 @@
           "floor": "5F",
           "description": "停車場車檔破損 [車位編號已遮除]",
           "trade": "其他",
-          "status": "未處理",
+          "status": "處理中",
           "completeDate": "",
           "note": "",
           "unit": "D2"
@@ -5814,7 +5824,7 @@
           "floor": "6F",
           "description": "鋁門有刮痕需美容，另請問是否有地方可以買修補的顏料及其色號是什麼？謝謝您",
           "trade": "門框扇",
-          "status": "未處理",
+          "status": "處理中",
           "completeDate": "",
           "note": "",
           "unit": "D5"
@@ -5824,7 +5834,7 @@
           "floor": "6F",
           "description": "地磚邊修補美容",
           "trade": "磁磚",
-          "status": "未處理",
+          "status": "處理中",
           "completeDate": "",
           "note": "",
           "unit": "D5"
@@ -5834,10 +5844,20 @@
           "floor": "2F",
           "description": "地磚一開始是有空磚，後來有補針後就沒空磚現象，前兩天吸地時才發現磁磚裂縫。\n後門開門關節很卡，門很重不流暢",
           "trade": "磁磚",
-          "status": "未處理",
+          "status": "處理中",
           "completeDate": "",
           "note": "",
           "unit": "D3"
+        },
+        {
+          "caseId": "D-0246",
+          "unit": "D3",
+          "floor": "13F",
+          "description": "走動時，多處地板出現異音。",
+          "trade": "其他",
+          "status": "處理中",
+          "completeDate": "",
+          "note": ""
         }
       ]
     },
@@ -7473,6 +7493,16 @@
           "completeDate": "",
           "note": "",
           "unit": "E2"
+        },
+        {
+          "caseId": "E-0164",
+          "unit": "E2",
+          "floor": "15F",
+          "description": "排水管出現類似下水道的異味。",
+          "trade": "衛浴設備",
+          "status": "未處理",
+          "completeDate": "",
+          "note": ""
         }
       ]
     },
@@ -10323,9 +10353,59 @@
           "completeDate": "",
           "note": "",
           "unit": "G3"
+        },
+        {
+          "caseId": "G-0168",
+          "unit": "G1",
+          "floor": "7F",
+          "description": "室內設備待檢修（已移除安全設備細節）。",
+          "trade": "水電",
+          "status": "未處理",
+          "completeDate": "",
+          "note": ""
+        },
+        {
+          "caseId": "G-0169",
+          "unit": "G1",
+          "floor": "7F",
+          "description": "室內設備待檢修（已移除安全設備細節）。",
+          "trade": "弱電",
+          "status": "未處理",
+          "completeDate": "",
+          "note": ""
+        },
+        {
+          "caseId": "G-0170",
+          "unit": "G7",
+          "floor": "15F",
+          "description": "餐廚區地面的矽利康未填補完整。",
+          "trade": "其他",
+          "status": "未處理",
+          "completeDate": "",
+          "note": ""
+        },
+        {
+          "caseId": "G-0171",
+          "unit": "G7",
+          "floor": "15F",
+          "description": "淋浴的熱水水量很小，已轉到最大。",
+          "trade": "衛浴設備",
+          "status": "未處理",
+          "completeDate": "",
+          "note": ""
+        },
+        {
+          "caseId": "G-0172",
+          "unit": "G8",
+          "floor": "10F",
+          "description": "11/19 更換玻璃後，發現窗框有敲傷；若可修補表面，請安排修補。",
+          "trade": "鋁窗及玻璃",
+          "status": "未處理",
+          "completeDate": "",
+          "note": ""
         }
       ]
     }
   },
-  "verifiedAt": "2026-11-21T04:55:04Z"
+  "verifiedAt": "2026-11-22T05:03:39Z"
 }
