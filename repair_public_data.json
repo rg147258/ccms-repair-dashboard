@@ -8,22 +8,22 @@
       "needs_review": 0
     },
     "B": {
-      "total": 164,
-      "open": 23,
+      "total": 166,
+      "open": 25,
       "working": 12,
       "completed": 129,
       "needs_review": 0
     },
     "C": {
-      "total": 113,
-      "open": 1,
+      "total": 114,
+      "open": 2,
       "working": 11,
       "completed": 101,
       "needs_review": 0
     },
     "D": {
-      "total": 241,
-      "open": 14,
+      "total": 243,
+      "open": 16,
       "working": 13,
       "completed": 214,
       "needs_review": 0
@@ -36,8 +36,8 @@
       "needs_review": 0
     },
     "F": {
-      "total": 118,
-      "open": 1,
+      "total": 120,
+      "open": 3,
       "working": 2,
       "completed": 115,
       "needs_review": 0
@@ -2308,6 +2308,26 @@
           "completeDate": "",
           "note": "",
           "unit": "B3"
+        },
+        {
+          "caseId": "B-0165",
+          "unit": "B2",
+          "floor": "6F",
+          "description": "主臥鋁窗玻璃有刮痕。",
+          "trade": "鋁窗及玻璃",
+          "status": "未處理",
+          "completeDate": "",
+          "note": ""
+        },
+        {
+          "caseId": "B-0166",
+          "unit": "B2",
+          "floor": "6F",
+          "description": "次臥鋁窗上框缺件，玻璃多處有刮痕。",
+          "trade": "鋁窗及玻璃",
+          "status": "未處理",
+          "completeDate": "",
+          "note": ""
         }
       ]
     },
@@ -3443,6 +3463,16 @@
           "completeDate": "",
           "note": "",
           "unit": "C2"
+        },
+        {
+          "caseId": "C-0114",
+          "unit": "C3",
+          "floor": "7F",
+          "description": "室內設備功能異常，待檢修（已移除安全設備細節）。",
+          "trade": "其他",
+          "status": "未處理",
+          "completeDate": "",
+          "note": ""
         }
       ]
     },
@@ -5856,6 +5886,26 @@
           "description": "走動時，多處地板出現異音。",
           "trade": "其他",
           "status": "處理中",
+          "completeDate": "",
+          "note": ""
+        },
+        {
+          "caseId": "D-0247",
+          "unit": "D3",
+          "floor": "2F",
+          "description": "大門表面有破損，待修補。",
+          "trade": "門框扇",
+          "status": "未處理",
+          "completeDate": "",
+          "note": ""
+        },
+        {
+          "caseId": "D-0248",
+          "unit": "D2",
+          "floor": "6F",
+          "description": "廚房抽油煙機排風管彎折較多，建議調整管線。",
+          "trade": "廚具",
+          "status": "未處理",
           "completeDate": "",
           "note": ""
         }
@@ -8688,6 +8738,26 @@
           "completeDate": "",
           "note": "",
           "unit": "F1"
+        },
+        {
+          "caseId": "F-0125",
+          "unit": "F2",
+          "floor": "12F",
+          "description": "主浴洗手台鏡櫃的小鏡面有三處藍色斑痕。",
+          "trade": "衛浴設備",
+          "status": "未處理",
+          "completeDate": "",
+          "note": ""
+        },
+        {
+          "caseId": "F-0126",
+          "unit": "F2",
+          "floor": "9F",
+          "description": "設備功能異常，待檢修（已移除安全設備細節）。",
+          "trade": "其他",
+          "status": "未處理",
+          "completeDate": "",
+          "note": ""
         }
       ]
     },
@@ -10407,5 +10477,5 @@
       ]
     }
   },
-  "verifiedAt": "2026-11-22T05:03:39Z"
+  "verifiedAt": "2026-11-23T04:29:12Z"
 }
