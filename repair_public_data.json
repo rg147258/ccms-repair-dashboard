@@ -3,13 +3,13 @@
     "A": {
       "total": 61,
       "open": 1,
-      "working": 5,
-      "completed": 55,
+      "working": 4,
+      "completed": 56,
       "needs_review": 0
     },
     "B": {
-      "total": 166,
-      "open": 25,
+      "total": 168,
+      "open": 27,
       "working": 12,
       "completed": 129,
       "needs_review": 0
@@ -44,9 +44,9 @@
     },
     "G": {
       "total": 171,
-      "open": 9,
+      "open": 8,
       "working": 19,
-      "completed": 143,
+      "completed": 144,
       "needs_review": 0
     }
   },
@@ -629,7 +629,7 @@
           "floor": "5F",
           "description": "門鎖設定故障，大門無法即時上鎖",
           "trade": "其他",
-          "status": "處理中",
+          "status": "已完成",
           "completeDate": "",
           "note": "11/12已留言給住戶約時間",
           "unit": "A1"
@@ -2325,6 +2325,26 @@
           "floor": "6F",
           "description": "次臥鋁窗上框缺件，玻璃多處有刮痕。",
           "trade": "鋁窗及玻璃",
+          "status": "未處理",
+          "completeDate": "",
+          "note": ""
+        },
+        {
+          "caseId": "B-0167",
+          "unit": "B2",
+          "floor": "6F",
+          "description": "[前陽/壁磚]刮傷",
+          "trade": "磁磚",
+          "status": "未處理",
+          "completeDate": "",
+          "note": ""
+        },
+        {
+          "caseId": "B-0168",
+          "unit": "B2",
+          "floor": "6F",
+          "description": "[玄關門/門框]刮傷及破損",
+          "trade": "門框扇",
           "status": "未處理",
           "completeDate": "",
           "note": ""
@@ -9859,7 +9879,7 @@
           "floor": "5F",
           "description": "淋浴間牆壁滲水",
           "trade": "",
-          "status": "處理中",
+          "status": "已完成",
           "completeDate": "",
           "note": "",
           "unit": "G8"
@@ -10109,7 +10129,7 @@
           "floor": "4F",
           "description": "信箱刮傷掉漆",
           "trade": "",
-          "status": "未處理",
+          "status": "處理中",
           "completeDate": "",
           "note": "",
           "unit": "G3"
@@ -10477,5 +10497,5 @@
       ]
     }
   },
-  "verifiedAt": "2026-11-23T04:29:12Z"
+  "verifiedAt": "2026-11-23T10:41:14Z"
 }
