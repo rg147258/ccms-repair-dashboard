@@ -44,9 +44,9 @@
     },
     "G": {
       "total": 172,
-      "open": 4,
-      "working": 24,
-      "completed": 144,
+      "open": 2,
+      "working": 23,
+      "completed": 147,
       "needs_review": 0
     }
   },
@@ -10421,7 +10421,7 @@
           "unit": "G8",
           "floor": "10F",
           "trade": "其他",
-          "status": "處理中",
+          "status": "已完成",
           "completeDate": ""
         },
         {
@@ -10470,7 +10470,7 @@
           "floor": "13F",
           "description": "[其他/牆面油漆]門口烤漆 交屋前門口烤油漆沒幫我補",
           "trade": "油漆",
-          "status": "未處理",
+          "status": "已完成",
           "completeDate": "",
           "note": ""
         },
@@ -10509,7 +10509,7 @@
           "floor": "11F",
           "description": "為何地磚出現平整的裂痕？",
           "trade": "磁磚",
-          "status": "未處理",
+          "status": "已完成",
           "completeDate": "",
           "note": "",
           "unit": "G3"
@@ -10577,5 +10577,5 @@
       ]
     }
   },
-  "verifiedAt": "2026-11-24T13:19:52Z"
+  "verifiedAt": "2026-11-24T13:26:42Z"
 }
