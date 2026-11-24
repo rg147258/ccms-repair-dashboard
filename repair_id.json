@@ -1019,7 +1019,15 @@
     "廚房抽油煙機排風管彎折較多，建議調整管線。": "Saluran pembuangan udara pengisap asap dapur memiliki beberapa belokan dan disarankan untuk disesuaikan.",
     "室內設備功能異常，待檢修（已移除安全設備細節）。": "Peralatan di dalam unit tidak berfungsi normal dan perlu diperiksa (rincian perangkat keamanan disamarkan).",
     "[前陽/壁磚]刮傷": "[Balkon depan/Ubin dinding]Tergores.",
-    "[玄關門/門框]刮傷及破損": "[Pintu masuk/Kusen pintu]Tergores dan rusak."
+    "[玄關門/門框]刮傷及破損": "[Pintu masuk/Kusen pintu]Tergores dan rusak.",
+    "抽油煙機運轉有異音。": "Pengisap asap dapur mengeluarkan suara tidak normal.",
+    "前陽台紗窗啟閉時有異音且會卡住。": "Kasa jendela balkon depan berbunyi dan tersangkut saat dibuka atau ditutup.",
+    "客浴面盆有黑點，需清潔。": "Wastafel kamar mandi tamu memiliki bintik hitam dan perlu dibersihkan.",
+    "廚房人造石檯面有破洞。": "Terdapat lubang pada meja dapur berbahan batu buatan.",
+    "公共梯間天花板有裂紋。": "Terdapat retakan pada plafon tangga umum.",
+    "廚房設備的管線長度不足，待調整。": "Jalur pipa peralatan dapur terlalu pendek dan perlu disesuaikan.",
+    "主浴智慧馬桶的沖洗功能異常。": "Fungsi semprot kloset pintar di kamar mandi utama tidak berfungsi dengan baik.",
+    "廚房牆面管線穿孔周圍有縫隙，待填補。": "Celah di sekitar lubang jalur pipa pada dinding dapur perlu ditutup."
   },
   "note": {
     "": "",
@@ -1318,6 +1326,7 @@
     "衛浴設備": "Perlengkapan kamar mandi",
     "鋁窗及玻璃": "Jendela aluminium dan kaca",
     "門框扇": "Kusen dan daun pintu",
-    "麗璟": "Li Jing"
+    "麗璟": "Li Jing",
+    "泥作粉刷": "Pekerjaan plester dan pasangan"
   }
 }
