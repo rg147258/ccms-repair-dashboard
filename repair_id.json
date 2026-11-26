@@ -1028,7 +1028,8 @@
     "廚房設備的管線長度不足，待調整。": "Jalur pipa peralatan dapur terlalu pendek dan perlu disesuaikan.",
     "主浴智慧馬桶的沖洗功能異常。": "Fungsi semprot kloset pintar di kamar mandi utama tidak berfungsi dengan baik.",
     "廚房牆面管線穿孔周圍有縫隙，待填補。": "Celah di sekitar lubang jalur pipa pada dinding dapur perlu ditutup.",
-    "主浴玻璃有多處刮痕。": "Terdapat beberapa goresan pada kaca di kamar mandi utama."
+    "主浴玻璃有多處刮痕。": "Terdapat beberapa goresan pada kaca di kamar mandi utama.",
+    "工作陽台磁磚有污漬，待清潔。": "Terdapat noda pada ubin balkon servis yang perlu dibersihkan."
   },
   "note": {
     "": "",
@@ -1329,6 +1330,7 @@
     "門框扇": "Kusen dan daun pintu",
     "麗璟": "Li Jing",
     "泥作粉刷": "Pekerjaan plester dan pasangan",
-    "玻璃": "Kaca"
+    "玻璃": "Kaca",
+    "地坪": "Lantai"
   }
 }

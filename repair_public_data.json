@@ -9,16 +9,16 @@
     },
     "B": {
       "total": 171,
-      "open": 22,
-      "working": 10,
+      "open": 21,
+      "working": 11,
       "completed": 139,
       "needs_review": 0
     },
     "C": {
-      "total": 115,
-      "open": 3,
+      "total": 116,
+      "open": 2,
       "working": 11,
-      "completed": 101,
+      "completed": 103,
       "needs_review": 0
     },
     "D": {
@@ -31,8 +31,8 @@
     "E": {
       "total": 167,
       "open": 3,
-      "working": 8,
-      "completed": 156,
+      "working": 6,
+      "completed": 158,
       "needs_review": 0
     },
     "F": {
@@ -45,8 +45,8 @@
     "G": {
       "total": 172,
       "open": 1,
-      "working": 24,
-      "completed": 147,
+      "working": 23,
+      "completed": 148,
       "needs_review": 0
     }
   },
@@ -2365,7 +2365,7 @@
           "floor": "8F",
           "description": "前陽台紗窗啟閉時有異音且會卡住。",
           "trade": "鋁窗及玻璃",
-          "status": "未處理",
+          "status": "處理中",
           "completeDate": "",
           "note": ""
         },
@@ -3209,7 +3209,7 @@
           "floor": "7F",
           "description": "[廚房/壁磚]獨立式廚房，整座廚具後面，完全沒有貼壁磚，跟買賣契約書內的配置內容全然不符。\n煩請鉅陞對此提出說明與後續如何處理妥當辦法，好讓我能接受與釋懷。謝謝",
           "trade": "磁磚",
-          "status": "處理中",
+          "status": "已完成",
           "completeDate": "",
           "note": "廠商報價中",
           "unit": "C3"
@@ -3219,7 +3219,7 @@
           "floor": "7F",
           "description": "[廚房/電器]烘碗機是瑕疵商品，右側嚴重敲傷內凹，請回收此瑕疵品，換台同型全新烘碗機給我，不必組裝，我自行處理，謝謝",
           "trade": "廚具",
-          "status": "處理中",
+          "status": "已完成",
           "completeDate": "",
           "note": "已連絡廠商更換",
           "unit": "C3"
@@ -3530,7 +3530,7 @@
           "floor": "7F",
           "description": "室內設備功能異常，待檢修（已移除安全設備細節）。",
           "trade": "其他",
-          "status": "未處理",
+          "status": "處理中",
           "completeDate": "",
           "note": ""
         },
@@ -3540,6 +3540,16 @@
           "floor": "14F",
           "trade": "玻璃",
           "description": "主浴玻璃有多處刮痕。",
+          "status": "處理中",
+          "completeDate": "",
+          "note": ""
+        },
+        {
+          "caseId": "C-0116",
+          "unit": "C1",
+          "floor": "14F",
+          "description": "工作陽台磁磚有污漬，待清潔。",
+          "trade": "地坪",
           "status": "未處理",
           "completeDate": "",
           "note": ""
@@ -7599,7 +7609,7 @@
           "floor": "5F",
           "description": "紗窗無法正確收合",
           "trade": "鋁窗及玻璃",
-          "status": "處理中",
+          "status": "已完成",
           "completeDate": "",
           "note": "",
           "unit": "E2"
@@ -7609,7 +7619,7 @@
           "floor": "3F",
           "description": "主臥的窗戶安全釦卡住",
           "trade": "門框扇",
-          "status": "處理中",
+          "status": "已完成",
           "completeDate": "",
           "note": "",
           "unit": "E2"
@@ -10451,7 +10461,7 @@
           "unit": "G2",
           "floor": "6F",
           "trade": "水電",
-          "status": "處理中",
+          "status": "已完成",
           "completeDate": ""
         },
         {
@@ -10597,5 +10607,5 @@
       ]
     }
   },
-  "verifiedAt": "2026-11-25T05:57:46Z"
+  "verifiedAt": "2026-11-26T04:27:31Z"
 }
