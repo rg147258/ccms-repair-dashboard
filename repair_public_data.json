@@ -1,8 +1,8 @@
 {
   "aggregates": {
     "A": {
-      "total": 63,
-      "open": 0,
+      "total": 64,
+      "open": 1,
       "working": 6,
       "completed": 57,
       "needs_review": 0
@@ -16,16 +16,16 @@
     },
     "C": {
       "total": 116,
-      "open": 2,
-      "working": 11,
+      "open": 1,
+      "working": 12,
       "completed": 103,
       "needs_review": 0
     },
     "D": {
-      "total": 243,
-      "open": 14,
-      "working": 12,
-      "completed": 217,
+      "total": 244,
+      "open": 15,
+      "working": 9,
+      "completed": 220,
       "needs_review": 0
     },
     "E": {
@@ -43,8 +43,8 @@
       "needs_review": 0
     },
     "G": {
-      "total": 173,
-      "open": 2,
+      "total": 175,
+      "open": 4,
       "working": 23,
       "completed": 148,
       "needs_review": 0
@@ -683,6 +683,16 @@
           "description": "浴室櫃面板破損。",
           "note": "",
           "completeDate": ""
+        },
+        {
+          "caseId": "A-0067",
+          "unit": "A3",
+          "floor": "9F",
+          "trade": "鋁窗及玻璃",
+          "status": "未處理",
+          "description": "客浴缺少矽利康填縫。",
+          "completeDate": "",
+          "note": ""
         }
       ]
     },
@@ -3560,7 +3570,7 @@
           "floor": "14F",
           "description": "工作陽台磁磚有污漬，待清潔。",
           "trade": "地坪",
-          "status": "未處理",
+          "status": "處理中",
           "completeDate": "",
           "note": ""
         }
@@ -5854,7 +5864,7 @@
           "floor": "1F",
           "description": "[其他/植栽]戶外草皮皆枯死泛黃、植栽樹木的部分也枯萎、水溝蓋不平整",
           "trade": "園藝",
-          "status": "處理中",
+          "status": "已完成",
           "completeDate": "",
           "note": "",
           "unit": "D1"
@@ -5975,7 +5985,7 @@
           "floor": "13F",
           "description": "走動時，多處地板出現異音。",
           "trade": "其他",
-          "status": "處理中",
+          "status": "已完成",
           "completeDate": "",
           "note": ""
         },
@@ -5985,7 +5995,7 @@
           "floor": "2F",
           "description": "大門表面有破損，待修補。",
           "trade": "門框扇",
-          "status": "處理中",
+          "status": "已完成",
           "completeDate": "",
           "note": ""
         },
@@ -5996,6 +6006,16 @@
           "description": "廚房抽油煙機排風管彎折較多，建議調整管線。",
           "trade": "廚具",
           "status": "處理中",
+          "completeDate": "",
+          "note": ""
+        },
+        {
+          "caseId": "D-0249",
+          "unit": "D2",
+          "floor": "6F",
+          "trade": "油漆",
+          "status": "未處理",
+          "description": "次臥天花板油漆受潮變質。",
           "completeDate": "",
           "note": ""
         }
@@ -10633,9 +10653,29 @@
           "description": "浴室地磚破損。",
           "note": "",
           "completeDate": ""
+        },
+        {
+          "caseId": "G-0175",
+          "unit": "G2",
+          "floor": "10F",
+          "trade": "廚具",
+          "status": "未處理",
+          "description": "廚房電器櫃螺絲脫落。",
+          "completeDate": "",
+          "note": ""
+        },
+        {
+          "caseId": "G-0176",
+          "unit": "G2",
+          "floor": "8F",
+          "trade": "水電",
+          "status": "未處理",
+          "description": "工作陽台燈開啟時反應慢。",
+          "completeDate": "",
+          "note": ""
         }
       ]
     }
   },
-  "verifiedAt": "2026-11-27T01:34:14Z"
+  "verifiedAt": "2026-11-27T06:24:43Z"
 }
