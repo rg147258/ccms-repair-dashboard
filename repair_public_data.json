@@ -1,17 +1,17 @@
 {
   "aggregates": {
     "A": {
-      "total": 62,
+      "total": 63,
       "open": 0,
-      "working": 5,
+      "working": 6,
       "completed": 57,
       "needs_review": 0
     },
     "B": {
       "total": 171,
-      "open": 21,
-      "working": 11,
-      "completed": 139,
+      "open": 19,
+      "working": 12,
+      "completed": 140,
       "needs_review": 0
     },
     "C": {
@@ -29,22 +29,22 @@
       "needs_review": 0
     },
     "E": {
-      "total": 167,
-      "open": 3,
-      "working": 6,
-      "completed": 158,
+      "total": 168,
+      "open": 4,
+      "working": 5,
+      "completed": 159,
       "needs_review": 0
     },
     "F": {
       "total": 121,
-      "open": 2,
-      "working": 3,
+      "open": 1,
+      "working": 4,
       "completed": 116,
       "needs_review": 0
     },
     "G": {
-      "total": 172,
-      "open": 1,
+      "total": 173,
+      "open": 2,
       "working": 23,
       "completed": 148,
       "needs_review": 0
@@ -673,6 +673,16 @@
           "status": "處理中",
           "completeDate": "",
           "note": ""
+        },
+        {
+          "caseId": "A-0066",
+          "unit": "A3",
+          "floor": "9F",
+          "trade": "衛浴設備",
+          "status": "處理中",
+          "description": "浴室櫃面板破損。",
+          "note": "",
+          "completeDate": ""
         }
       ]
     },
@@ -1994,7 +2004,7 @@
           "floor": "9F",
           "description": "主臥室緊急壓扣沒有反應",
           "trade": "",
-          "status": "處理中",
+          "status": "已完成",
           "completeDate": "",
           "note": "",
           "unit": "B7"
@@ -2375,7 +2385,7 @@
           "floor": "9F",
           "description": "客浴面盆有黑點，需清潔。",
           "trade": "衛浴設備",
-          "status": "未處理",
+          "status": "處理中",
           "completeDate": "",
           "note": ""
         },
@@ -2385,7 +2395,7 @@
           "floor": "10F",
           "trade": "弱電",
           "description": "室內設備功能異常，待檢修（已移除安全設備細節）。",
-          "status": "未處理",
+          "status": "處理中",
           "completeDate": "",
           "note": ""
         }
@@ -7581,7 +7591,7 @@
           "unit": "E2",
           "floor": "5F",
           "trade": "鋁窗及玻璃",
-          "status": "處理中",
+          "status": "已完成",
           "completeDate": ""
         },
         {
@@ -7663,6 +7673,16 @@
           "status": "未處理",
           "completeDate": "",
           "note": ""
+        },
+        {
+          "caseId": "E-0168",
+          "unit": "E2",
+          "floor": "15F",
+          "trade": "弱電",
+          "status": "未處理",
+          "description": "感應設備夜間無法正常運作。",
+          "note": "",
+          "completeDate": ""
         }
       ]
     },
@@ -8844,7 +8864,7 @@
           "floor": "10F",
           "description": "IH爐不平整",
           "trade": "廚具",
-          "status": "未處理",
+          "status": "處理中",
           "completeDate": "",
           "note": "",
           "unit": "F1"
@@ -10603,9 +10623,19 @@
           "status": "處理中",
           "completeDate": "",
           "note": ""
+        },
+        {
+          "caseId": "G-0174",
+          "unit": "G3",
+          "floor": "2F",
+          "trade": "磁磚",
+          "status": "未處理",
+          "description": "浴室地磚破損。",
+          "note": "",
+          "completeDate": ""
         }
       ]
     }
   },
-  "verifiedAt": "2026-11-26T04:27:31Z"
+  "verifiedAt": "2026-11-27T01:34:14Z"
 }
